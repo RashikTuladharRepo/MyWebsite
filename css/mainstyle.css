@@ -1,0 +1,42 @@
+.ticker {
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#ticker_02 {
+    /*min-height: 300px;*/
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.ticker li {
+    min-height: 90px;
+    height: auto;
+    border-bottom: 1px solid #DDD;
+    padding: 5px;
+    margin: 0px 5px;
+    font-size: 16px;
+    display: block;
+}
+
+.ticker li:hover
+{
+    background: #fcf8e3;
+}
+
+.ticker li a
+{
+    text-decoration: none;
+    color:#C9302C;
+    display: block;
+}
+
+.ticker li a:hover
+{
+    color:#449D44;
+}

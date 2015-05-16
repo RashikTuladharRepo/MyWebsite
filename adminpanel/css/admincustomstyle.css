@@ -1,0 +1,248 @@
+*
+{
+    font-family: sans-serif;
+}
+
+@font-face {
+    src:url("DancingScript-Regular.otf") ;
+    font-family:DancingScript ;
+}
+
+.signin-form
+{
+    margin:0 auto;
+    max-width: 330px;
+    padding: 15px;
+    padding-top: 150px;
+}
+
+.signin-form form h2
+{
+
+    font-family: DancingScript;
+    font-weight: 100;
+    text-align: center;
+    color: #1e90ff;
+}
+
+.signin-form form input[type="text"],.signin-form form input[type="password"]
+{
+    height: 40px;
+    font-family: DancingScript;
+    font-size: 20px;
+}
+
+.signin-form form button
+{
+    height: 45px;
+    font-family: DancingScript;
+    font-size: 20px;
+}
+
+.has-error
+{
+    text-align: center;
+}
+
+.navbar
+{
+    min-height: 80px;
+    border-bottom: none;
+}
+
+.navbar-brand
+{
+    height: 80px;
+    background-image: url("../../images/logo.png");
+    width: 200px;
+}
+
+.navbar-inverse .navbar-toggle {
+    margin-top: 23px;
+}
+
+.navbar-nav > li
+{
+    display: block;
+}
+
+.navbar-nav > li > a
+{
+    height: 80px;
+    text-align: center;
+    /*padding: 30px;*/
+    line-height:50px;
+}
+
+.navbar-inverse .navbar-nav > li > a
+{
+    color:#1e90ff;
+    font-size: 16px;
+    font-weight: 100;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -ms-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover
+{
+    color: #FFFFFF;
+}
+
+.dashboard-container, .dashboard-sidebar
+{
+    padding-top: 80px;
+}
+
+.dashboard-sidebar
+{
+    padding-top: 29px !important;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+    border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+    /*display: none;*/
+}
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #f5f5f5;
+        border-right: 1px solid #eee;
+    }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #428bca;
+}
+
+
+
+
+
+
+.tabmenus
+{
+    padding-bottom:20px;
+}
+
+.tabmenus .tabcontents
+{
+    padding-top:20px;
+}
+
+
+.nav-tabs li a
+{
+    display:block;
+    padding:20px;
+    font-family:DancingScript;
+    font-size:28px;
+}
+
+
+.nav-tabs li a i
+{
+    font-size:30px;
+}
+
+
+
+
+/*
+ * Main content
+ */
+
+.main {
+    padding: 20px;
+}
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+.main .page-header {
+    margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.placeholders h4 {
+    margin-bottom: 0;
+}
+.placeholder {
+    margin-bottom: 20px;
+}
+.placeholder img {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.page-header
+{
+    font-family:DancingScript ;
+}
+
+
+.blogforms
+{
+
+}
+
+
+.paginate
+{
+    height: 10px;
+}
