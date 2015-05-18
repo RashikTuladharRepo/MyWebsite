@@ -30,11 +30,10 @@ if(isset($_POST['signin']))
                 <div class="has-error">
                     <span id="helpBlock" class="help-block">
                         <?php
-                            if(isset($_SESSION['message']))
-                            {
-                                echo $_SESSION['message'];
-                                //$_SESSION['message']="";
-                            }
+                        if(isset($_SESSION['message']))
+                        {
+                            echo $_SESSION['message'];
+                        }
                         ?>
                     </span>
                 </div>
@@ -63,5 +62,10 @@ if(isset($_POST['signin']))
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="<?php echo $baseurl; ?>js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready( function() {
+    $('#helpBlock').delay(2000).fadeOut();
+    });
+    </script>
     </body>
 </html>
