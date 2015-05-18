@@ -14,6 +14,11 @@
     {
         $bc->deleteblog($_REQUEST['did']);
     }
+
+    if(isset($_REQUEST['cs'])!="")
+    {
+        $bc->changestatus($_REQUEST['cs']);
+    }
 ?>
 <html>
     <head>
@@ -48,6 +53,8 @@
                         if(isset($_SESSION['msg'])!="")
                         {
                             echo $_SESSION['msg'];
+                            $_SESSION['msg'] = null;
+                            unset($_SESSION['msg']);
                         }
                         ?>
                     </span>
@@ -80,7 +87,7 @@
                                              'The Blog?')" >
                                                 <i class="fa fa-eraser" >&nbsp;Delete </i >
                                             </a >
-                                            <a href = "<?php echo $baseurl; ?>adminpanel/library/blogscontroller.php?cs=<?php
+                                            <a href = "<?php echo $baseurl; ?>adminpanel/dashboard.php?cs=<?php
                                             echo
                                             $row['sn'];?>" class="btn btn-warning" >
                                                 <i class="fa fa-recycle" >&nbsp;Change Status </i >

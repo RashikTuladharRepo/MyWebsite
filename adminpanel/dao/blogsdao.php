@@ -56,5 +56,28 @@ class blogsdao extends webconfig
         }
     }
 
+    function changesstatus($id)
+    {
+        $sql="update tbl_blogs set status = CASE
+              WHEN status = 'active' THEN 'nactive'
+              WHEN status = 'active' THEN 'nactive'
+              ELSE 'active'
+              END
+              where sn='$id'" ;
+        $qry=$this->mysqli->query($sql);
+        if($qry)
+        {
+            $result['errorcode']=0;
+            $result['msg']="Status Changed Successfully!!!";
+            return $result;
+        }
+        else
+        {
+            $result['errorcode']=1;
+            $result['msg']="Status Change Failure!!!";
+            return $result;
+        }
+    }
+
 
 }

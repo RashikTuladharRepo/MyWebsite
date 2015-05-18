@@ -1,5 +1,4 @@
 <?php
-
 include "library/getstatic.php";
 $gs=new getstatic();
 $gs->checksession();

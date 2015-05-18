@@ -46,11 +46,13 @@ class blogscontroller
             move_uploaded_file($_FILES['coverimage']['tmp_name'], "images/".$imagename);
             $_SESSION['msg']=$result['msg'];
             header('location:'.$gs->home_base_url().'adminpanel/blogs.php');
+            exit();
         }
         else
         {
             $_SESSION['msg']=$result['msg'];
             header('location:'.$gs->home_base_url().'adminpanel/blogs.php');
+            exit();
         }
     }
 
@@ -67,24 +69,51 @@ class blogscontroller
         if($deleteid!="") {
             $bd = new blogsdao();
             $res=$bd->deleteindividualblogs($deleteid);
-            print_r($res);
             if($res['errorcode']=="0")
             {
                 $_SESSION['msg']=$res['msg'];
                 header('location:'.$gs->home_base_url().'adminpanel/dashboard.php');
-
+                exit();
             }
             else
             {
                 $_SESSION['msg']=$res['msg'];
                 header('location:'.$gs->home_base_url().'adminpanel/dashboard.php');
+                exit();
             }
         }
         else
         {
             header('location:'.$gs->home_base_url().'adminpanel/dashboard.php');
+            exit();
         }
+    }
 
+    function changestatus($csid)
+    {
+        $gs=new getstatic();
+        if($csid!="")
+        {
+            $bd = new blogsdao();
+            $res=$bd->changesstatus($csid);
+            if($res['errorcode']=="0")
+            {
+                $_SESSION['msg']=$res['msg'];
+                header('location:'.$gs->home_base_url().'adminpanel/dashboard.php');
+                exit();
+            }
+            else
+            {
+                $_SESSION['msg']=$res['msg'];
+                header('location:'.$gs->home_base_url().'adminpanel/dashboard.php');
+                exit();
+            }
+        }
+        else
+        {
+            header('location:'.$gs->home_base_url().'adminpanel/dashboard.php');
+            exit();
+        }
     }
 }
 

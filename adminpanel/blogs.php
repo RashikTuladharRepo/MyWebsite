@@ -25,7 +25,6 @@ if(isset($_POST['addblog']))
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>adminpanel/css/admincustomstyle.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dancing+Script">
-
 <!--Froala Editor-->
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>adminpanel/css/froala_editor.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>adminpanel/css/froala_style.min.css">
@@ -56,6 +55,8 @@ if(isset($_POST['addblog']))
                         if(isset($_SESSION['msg']))
                         {
                             echo $_SESSION['msg'];
+                            $_SESSION['msg'] = null;
+                            unset($_SESSION['msg']);
                         }
                         ?>
                     </span>
@@ -96,7 +97,9 @@ if(isset($_POST['addblog']))
                     </div>
                     <div class="form-group">
                         <label for="coverimage">Cover Image For The Blog</label>
-                        <input class="form-control" type="file" id="coverimage" name="coverimage">
+                        <input class="" type="file" id="coverimage" name="coverimage">
+                        <img src="#" alt="your image" id="imageprev" width="250px" height="100px" style="display:
+                        none;"/>
                     </div>
                     <button type="submit" class="btn btn-success" name="addblog">Add Blog</button>
                 </form>
@@ -117,7 +120,10 @@ if(isset($_POST['addblog']))
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="<?php echo $baseurl; ?>js/bootstrap.min.js"></script>
 <script src="<?php echo $baseurl; ?>adminpanel/js/froala_editor.min.js" type="text/javascript"></script>
+
 <script type="text/javascript">
+
+//froalaeditor customization
     $(function(){
         $('textarea#description').editable({
             buttons: ['sep', 'bold', 'italic', 'underline','strikeThrough','fontFamily','fontSize','formatBlock','align','blockStyle','insertOrderedList','insertUnorderedList','indent','html','insertImage'],
@@ -127,11 +133,32 @@ if(isset($_POST['addblog']))
             imageUploadURL: 'http://localhost/myblog/adminpanel/upload_image.php'
         })
     });
-</script>
-<script type="text/javascript">
+
+//for displaying the seession message and fadeout
     $(document).ready( function() {
         $('#helpBlock').delay(2000).fadeOut();
     });
+
+//for image preview in the form
+    function readURL(input) {
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#imageprev').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#coverimage").change(function(){
+        readURL(this);
+        document.getElementById('imageprev').style.cssText="display:block;padding-top:10px;";
+//        document.getElementById("searchScroll").style.cssText = "position:fixed;margin:-50px;";
+//        document.getElementById("searchScroll").style.cssText += "position:fixed;margin:-50px;";
+    });
+
 </script>
 </body>
 </html>
