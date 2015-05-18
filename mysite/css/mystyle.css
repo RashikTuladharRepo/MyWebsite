@@ -1,0 +1,252 @@
+*
+{
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: HarabaraHand;
+    src: url("../fonts/HarabaraHand.ttf");
+}
+
+body {
+    background: url('../images/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:#fff;
+    background-color:#333;
+    position: relative;
+}
+
+
+.navbar
+{
+    min-height: 80px;
+    border-bottom: none;
+    background: rgba(0,0,0,0.4);
+}
+
+.navbar-brand
+{
+    height: 80px;
+    background-image: url("../images/logo.png");
+    width: 200px;
+}
+
+.navbar-default .navbar-toggle {
+    margin-top: 23px;
+}
+
+.navbar-nav > li
+{
+    display: block;
+}
+
+.navbar-nav > li > a
+{
+    height: 80px;
+    text-align: center;
+    padding: 30px;
+    line-height:20px;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+    color:#1e90ff;
+    font-size: 16px;
+    font-weight: 100;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -ms-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s;
+}
+
+.navbar-default .navbar-nav > li > a:hover
+{
+    color: #FFFFFF;
+    background: #0169CE;
+}
+
+.navbar-default .navbar-nav .active
+{
+    color: #FFFFFF;
+    background: #0169CE;
+}
+
+@media (max-width:990px) {
+    .navbar-default .navbar-nav > li > a:hover {  color: #FFFFFF;  background: #0169CE;  }
+    .blogs .side-menu{margin-top: 0px;}
+}
+@media (max-width:650px) {
+    .blogs .blog-lists{font-size:1em;}
+    .blog a{width:100%;}
+    .blogs .side-menu{margin-top: 0px;}
+}
+
+.aboutme
+{
+    padding-top: 70px;
+    color: #000000;
+}
+
+.aboutme h1
+{
+    font-family: HarabaraHand;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    color: #0169CE;
+}
+
+.aboutme p
+{
+    font-size: 1.2em;
+    font-weight:normal;
+}
+
+.aboutme img
+{
+    width: 250px;
+    height: 250px;
+    padding: 8px;
+}
+
+@media (max-width:650px)
+{
+    .aboutme img
+    {
+        width: 100%;
+        height: 250px;
+        padding: 8px;
+    }
+}
+
+.myportfolio
+{
+    padding-top: 70px;
+    color: #0f0f0f;
+}
+
+.myportfolio h1
+{
+    font-family: HarabaraHand;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    color: #0169CE;
+}
+
+
+.myskills
+{
+    padding-top: 70px;
+    color: #0f0f0f;
+}
+
+.myskills h1
+{
+    font-family: HarabaraHand;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    color: #0169CE;
+}
+
+
+.contact
+{
+    padding-top: 70px;
+    color: #0f0f0f;
+}
+
+.contact h1
+{
+    font-family: HarabaraHand;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    color: #0169CE;
+}
+
+
+
+.skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:15px;
+    width:100%;
+    background:rgba(0,0,0,0.1);
+    height:35px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+}
+
+.skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:110px;
+    font-weight:bold;
+    font-size:13px;
+    color:#ffffff;
+    background:#6adcfa;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0 20px;
+    height:35px;
+    line-height:35px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+    height:35px;
+    width:0px;
+    background:#6adcfa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:11px;
+    height:35px;
+    line-height:35px;
+    color:#ffffff;
+    color:rgba(0, 0, 0, 0.4);
+}
+
+
+footer
+{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+}
