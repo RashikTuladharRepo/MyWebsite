@@ -24,7 +24,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#myskills">My Skills</a></li>
@@ -41,10 +41,29 @@
     <div class="container aboutme">
         <div class="col-md-12">
             <h1>About Me</h1>
-            <img src="images/bg.jpg" class="pull-left img-responsive" >
+            <img src="images/me.jpg" class="pull-left img-responsive img-circle" >
             <p class="text-justify">
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.paragraphs'.<br>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.paragraphs'
+                <br>
+                Hi,
+                I am Rashik Tuladhar from Kathmandu. I am a web developer, designer and a blogger too. I am graduating
+                this year i.e 2015 in Bachelor of Science In Computer Science And Information Technology from St.
+                Lawrence College which is situated in Chabahil, Kathmandu of Tribhuvan University.
+                <br><br>
+                I am currently working as a Software Engineer at Swift Technology Pvt. Ltd.
+                <br><br>
+                I love programming and always love to do my works. I love programming,blogging and photography too.
+                I am freindly and can adjust in any type of environment. I am a team worker and believe in team
+                effort to achieve goals.
+                <br><br><br>
+                <blockquote>
+                    <p>
+                        Being the richest man in the cemetery doesn't matter to me..
+                        Going to bed at night saying we've done something wonderful..that's what matters to me.
+                    </p>
+                    <p>
+                        <small>Steve Jobs'</small>
+                    </p>
+                </blockquote>
             </p>
             <div class="clearfix"></div>
         </div>
