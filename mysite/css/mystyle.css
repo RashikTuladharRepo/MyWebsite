@@ -3,6 +3,11 @@
     font-family: sans-serif;
 }
 
+#portfolio,#about,#contact,.timeline-deverted,.timeline-inverted
+{
+    visibility: hidden;
+}
+
 @font-face {
     font-family: HarabaraHand;
     src: url("../fonts/HarabaraHand.ttf");
@@ -83,6 +88,12 @@ body {
     .blogs .blog-lists{font-size:1em;}
     .blog a{width:100%;}
     .blogs .side-menu{margin-top: 0px;}
+}
+
+
+.slider
+{
+    padding-top: 80px;
 }
 
 .aboutme

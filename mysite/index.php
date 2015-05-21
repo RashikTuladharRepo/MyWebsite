@@ -7,12 +7,12 @@
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
         <link rel="icon" href="images/logo.png">
         <link rel="stylesheet" type="text/css" href="css/animations.css">
-        <style>
-            #portfolio,.timeline-deverted,.timeline-inverted
-            {
-                visibility: hidden;
-            }
-        </style>
+
+        <!-- Start WOWSlider.com HEAD section -->
+        <link rel="stylesheet" type="text/css" href="includes/engine1/style.css" />
+        <script type="text/javascript" src="includes/engine1/jquery.js"></script>
+        <!-- End WOWSlider.com HEAD section -->
+
     </head>
 <body id="home">
 
@@ -42,6 +42,22 @@
     </div>
 </nav>
 <!-- Fixed navbar -->
+
+
+<div class="slider">
+    <div id="wowslider-container1">
+        <div class="ws_images">
+            <ul>
+                <li><img src="includes/data1/images/image1.jpg" alt="wordpress slider plugin" title="image1"
+                         id="wows1_0"/></li>
+                <li><img src="includes/data1/images/image2.jpg" alt="image2" title="image2" id="wows1_1"/></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="includes/engine1/wowslider.js"></script>
+    <script type="text/javascript" src="includes/engine1/script.js"></script>
+</div>
+
 
 <section id="about">
     <div class="container aboutme">
@@ -512,16 +528,30 @@
 $(window).scroll(function() {
     $('#portfolio').each(function(){
         var imagePos = $(this).offset().top;
-
         var topOfWindow = $(window).scrollTop();
         if (imagePos < topOfWindow+80) {
             $(this).addClass("fadeIn");
         }
     });
 
+    $('#about').each(function(){
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+80) {
+            $(this).addClass("fadeIn");
+        }
+    });
+
+    $('#contact').each(function(){
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+200) {
+            $(this).addClass("fadeIn");
+        }
+    });
+
     $('.timeline-deverted').each(function(){
         var imagePos = $(this).offset().top;
-
         var topOfWindow = $(window).scrollTop();
         if (imagePos < topOfWindow+400) {
             $(this).addClass("slideRight");
@@ -530,7 +560,6 @@ $(window).scroll(function() {
 
     $('.timeline-inverted').each(function(){
         var imagePos = $(this).offset().top;
-
         var topOfWindow = $(window).scrollTop();
         if (imagePos < topOfWindow+400) {
             $(this).addClass("slideLeft");
