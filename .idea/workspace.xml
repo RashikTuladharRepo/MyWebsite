@@ -25,23 +25,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6166078" vertical-offset="1147" max-vertical-offset="2728">
-              <caret line="431" column="56" selection-start-line="431" selection-start-column="56" selection-end-line="431" selection-end-column="56" />
+            <state vertical-scroll-proportion="-7.806452" vertical-offset="770" max-vertical-offset="12760">
+              <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysite/includes/engine1/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.40536013" vertical-offset="0" max-vertical-offset="8712">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="22" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mystyle.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/css/mystyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1650" max-vertical-offset="10780">
+              <caret line="95" column="18" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/includes/engine1/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#23913#24311#0#HTML" expanded="false" />
-                <element signature="e#24375#24573#0#HTML" expanded="false" />
-                <element signature="e#24606#25330#0#HTML" expanded="false" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.mod.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/includes/engine1/style.mod.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="2002">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,8 +119,9 @@
         <option value="$PROJECT_DIR$/adminpanel/index.php" />
         <option value="$PROJECT_DIR$/mysite/js/scrolling-nav.js" />
         <option value="$PROJECT_DIR$/mysite/inquirysend.php" />
-        <option value="$PROJECT_DIR$/mysite/css/mystyle.css" />
         <option value="$PROJECT_DIR$/mysite/index.php" />
+        <option value="$PROJECT_DIR$/mysite/css/mystyle.css" />
+        <option value="$PROJECT_DIR$/mysite/includes/engine1/style.css" />
       </list>
     </option>
   </component>
@@ -142,7 +174,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -185,12 +216,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,6 +272,9 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -230,13 +283,10 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SpellCheckerSettings" BundledDictionaries="6" BundledDictionary0="jetbrains.dic" BundledDictionary1="twig.dic" BundledDictionary2="english.dic" BundledDictionary3="less.dic" BundledDictionary4="php.dic" BundledDictionary5="css.dic" Folders="0" Dictionaries="0" />
+  <component name="SpellCheckerSettings" BundledDictionaries="6" BundledDictionary0="jetbrains.dic" BundledDictionary1="twig.dic" BundledDictionary2="english.dic" BundledDictionary3="php.dic" BundledDictionary4="less.dic" BundledDictionary5="css.dic" Folders="0" Dictionaries="0" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -250,7 +300,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -261,17 +311,17 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15959005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -297,28 +347,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mysite/css/mystyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4928" max-vertical-offset="10538">
-          <caret line="244" column="24" selection-start-line="244" selection-start-column="24" selection-end-line="244" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="3212">
-          <caret line="10" column="104" selection-start-line="10" selection-start-column="104" selection-end-line="10" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="220">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/customstyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4444">
@@ -642,30 +670,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/css/mystyle.css">
+    <entry file="file://$PROJECT_DIR$/mysite/includes/engine1/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72131145" vertical-offset="4928" max-vertical-offset="10538">
-          <caret line="244" column="24" selection-start-line="244" selection-start-column="24" selection-end-line="244" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="597">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/includes/engine1/style.mod.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2002">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6166078" vertical-offset="1147" max-vertical-offset="2728">
-          <caret line="431" column="56" selection-start-line="431" selection-start-column="56" selection-end-line="431" selection-end-column="56" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#23913#24311#0#HTML" expanded="false" />
-            <element signature="e#24375#24573#0#HTML" expanded="false" />
-            <element signature="e#24606#25330#0#HTML" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-7.806452" vertical-offset="770" max-vertical-offset="12760">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/css/mystyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1650" max-vertical-offset="10780">
+          <caret line="95" column="18" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/includes/engine1/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40536013" vertical-offset="0" max-vertical-offset="8712">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="22" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
         <link rel="icon" href="images/logo.png">
         <link rel="stylesheet" type="text/css" href="css/animations.css">
+        <link rel="stylesheet" type="text/css" href="css/ihover.css">
 
         <!-- Start WOWSlider.com HEAD section -->
         <link rel="stylesheet" type="text/css" href="includes/engine1/style.css" />
@@ -97,71 +98,54 @@
     <div class="container myportfolio">
         <div class="row">
             <h1>My Works</h1>
-            <div class="col-md-3 col-sm-6">
-                <h2>Heading</h2>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-                    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                    Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
+            <div class="col-md-4 col-sm-6 works">
+                <div class="ih-item square colored effect7">
+                    <a href="#">
+                        <div class="img"><img src="images/bg.jpg" alt="img"></div>
+                        <div class="info">
+                            <h3>Heading here</h3>
+                            <p>Description goes here</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <h2>Heading</h2>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-                    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                    Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h2>Heading</h2>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-                    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                    Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h2>Heading</h2>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-                    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                    Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
+            
+            <div class="col-md-4 col-sm-6 works">
+                <div class="ih-item square colored effect7">
+                    <a href="#">
+                        <div class="img"><img src="images/bg.jpg" alt="img"></div>
+                        <div class="info">
+                            <h3>Heading here</h3>
+                            <p>Description goes here</p>
+                        </div>
+                    </a>
+                </div>
             </div>
 
-            <div class="col-md-3 col-sm-6">
-                <h2>Heading</h2>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-                    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                    Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
+            <div class="col-md-4 col-sm-6 works">
+                <div class="ih-item square colored effect7">
+                    <a href="#">
+                        <div class="img"><img src="images/bg.jpg" alt="img"></div>
+                        <div class="info">
+                            <h3>Heading here</h3>
+                            <p>Description goes here</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <h2>Heading</h2>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-                    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                    Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
+
+            <div class="col-md-4 col-sm-6 works">
+                <div class="ih-item square colored effect7">
+                    <a href="#">
+                        <div class="img"><img src="images/bg.jpg" alt="img"></div>
+                        <div class="info">
+                            <h3>Heading here</h3>
+                            <p>Description goes here</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <h2>Heading</h2>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-                    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                    Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <h2>Heading</h2>
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-                    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-                    Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                </p>
-            </div>
+
         </div>
     </div>
 </section>
@@ -416,7 +400,7 @@
     <div class="container contact">
         <div class="row">
             <h1>Contact Me</h1>
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <p><i class="fa fa-user"></i>&nbsp;&nbsp;Rashik Tuladhar</p>
                 <p><i class="fa fa-cloud"></i>&nbsp;&nbsp;Web Developer</p>
                 <p><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Kathmandu, Nepal</p>
@@ -424,14 +408,6 @@
                 <p><i class="fa fa-globe"></i>&nbsp;&nbsp;www.rashik.com.np</p>
                 <p class="text-justify"><i class="fa fa-envelope"></i>&nbsp;&nbsp;rashik.tuladhar@outlook.com&nbsp;&nbsp;&nbsp;</p>
             </div>
-            <div class="col-md-6">
-                <p><i class="fa fa-envelope"></i>&nbsp;&nbsp;tuladhar.rashik@gmail.com&nbsp;&nbsp;&nbsp;</p>
-                <p class="text-justify"><i class="fa fa-facebook"></i>&nbsp;&nbsp;rashik.tuladhar&nbsp;&nbsp;&nbsp;</p>
-                <p><i class="fa fa-twitter"></i>&nbsp;&nbsp;rashiktuladhar&nbsp;&nbsp;&nbsp;</p>
-                <p><i class="fa fa-skype"></i>&nbsp;&nbsp;tuladharrashik&nbsp;&nbsp;&nbsp;</p>
-                <p><i class="fa fa-linkedin"></i>&nbsp;&nbsp;rashiktuladhar&nbsp;&nbsp;&nbsp;</p>
-            </div>
-
             <!-- Contact Box -->
             <div class="col-md-12">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
@@ -455,17 +431,22 @@
                             <div class="input-group">
                                 <div class="input-group-addon"><i class="fa fa-user"></i></div>
                                 <input type="text" class="form-control" id="Full Name" name="fname" required="required"
-                                       placeholder="Your Good Name Please :)">
+                                       placeholder="Your Name">
                             </div>
                             <div class="input-group">
                                 <div class="input-group-addon"><i class="fa fa-building"></i></div>
                                 <input type="text" class="form-control" id="address" name="address" required="required"
-                                       placeholder="Your Address Please :)">
+                                       placeholder="Your Address">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                <input type="text" class="form-control" id="phone" name="phone" required="required"
+                                       placeholder="Your Phone #">
                             </div>
                             <div class="input-group">
                                 <div class="input-group-addon"><i class="fa fa-at"></i></div>
                                 <input type="email" class="form-control" id="email" name="email" required="required"
-                                       placeholder="Your Email Address Please :)">
+                                       placeholder="Your Email Address">
                             </div>
                             <div class="input-group">
                                 <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
@@ -490,6 +471,12 @@
 <footer>
     <div class="container">
         Rashik Tuladhar &copy; 2015, Nepal <i class="fa fa-flag-checkered"></i>
+        <div class="social pull-right">
+            <a href="https://www.facebook.com/rashik.tuladhar"><img src="images/facebook.png"></a>
+            <a href="https://twitter.com/RashikTuladhar"><img src="images/twitter.png"></a>
+            <a href="https://np.linkedin.com/pub/rashik-tuladhar/a7/ba3/51a"><img src="images/linkedin.png"></a>
+        </div>
+        <div class="clearfix"></div>
     </div>
 </footer>
 
