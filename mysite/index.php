@@ -516,7 +516,7 @@ $(window).scroll(function() {
     $('#portfolio').each(function(){
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+80) {
+        if (imagePos < topOfWindow+500) {
             $(this).addClass("fadeIn");
         }
     });
@@ -524,7 +524,7 @@ $(window).scroll(function() {
     $('#about').each(function(){
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+80) {
+        if (imagePos < topOfWindow+500) {
             $(this).addClass("fadeIn");
         }
     });
@@ -532,7 +532,7 @@ $(window).scroll(function() {
     $('#contact').each(function(){
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+200) {
+        if (imagePos < topOfWindow+400) {
             $(this).addClass("fadeIn");
         }
     });
