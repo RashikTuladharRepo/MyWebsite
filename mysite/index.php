@@ -6,6 +6,13 @@
         <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
         <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" type="text/css" href="css/animations.css">
+        <style>
+            #portfolio,.timeline-deverted,.timeline-inverted
+            {
+                visibility: hidden;
+            }
+        </style>
     </head>
 <body id="home">
 
@@ -29,13 +36,12 @@
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#myskills">My Skills</a></li>
                 <li><a href="#timeline">Timeline</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#contact" class="cntct">Contact Me</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
 </nav>
 <!-- Fixed navbar -->
-
 
 <section id="about">
     <div class="container aboutme">
@@ -225,7 +231,7 @@
     <div class="container mytimeline">
             <h1>Timeline</h1>
         <ul class="timeline">
-            <li>
+            <li class="timeline-deverted">
                 <div class="timeline-badge"><i class="fa fa-graduation-cap"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -265,7 +271,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li class="timeline-deverted">
                 <div class="timeline-badge danger"><i class="fa fa-building"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -285,7 +291,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li class="timeline-deverted">
                 <div class="timeline-badge certificate"><i class="fa fa-certificate"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -321,7 +327,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li class="timeline-deverted">
                 <div class="timeline-badge info"><i class="fa fa-cloud"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -354,7 +360,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li class="timeline-deverted">
                 <div class="timeline-badge primary"><i class="fa fa-graduation-cap"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -470,6 +476,7 @@
 <script src="js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
+
 //for easy scrolling
     $("nav ul li a[href^='#']").on('click', function(e) {
         // prevent default anchor click behavior
@@ -495,6 +502,38 @@
             },6000);
         });
     });
+
+
+
+$(window).scroll(function() {
+    $('#portfolio').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+80) {
+            $(this).addClass("fadeIn");
+        }
+    });
+
+    $('.timeline-deverted').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+            $(this).addClass("slideRight");
+        }
+    });
+
+    $('.timeline-inverted').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+            $(this).addClass("slideLeft");
+        }
+    });
+
+});
 
 
 </script>
