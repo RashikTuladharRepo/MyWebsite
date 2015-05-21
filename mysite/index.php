@@ -427,7 +427,14 @@
             <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
-                        <h1>Contact Me</h1>
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    &times;
+                                </span>
+                            </button>
+                            <h1 class="modal-title" id="myModalLabel">Contact Me</h1>
+                        </div>
                         <form>
                             <div class="input-group">
                                 <div class="input-group-addon"><i class="fa fa-user"></i></div>
@@ -467,14 +474,12 @@
 <footer>
     <div class="container">
         Rashik Tuladhar &copy; 2015, Nepal <i class="fa fa-flag-checkered"></i>
-
     </div>
 </footer>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
 <script type="text/javascript">
 
 //for easy scrolling
@@ -502,7 +507,6 @@
             },6000);
         });
     });
-
 
 
 $(window).scroll(function() {
