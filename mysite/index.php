@@ -1,13 +1,26 @@
 <html>
     <head>
 
+
         <title>Rashik Tuladhar | A Web Developer From Nepal | Web Designer From Nepal | Website Development In Nepal | Freelance Webdesigner From Nepal | Freelance IT professional From Nepal </title>
         <meta name="description" content="Rashik, web designer from nepal and freelance webdesigner from nepal provides world class web design, grahpihc design, Search Engine Optimization , IT professional from nepal, freelance web designer nepal, freelance web designer, web developer, web page designer, web">
         <meta name="keywords" content="Rashik, Rashik Tuladhar web designer from nepal and freelance webdesigner from nepal, freelance web developer, web developer resume, web developer, web page developer, World class web design, Freelance web designer, Experienced Web Master, IT Professional from Nepal, E-commerce, Web hosing, Domain Registration, rashiktuladhar, rashik tuladhar">
         
-        <link rel="alternate" href="http://rashik.com.np/" hreflang="en" />
-
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="language" content="en-US" />        
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <link rel="alternate" href="http://rashik.com.np/" hreflang="en" />
+        
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Web Designers in Nepal | Web Developer In Nepal" />
+        <meta property="og:description" content="Rashik, web designer from nepal and freelance webdesigner from nepal provides world class web design, grahpihc design, Search Engine Optimization , IT professional from nepal, freelance web designer nepal, freelance web designer, web developer, web page designer, web" />
+        <meta property="og:url" content="http://www.rashik.com.np" />
+        <meta property="article:published_time" content="2012-03-12" />
+        <meta property="article:modified_time" content="2013-01-01" />
+        <meta property="og:site_name" content="Rashik Tuladhar | Web Designer/Developer In Nepal" />
+        <meta name="twitter:card" content="summary" />
+
+
 
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
