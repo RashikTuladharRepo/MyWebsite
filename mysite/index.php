@@ -98,13 +98,26 @@
     <div class="container myportfolio">
         <div class="row">
             <h1>My Works</h1>
+
             <div class="col-md-4 col-sm-6 works">
                 <div class="ih-item square colored effect7">
                     <a href="#">
-                        <div class="img"><img src="images/bg.jpg" alt="img"></div>
+                        <div class="img"><img src="images/collegemis.JPG" alt="St. Lawrence College MIS"></div>
                         <div class="info">
-                            <h3>Heading here</h3>
-                            <p>Description goes here</p>
+                            <h3>St. Lawrence College MIS</h3>
+                            <p>The Web Application was developed as my final year project that can handle the management information. The Application has all the facilites like notes rep0, result publications, student teacher details central repo and many more..</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 works">
+                <div class="ih-item square colored effect7">
+                    <a href="#">
+                        <div class="img"><img src="images/hotelcrown.JPG" alt="Hotel Crown"></div>
+                        <div class="info">
+                            <h3>Hotel Crown</h3>
+                            <p>The website was developed for Hotel Crown located at Tansen, Palpa</p>
                         </div>
                     </a>
                 </div>
@@ -113,10 +126,10 @@
             <div class="col-md-4 col-sm-6 works">
                 <div class="ih-item square colored effect7">
                     <a href="#">
-                        <div class="img"><img src="images/bg.jpg" alt="img"></div>
+                        <div class="img"><img src="images/apprentice.JPG" alt="The Apprentice Firm"></div>
                         <div class="info">
-                            <h3>Heading here</h3>
-                            <p>Description goes here</p>
+                            <h3>The Apprentice Firm</h3>
+                            <p>The website is under construction... and the firm provides various trainings for one going out of country to work. Especially for Cruise works.</p>
                         </div>
                     </a>
                 </div>
@@ -125,10 +138,10 @@
             <div class="col-md-4 col-sm-6 works">
                 <div class="ih-item square colored effect7">
                     <a href="#">
-                        <div class="img"><img src="images/bg.jpg" alt="img"></div>
+                        <div class="img"><img src="images/hidden.JPG" alt="Hidden Pardise Travel And Tours Pvt. Ltd"></div>
                         <div class="info">
-                            <h3>Heading here</h3>
-                            <p>Description goes here</p>
+                            <h3>Hidden Paradise Travel And Tours Pvt. Ltd</h3>
+                            <p>The website is under construction and the travel and tour company provides various facilities like air ticketing, tour organizing, etc.</p>
                         </div>
                     </a>
                 </div>
@@ -137,10 +150,82 @@
             <div class="col-md-4 col-sm-6 works">
                 <div class="ih-item square colored effect7">
                     <a href="#">
-                        <div class="img"><img src="images/bg.jpg" alt="img"></div>
+                        <div class="img"><img src="images/laxmee.JPG" alt="Laxmee Hair And Beauty Saloon"></div>
                         <div class="info">
-                            <h3>Heading here</h3>
-                            <p>Description goes here</p>
+                            <h3>Laxmee Hair And Beauty Saloon</h3>
+                            <p>The website was developed for Laxmee Hair And Beauty Saloon located in various Bhatbhateni Stores around the valley.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 works">
+                <div class="ih-item square colored effect7">
+                    <a href="#">
+                        <div class="img"><img src="images/8eyes.JPG" alt="8Eyes Travel And Tours Pvt. Ltd"></div>
+                        <div class="info">
+                            <h3>8Eyes Travel And Tours Pvt. Ltd</h3>
+                            <p>The travel and tour company provides various facilities like air ticketing, tour organizing, etc.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 works">
+                <div class="ih-item square colored effect7">
+                    <a href="#">
+                        <div class="img"><img src="images/dataentry.jpg" alt="8Eyes Travel And Tours Pvt. Ltd"></div>
+                        <div class="info">
+                            <h3>Customer Data Entry System</h3>
+                            <p>It is the web application developed for 8Eyes Travels for customer entry and record keeping.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 works">
+                <div class="ih-item square colored effect7">
+                    <a href="#">
+                        <div class="img"><img src="images/green.jpg" alt="Green Soldiers"></div>
+                        <div class="info">
+                            <h3>Green Soldiers</h3>
+                            <p>The website was developed for an NGO Green Soldiers.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 works">
+                <div class="ih-item square colored effect7">
+                    <a href="#">
+                        <div class="img"><img src="images/flo.jpg" alt="Green Soldiers"></div>
+                        <div class="info">
+                            <h3>Touch of Flo</h3>
+                            <p>The website was developed for a photographer from France to make the site as his portfolio.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 works">
+                <div class="ih-item square colored effect7">
+                    <a href="#">
+                        <div class="img"><img src="images/pasmina.JPG" alt="Ecommerce Template"></div>
+                        <div class="info">
+                            <h3>E-Commerce Template</h3>
+                            <p>It is a simple E-Commerce Template and has full CMS for product listings and sales.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 works">
+                <div class="ih-item square colored effect7">
+                    <a href="#">
+                        <div class="img"><img src="images/worldtravels.jpg" alt="World Travels And Tours Pvt. Ltd"></div>
+                        <div class="info">
+                            <h3>World Travels And Tours Pvt. Ltd</h3>
+                            <p>The website was developed for a travel and tour company. Now has been Modified...</p>
                         </div>
                     </a>
                 </div>
@@ -159,67 +244,67 @@
             <div class="skillbar clearfix " data-percent="100%">
                 <div class="skillbar-title" style="background: #E44D26;"><span>HTML5</span></div>
                 <div class="skillbar-bar" style="background: #E44D26;"></div>
-                <div class="skill-bar-percent">100%</div>
+                <!-- <div class="skill-bar-percent">100%</div> -->
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="95%">
                 <div class="skillbar-title" style="background: #1572B6;"><span>CSS3</span></div>
                 <div class="skillbar-bar" style="background: #1572B6;"></div>
-                <div class="skill-bar-percent">95%</div>
+                <!-- <div class="skill-bar-percent">95%</div> -->
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="95%">
                 <div class="skillbar-title" style="background: #63498C;"><span>Bootstrap</span></div>
                 <div class="skillbar-bar" style="background: #63498C;"></div>
-                <div class="skill-bar-percent">95%</div>
+                <!-- <div class="skill-bar-percent">95%</div> -->
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="80%">
                 <div class="skillbar-title" style="background: #ffff00;"><span>Javascript</span></div>
                 <div class="skillbar-bar" style="background: #ffff00;"></div>
-                <div class="skill-bar-percent">80%</div>
+                <!-- <div class="skill-bar-percent">80%</div> -->
             </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix " data-percent="60%">
+            <div class="skillbar clearfix " data-percent="75%">
                 <div class="skillbar-title" style="background: #1572B6;"><span>jQuery</span></div>
                 <div class="skillbar-bar" style="background: #1572B6;"></div>
-                <div class="skill-bar-percent">60%</div>
+                <!-- <div class="skill-bar-percent">75%</div> -->
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="95%">
                 <div class="skillbar-title" style="background: #b8312f;"><span>PHP</span></div>
                 <div class="skillbar-bar" style="background: #b8312f;"></div>
-                <div class="skill-bar-percent">95%</div>
+                <!-- <div class="skill-bar-percent">95%</div> -->
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="90%">
                 <div class="skillbar-title" style="background: #F07609;"><span>MySQL</span></div>
                 <div class="skillbar-bar" style="background: #F07609;"></div>
-                <div class="skill-bar-percent">90%</div>
+                <!-- <div class="skill-bar-percent">90%</div> -->
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="85%">
                 <div class="skillbar-title" style="background: #2b542c;"><span>.NET</span></div>
                 <div class="skillbar-bar" style="background: #2b542c;"></div>
-                <div class="skill-bar-percent">85%</div>
+                <!-- <div class="skill-bar-percent">85%</div> -->
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="85%">
                 <div class="skillbar-title" style="background: #C82629;"><span>MSSql</span></div>
                 <div class="skillbar-bar" style="background: #C82629;"></div>
-                <div class="skill-bar-percent">85%</div>
+                <!-- <div class="skill-bar-percent">85%</div> -->
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="75%">
                 <div class="skillbar-title" style="background: #464646;"><span>Wordpress</span></div>
                 <div class="skillbar-bar" style="background: #464646;"></div>
-                <div class="skill-bar-percent">75%</div>
+                <!-- <div class="skill-bar-percent">75%</div> -->
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="90%">
                 <div class="skillbar-title" style="background: #3D79F7;"><span>SEO</span></div>
                 <div class="skillbar-bar" style="background: #3D79F7;"></div>
-                <div class="skill-bar-percent">90%</div>
+                <!-- <div class="skill-bar-percent">90%</div> -->
             </div> <!-- End Skill Bar -->
 
         </div>
@@ -315,13 +400,14 @@
                 </div>
             </li>
             <li class="timeline-inverted">
+                <div class="timeline-badge danger"><i class="fa fa-forumbee"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4 class="timeline-title">Started Web Development</h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            Started Learning Web Development. Together with self learning, joined NIIT and started
+                            Started Self Learning Web Development. And Also joined NIIT and started
                             learning web development skill mainly focusing on PHP.
                         </p>
                     </div>

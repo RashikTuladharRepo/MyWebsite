@@ -147,12 +147,11 @@ body {
     color: #0169CE;
 }
 
-
 .works
 {
+    margin: 0 auto;
     padding-top: 50px;
 }
-
 
 .myskills
 {
@@ -171,6 +170,7 @@ body {
 
 .mytimeline
 {
+    margin: 0 auto;
     padding-top: 70px;
     color: #0f0f0f;
 }
