@@ -1,7 +1,14 @@
 <html>
     <head>
-        <title>Rashik Tuladhar | A Web Developer From Nepal</title>
+
+        <title>Rashik Tuladhar | A Web Developer From Nepal | Web Designer From Nepal | Website Development In Nepal | Freelance Webdesigner From Nepal | Freelance IT professional From Nepal </title>
+        <meta name="description" content="Rashik, web designer from nepal and freelance webdesigner from nepal provides world class web design, grahpihc design, Search Engine Optimization , IT professional from nepal, freelance web designer nepal, freelance web designer, web developer, web page designer, web">
+        <meta name="keywords" content="Rashik, Rashik Tuladhar web designer from nepal and freelance webdesigner from nepal, freelance web developer, web developer resume, web developer, web page developer, World class web design, Freelance web designer, Experienced Web Master, IT Professional from Nepal, E-commerce, Web hosing, Domain Registration, rashiktuladhar, rashik tuladhar">
+        
+        <link rel="alternate" href="http://rashik.com.np/" hreflang="en" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
@@ -9,12 +16,11 @@
         <link rel="stylesheet" type="text/css" href="css/animations.css">
         <link rel="stylesheet" type="text/css" href="css/ihover.css">
 
-        <!-- Start WOWSlider.com HEAD section -->
         <link rel="stylesheet" type="text/css" href="includes/engine1/style.css" />
         <script type="text/javascript" src="includes/engine1/jquery.js"></script>
-        <!-- End WOWSlider.com HEAD section -->
 
     </head>
+
 <body id="home">
 
 
@@ -49,9 +55,9 @@
     <div id="wowslider-container1">
         <div class="ws_images">
             <ul>
-                <li><img src="includes/data1/images/image1.jpg" alt="wordpress slider plugin" title="image1"
+                <li><img src="includes/data1/images/html5.jpg" alt="HTML5" title="HTML5"
                          id="wows1_0"/></li>
-                <li><img src="includes/data1/images/image2.jpg" alt="image2" title="image2" id="wows1_1"/></li>
+                <li><img src="includes/data1/images/pgmlang.jpg" alt="Programming Languages" title="Programming Languages" id="wows1_1"/></li>
             </ul>
         </div>
     </div>
@@ -138,7 +144,7 @@
             <div class="col-md-4 col-sm-6 works">
                 <div class="ih-item square colored effect7">
                     <a href="#">
-                        <div class="img"><img src="images/hidden.JPG" alt="Hidden Pardise Travel And Tours Pvt. Ltd"></div>
+                        <div class="img"><img src="images/hidden.jpg" alt="Hidden Pardise Travel And Tours Pvt. Ltd"></div>
                         <div class="info">
                             <h3>Hidden Paradise Travel And Tours Pvt. Ltd</h3>
                             <p>The website is under construction and the travel and tour company provides various facilities like air ticketing, tour organizing, etc.</p>
@@ -150,7 +156,7 @@
             <div class="col-md-4 col-sm-6 works">
                 <div class="ih-item square colored effect7">
                     <a href="#">
-                        <div class="img"><img src="images/laxmee.JPG" alt="Laxmee Hair And Beauty Saloon"></div>
+                        <div class="img"><img src="images/laxmee.jpg" alt="Laxmee Hair And Beauty Saloon"></div>
                         <div class="info">
                             <h3>Laxmee Hair And Beauty Saloon</h3>
                             <p>The website was developed for Laxmee Hair And Beauty Saloon located in various Bhatbhateni Stores around the valley.</p>
@@ -558,9 +564,9 @@
     <div class="container">
         Rashik Tuladhar &copy; 2015, Nepal <i class="fa fa-flag-checkered"></i>
         <div class="social pull-right">
-            <a href="https://www.facebook.com/rashik.tuladhar"><img src="images/facebook.png"></a>
-            <a href="https://twitter.com/RashikTuladhar"><img src="images/twitter.png"></a>
-            <a href="https://np.linkedin.com/pub/rashik-tuladhar/a7/ba3/51a"><img src="images/linkedin.png"></a>
+            <a href="https://www.facebook.com/rashik.tuladhar"><img src="images/Facebook.png"></a>
+            <a href="https://twitter.com/RashikTuladhar"><img src="images/Twitter.png"></a>
+            <a href="https://np.linkedin.com/pub/rashik-tuladhar/a7/ba3/51a"><img src="images/Linkedin.png"></a>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -569,79 +575,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript">
-
-//for easy scrolling
-    $("nav ul li a[href^='#']").on('click', function(e) {
-        // prevent default anchor click behavior
-        e.preventDefault();
-        // store hash
-        var hash = this.hash;
-        // animate
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 1000, function(){
-            // when done, add hash to url
-            // (default click behaviour)
-            window.location.hash = hash;
-        });
-    });
-
-
-//animation of skills
-    jQuery(document).ready(function(){
-        jQuery('.skillbar').each(function(){
-            jQuery(this).find('.skillbar-bar').animate({
-                width:jQuery(this).attr('data-percent')
-            },6000);
-        });
-    });
-
-
-$(window).scroll(function() {
-    $('#portfolio').each(function(){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+500) {
-            $(this).addClass("fadeIn");
-        }
-    });
-
-    $('#about').each(function(){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+500) {
-            $(this).addClass("fadeIn");
-        }
-    });
-
-    $('#contact').each(function(){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+400) {
-            $(this).addClass("fadeIn");
-        }
-    });
-
-    $('.timeline-deverted').each(function(){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+400) {
-            $(this).addClass("slideRight");
-        }
-    });
-
-    $('.timeline-inverted').each(function(){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+400) {
-            $(this).addClass("slideLeft");
-        }
-    });
-
-});
-
-
-</script>
+<script src="js/myscripts.js"></script>
 </body>
 </html>
