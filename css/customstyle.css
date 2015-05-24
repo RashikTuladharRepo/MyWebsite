@@ -135,6 +135,8 @@
 
  .full-blogs .blog-title
  {
+     padding-top: 10px;
+     padding-bottom: 10px;
      font-size: 2em;
  }
 

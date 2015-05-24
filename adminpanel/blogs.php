@@ -130,7 +130,7 @@ if(isset($_POST['addblog']))
             inlineMode: false,
             minHeight: 100,
             maxWidth:100,
-            imageUploadURL: 'http://localhost/myblog/adminpanel/upload_image.php'
+            imageUploadURL: 'http://localhost/MyWebsite/adminpanel/upload_image.php'
         })
     });
 

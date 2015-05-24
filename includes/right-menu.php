@@ -2,66 +2,24 @@
     <div class="popular-post">
         <h2 class="text-center">Popular Posts</h2>
         <ul id="ticker_02" class="ticker">
+            <?php foreach($blogsarray as $row) {?>
             <li>
-                <a href="#"><img src="images/banner.jpg" style="margin-right: 10px;" height="80" width="80"
+                <p><?php echo $row['title']; ?></p>
+                <a href="#"><img src="<?php echo $baseurl; ?>images/banner.jpg"
+                                 style="margin-right: 10px;"
+                                 height="80"
+                                 width="80"
                                  class="pull-left img-responsive">
                     <p class="text-justify">
                         <span class="author">
-                            Rashik Tuladhar<br>
-                            Dated On: <?php echo date('Y-d-m'); ?><br>
+                            Created By: <?php echo ucfirst($row['createdby']); ?><br>
+                            Dated On: <?php echo date('Y/m/d',strtotime($row['createddate'])); ?><br>
                         </span>
-                        A blog is your best bet for a voice among the online crowd
+                        <?php echo substr($row['description'],0,55)."......"; ?>
                     </p>
                 </a>
             </li>
-            <li>
-                <a href="#"><img src="images/banner.jpg" style="margin-right: 10px;" height="80" width="80"
-                                 class="pull-left img-responsive">
-                    <p class="text-justify">
-                        <span class="author">
-                            Rashik Tuladhar<br>
-                            Dated On: <?php echo date('Y-d-m'); ?><br>
-                        </span>
-                        Our community is the choice for more than two million bloggers.
-                    </p>
-                </a>
-            </li>
-            <li>
-                <a href="#"><img src="images/banner.jpg" style="margin-right: 10px;" height="80" width="80"
-                                 class="pull-left img-responsive">
-                    <p class="text-justify">
-                        <span class="author">
-                            Rashik Tuladhar<br>
-                            Dated On: <?php echo date('Y-d-m'); ?><br>
-                        </span>
-                        Fully-featured from the get-go, Blog.com provides a powerful publishing platform for free.
-                    </p>
-                </a>
-            </li>
-            <li>
-                <a href="#"><img src="images/banner.jpg" style="margin-right: 10px;" height="80" width="80"
-                                 class="pull-left img-responsive">
-                    <p class="text-justify">
-                        <span class="author">
-                            Rashik Tuladhar<br>
-                            Dated On: <?php echo date('Y-d-m'); ?><br>
-                        </span>
-                        A blog is your best bet for a voice among the online crowd
-                    </p>
-                </a>
-            </li>
-            <li>
-                <a href="#"><img src="images/banner.jpg" style="margin-right: 10px;" height="80" width="80"
-                                 class="pull-left img-responsive">
-                    <p class="text-justify">
-                        <span class="author">
-                            Rashik Tuladhar<br>
-                            Dated On: <?php echo date('Y-d-m'); ?><br>
-                        </span>
-                        Our community is the choice for more than two million bloggers.
-                    </p>
-                </a>
-            </li>
+            <?php }?>
         </ul>
     </div>
 
@@ -76,8 +34,14 @@
                 </div>
             </div>
         </div>
+        <div class="twitter-feed">
+        <a class="twitter-timeline"  href="https://twitter.com/RashikTuladhar" data-widget-id="602419056361144322">Tweets by @RashikTuladhar</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
     </div>
     <div class="clearfix"></div>
+
+
 
     <div class="popular-keyword">
         <h2 class="text-center">Popular Keywords</h2>

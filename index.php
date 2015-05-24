@@ -74,55 +74,27 @@
                 <div class="blog">
                     <div class="row">
                         <div class="col-md-6 col-md-push-6">
-                            <img src="adminpanel/images/<?php echo $row['coverimage']; ?>"
+                            <img src="<?php echo $baseurl; ?>adminpanel/images/<?php echo $row['coverimage']; ?>"
                                  class="coverimage img-responsive">
                         </div>
                         <div class="col-md-6 col-md-pull-6">
                             <h2 class="text-justify"><?php echo $row['title']; ?></h2>
                                     <span class="author">
-                                        <?php echo ucfirst($row['createdby']);?>, On <?php echo $row['createddate'];?>
+                                        <?php echo ucfirst($row['createdby']);?>, On <?php echo date("Y/m/d", strtotime($row['createddate']));?>
                                     </span>
                             <p class="text-justify">
                                 <?php
                                     echo substr($row['description'],0,230).".....";
                                 ?>
                             </p>
-                            <a href="fullblog.php?bid=<?php echo $row['sn']; ?>" class="btn btn-success">Read More
+                            <a href="<?php echo $baseurl; ?>fullblog/<?php echo $row['sn']; ?>" class="btn
+                            btn-success">Read More
                                 &raquo;</a>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                 </div>
                 <?php } ?>
-
-
-
-
-
-<!--                --><?php //for($i=0;$i<5;$i++) {?>
-<!--                    <div class="blog">-->
-<!--                        <div class="row">-->
-<!--                            <div class="col-md-6 col-md-push-6"><img src="images/banner.jpg" class="img-responsive"></div>-->
-<!--                            <div class="col-md-6 col-md-pull-6">-->
-<!--                                <h2 class="text-center">First Blog Templates</h2>-->
-<!--                                    <span class="author">-->
-<!--                                        Rashik Tuladhar, On --><?php //echo date('Y-m-d');?>
-<!--                                    </span>-->
-<!--                                <p class="text-justify">It is a long established fact that a reader will be distracted by the-->
-<!--                                    readable-->
-<!--                                    content of a page-->
-<!--                                    when-->
-<!--                                    looking at its layout. The point of using Lorem Ipsum is that it has a-->
-<!--                                    more-or-less normal distribution of letters,-->
-<!--                                    as opposed to using 'Content here, content here'.-->
-<!--                                </p>-->
-<!--                                <a href="fullblog.php" class="btn btn-success">Read More &raquo;</a>-->
-<!--                            </div>-->
-<!--                            <div class="clearfix"></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <br>-->
-<!--                --><?php //} ?>
             </div>
         </div>
 

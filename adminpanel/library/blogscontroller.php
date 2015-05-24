@@ -10,6 +10,7 @@ $bd=new blogsdao();
 
 class blogscontroller
 {
+
     function blogsadd()
     {
         $bd=new blogsdao();
@@ -55,7 +56,6 @@ class blogscontroller
             exit();
         }
     }
-
 
     function getallblogs()
     {
@@ -114,6 +114,12 @@ class blogscontroller
             header('location:'.$gs->home_base_url().'adminpanel/dashboard.php');
             exit();
         }
+    }
+
+    function getblogdetails($bid)
+    {
+        $bd=new blogsdao();
+        return $bd->getblogdetails($bid);
     }
 }
 

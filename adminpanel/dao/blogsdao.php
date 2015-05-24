@@ -79,5 +79,24 @@ class blogsdao extends webconfig
         }
     }
 
+    public function getblogdetails($bid)
+    {
+        $sql="select * from tbl_blogs where sn='$bid'";
+        $qry=$this->mysqli->query($sql);
+        $result=$qry->fetch_array(MYSQLI_ASSOC);
+        if(count($result)>0)
+        {
+            $result['errorcode']=0;
+            $result['msg']="Blog Available";
+            return $result;
+        }
+        else
+        {
+            $result['errorcode']=1;
+            $result['msg']="Blog Not Available!!!";
+            return $result;
+        }
+    }
+
 
 }
