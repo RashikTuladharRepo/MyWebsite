@@ -68,9 +68,11 @@
     <div id="wowslider-container1">
         <div class="ws_images">
             <ul>
-                <li><img src="includes/data1/images/html5.jpg" alt="HTML5" title="HTML5"
-                         id="wows1_0"/></li>
-                <li><img src="includes/data1/images/pgmlang.jpg" alt="Programming Languages" title="Programming Languages" id="wows1_1"/></li>
+                <li><img src="includes/data1/images/html5.png" alt="HTML5" title="HTML5" id="wows1_0"/></li>
+                <li><img src="includes/data1/images/css3.png" alt="CSS3" title="CSS3" id="wows1_1"/></li>
+                <li><img src="includes/data1/images/dotnet.png" alt="ASP.NET" title="ASP.NET" id="wows1_0"/></li>
+                <li><img src="includes/data1/images/sqlserver.png" alt="ASP.NET" title="ASP.NET" id="wows1_0"/></li>
+                <li><img src="includes/data1/images/php.png" alt="PHP" title="PHP" id="wows1_0"/></li>
             </ul>
         </div>
     </div>
@@ -575,13 +577,19 @@
 
 <footer>
     <div class="container">
-        Rashik Tuladhar &copy; 2015, Nepal <i class="fa fa-flag-checkered"></i>
-        <div class="social pull-right">
-            <a href="https://www.facebook.com/rashik.tuladhar"><img src="images/Facebook.png"></a>
-            <a href="https://twitter.com/RashikTuladhar"><img src="images/Twitter.png"></a>
-            <a href="https://np.linkedin.com/pub/rashik-tuladhar/a7/ba3/51a"><img src="images/Linkedin.png"></a>
+        
+        <div class="col-md-6 col-xs-12 text-left">
+            Rashik Tuladhar &copy; 2015, Nepal <i class="fa fa-flag-checkered"></i>
         </div>
-        <div class="clearfix"></div>
+
+        <div class="col-md-6 col-xs-12">
+            <div class="social pull-right">
+                <a href="https://www.facebook.com/rashik.tuladhar"><img src="images/Facebook.png"></a>
+                <a href="https://twitter.com/RashikTuladhar"><img src="images/Twitter.png"></a>
+                <a href="https://np.linkedin.com/pub/rashik-tuladhar/a7/ba3/51a"><img src="images/Linkedin.png"></a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
     </div>
 </footer>
 
