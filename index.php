@@ -12,7 +12,7 @@
 
     include"adminpanel/library/blogscontroller.php";
     $bc=new blogscontroller();
-    $blogsarray=$bc->getallblogs();
+    $blogsarray=$bc->getallblogsclient();
 
 
 
@@ -87,7 +87,8 @@
                                     echo substr($row['description'],0,230).".....";
                                 ?>
                             </p>
-                            <a href="<?php echo $baseurl; ?>fullblog/<?php echo $row['sn']; ?>" class="btn
+                            <a href="<?php echo $baseurl; ?>fullblog/<?php echo $row['sn']; ?>/<?php echo
+                            $row['title']; ?>" class="btn
                             btn-success">Read More
                                 &raquo;</a>
                         </div>

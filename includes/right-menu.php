@@ -5,7 +5,9 @@
             <?php foreach($blogsarray as $row) {?>
             <li>
                 <p><?php echo $row['title']; ?></p>
-                <a href="#"><img src="<?php echo $baseurl; ?>images/banner.jpg"
+                <a href="<?php echo $baseurl; ?>fullblog/<?php echo $row['sn']; ?>/<?php echo
+                $row['title']; ?>">
+                    <img src="<?php echo $baseurl; ?>images/banner.jpg"
                                  style="margin-right: 10px;"
                                  height="80"
                                  width="80"

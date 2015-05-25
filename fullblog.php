@@ -60,8 +60,12 @@
                 <?php if($details['errorcode']==1) { ?>
 
                        <div class="blog-cover">
-                           <img src="<?php echo $baseurl; ?>/images/errorpage.png" height="200px"
-                                class="img-responsive">
+                           <button class="btn btn-success" onclick="window.history.back()">
+                               Go Back To Previous Page
+                           </button>
+                           <img src="<?php echo $baseurl; ?>/images/errorpage.png"
+                                height="200px"
+                                class="img-responsive" style="padding-top: 10px;">
                        </div>
 
                 <?php } else { ?>
