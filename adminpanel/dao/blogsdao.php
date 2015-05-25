@@ -38,12 +38,24 @@ class blogsdao extends webconfig
         return $result;
     }
 
-    function deleteindividualblogs($id)
+    function getblogslistclient()
+    {
+        $result=array();
+        $sql="select * from tbl_blogs WHERE status='active' ORDER by createddate DESC";
+        $qry=$this->mysqli->query($sql);
+        while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
+            $result[]= $res;
+        }
+        return $result;
+    }
+
+    function deleteindividualblogs($id,$image)
     {
         $sql="delete from tbl_blogs where sn='$id'";
         $qry=$this->mysqli->query($sql);
         if($qry)
         {
+            unlink('images/'.$image);
             $result['errorcode']=0;
             $result['msg']="Blog Deleted Successfully!!!";
             return $result;
@@ -94,6 +106,46 @@ class blogsdao extends webconfig
         {
             $result['errorcode']=1;
             $result['msg']="Blog Not Available!!!";
+            return $result;
+        }
+    }
+
+    public function getblogdetailsforedit($eid)
+    {
+        $sql="select * from tbl_blogs where sn='$eid'";
+        $qry=$this->mysqli->query($sql);
+        $result=$qry->fetch_array(MYSQLI_ASSOC);
+        if(count($result)>0)
+        {
+            $result['errorcode']=0;
+            $result['msg']="Blog Available";
+            return $result;
+        }
+        else
+        {
+            $result['errorcode']=1;
+            $result['msg']="Blog Not Available!!!";
+            return $result;
+        }
+    }
+
+    function editblogs($sn,$title,$metadata,$keyword,$description,$status,$category)
+    {
+        $date=date("Y-m-d h:i:sa");
+        $user=$_SESSION['username'];
+        $sql="UPDATE tbl_blogs SET title='$title',metadata='$metadata',keyword='$keyword',description='$description',status='$status',category='$category',modifieddate='$date',modifiedby='$user'
+              WHERE sn='$sn'";
+        $qry=$this->mysqli->query($sql);
+        if($qry)
+        {
+            $result['errorcode']=0;
+            $result['msg']="Blog Edit Success!!!";
+            return $result;
+        }
+        else
+        {
+            $result['errorcode']=1;
+            $result['msg']="Blog Edit Failed!!!";
             return $result;
         }
     }

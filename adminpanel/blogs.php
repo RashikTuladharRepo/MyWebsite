@@ -1,4 +1,7 @@
 <?php
+
+
+
 @session_start();
 include "library/blogscontroller.php";
 include "library/getstatic.php";
@@ -13,6 +16,13 @@ if(isset($_POST['addblog']))
 {
     $bc->blogsadd();
 }
+
+if(isset($_POST['editblog']))
+{
+    $bc->blogsedit();
+}
+
+
 
 
 ?>
@@ -39,8 +49,6 @@ if(isset($_POST['addblog']))
 </nav>
 
 
-
-
 <div class="clearfix"></div>
 
 <div class="container-fluid dashboard-container">
@@ -48,7 +56,7 @@ if(isset($_POST['addblog']))
         <?php include "includes/adminsidebar.php"; ?>
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Add Blogs</h1>
+            <h1 class="page-header">Add/Edit Blogs</h1>
             <div class="has-error">
                     <span id="helpBlock" class="help-block">
                         <?php
@@ -62,6 +70,66 @@ if(isset($_POST['addblog']))
                     </span>
             </div>
             <div class="blogforms">
+
+                <?php if(isset($_REQUEST['data']))
+                {
+                    $blogdetail=$_SESSION['editblogsdetail'];
+                    $blogeditsn=$blogdetail['sn'];
+                    $title=$blogdetail['title'];
+                    $metadata=$blogdetail['metadata'];
+                    $keyword=$blogdetail['keyword'];
+                    $description=$blogdetail['description'];
+                    $status=$blogdetail['status'];
+                    $coverimage=$blogdetail['coverimage'];
+                    $category=$blogdetail['category'];
+                ?>
+                <form method="post" action="#" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="blogtitle">Blog Title</label>
+                        <input type="text" class="form-control" id="blogtitle" name="blogtitle" value="<?php echo $title;?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="meta">Meta Data</label>
+                        <input type="text" class="form-control" id="meta" name="meta" value="<?php echo $title;?>">
+                        <p class="help-block">Meta Data Seperated By Comma ","</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="keywords">Keywords</label>
+                        <input type="text" class="form-control" id="keywords" name="keywords" value="<?php echo $title;?>">
+                        <p class="help-block">Keywords Seperated By Comma ","</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" id="description" name="description">
+                            <?php echo $description;?>
+                        </textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Status</label>
+                        <select name="status" id="status" class="form-control">
+                            <option value="active" selected>Active</option>
+                            <option value="inactive">Inactive</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select name="category" id="category" class="form-control">
+                            <option value="PHP" selected>PHP</option>
+                            <option value="SQL">SQL</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="coverimage">Cover Image For The Blog</label><br>
+                        <input type="hidden" name="blogid" value="<?php echo $blogeditsn; ?>">
+                        <img src="images/<?php echo $coverimage;?>" alt="your image" id="image" width="250px"
+                             height="100px"/>
+                    </div>
+                    <button type="submit" class="btn btn-success" name="editblog">Edit Blog</button>
+                </form>
+
+                <?php } else {?>
+
+
                 <form method="post" action="#" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="blogtitle">Blog Title</label>
@@ -103,6 +171,9 @@ if(isset($_POST['addblog']))
                     </div>
                     <button type="submit" class="btn btn-success" name="addblog">Add Blog</button>
                 </form>
+
+                <?php }?>
+
             </div>
 
         </div>

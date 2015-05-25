@@ -63,12 +63,18 @@ class blogscontroller
         return $bd->getblogslist();
     }
 
-    function deleteblog($deleteid)
+    function getallblogsclient()
+    {
+        $bd=new blogsdao();
+        return $bd->getblogslistclient();
+    }
+
+    function deleteblog($deleteid,$coverimage)
     {
         $gs=new getstatic();
         if($deleteid!="") {
             $bd = new blogsdao();
-            $res=$bd->deleteindividualblogs($deleteid);
+            $res=$bd->deleteindividualblogs($deleteid,$coverimage);
             if($res['errorcode']=="0")
             {
                 $_SESSION['msg']=$res['msg'];
@@ -121,6 +127,47 @@ class blogscontroller
         $bd=new blogsdao();
         return $bd->getblogdetails($bid);
     }
+
+    function editblog($eid)
+    {
+        $gs=new getstatic();
+        $bd=new blogsdao();
+        $returnvalues=$bd->getblogdetailsforedit($eid);
+        $_SESSION['editblogsdetail']= $bd->getblogdetailsforedit($eid);
+        header('location:'.$gs->home_base_url().'adminpanel/blogs.php?data='.$returnvalues['errorcode']);
+    }
+
+    function blogsedit()
+    {
+        $bd=new blogsdao();
+        $gs=new getstatic();
+
+        $sn=$gs->filterstring($_POST['blogid']);
+        $blogtitle=$gs->filterstring($_POST['blogtitle']);
+        $meta=$gs->filterstring($_POST['meta']);
+        $keyword=$gs->filterstring($_POST['keywords']);
+        $description=$gs->filterstring($_POST['description']);
+        $status=$gs->filterstring($_POST['status']);
+        $category=$gs->filterstring($_POST['category']);
+
+
+        $result=$bd->editblogs($sn,$blogtitle,$meta,$keyword,$description,$status,$category);
+
+
+        if($result['errorcode']=="0")
+        {
+            $_SESSION['msg']=$result['msg'];
+            header('location:'.$gs->home_base_url().'adminpanel/blogs.php');
+            exit();
+        }
+        else
+        {
+            $_SESSION['msg']=$result['msg'];
+            header('location:'.$gs->home_base_url().'adminpanel/blogs.php');
+            exit();
+        }
+    }
+
 }
 
 

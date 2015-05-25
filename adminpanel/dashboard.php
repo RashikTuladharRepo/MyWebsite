@@ -12,12 +12,17 @@
 
     if(isset($_REQUEST['did'])!="")
     {
-        $bc->deleteblog($_REQUEST['did']);
+        $bc->deleteblog($_REQUEST['did'],$_REQUEST['coverimage']);
     }
 
     if(isset($_REQUEST['cs'])!="")
     {
         $bc->changestatus($_REQUEST['cs']);
+    }
+
+    if(isset($_REQUEST['eid'])!="")
+    {
+        $bc->editblog($_REQUEST['eid']);
     }
 ?>
 <html>
@@ -76,13 +81,11 @@
                                             <?php } ?>
                                         </td >
                                         <td >
-                                            <a href = "<?php echo $baseurl; ?>adminpanel/library/blogscontroller
-                                            .php?eid=<?php echo
-                                            $row['sn'];?>" class="btn btn-success" >
+                                            <a href = "<?php echo $baseurl; ?>adminpanel/dashboard.php?eid=<?php echo $row['sn'];?>" class="btn btn-success" >
                                                 <i class="fa fa-pencil" >&nbsp;Edit </i >
                                             </a >
                                             <a href = "<?php echo $baseurl; ?>adminpanel/dashboard.php?did=<?php echo
-                                            $row['sn'];?>"
+                                            $row['sn'];?>&coverimage=<?php echo $row['coverimage']; ?>"
                                             class="btn btn-danger" onclick="return confirm('Are You Sure to Delete ' +
                                              'The Blog?')" >
                                                 <i class="fa fa-eraser" >&nbsp;Delete </i >
