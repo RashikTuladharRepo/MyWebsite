@@ -88,7 +88,7 @@
                                 ?>
                             </p>
                             <a href="<?php echo $baseurl; ?>fullblog/<?php echo $row['sn']; ?>/<?php echo
-                            $row['title']; ?>" class="btn
+                            $row['title']; ?>#disqus_thread" class="btn
                             btn-success">Read More
                                 &raquo;</a>
                         </div>
