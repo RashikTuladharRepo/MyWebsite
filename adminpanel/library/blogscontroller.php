@@ -57,10 +57,16 @@ class blogscontroller
         }
     }
 
-    function getallblogs()
+    function getblogscount()
     {
         $bd=new blogsdao();
-        return $bd->getblogslist();
+        return $bd->getblogscount();
+    }
+
+    function getallblogs($N)
+    {
+        $bd=new blogsdao();
+        return $bd->getblogslist($N);
     }
 
     function getallblogsclient()

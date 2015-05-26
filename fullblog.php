@@ -11,7 +11,7 @@
 
     $id=$_REQUEST['bid'];
     $bc=new blogscontroller();
-    $blogsarray=$bc->getallblogs();
+    $blogsarray=$bc->getallblogsclient();
     $details=$bc->getblogdetails($id);
 ?>
 <!--<a href="http://example.com/bar.html#disqus_thread">Link</a>-->

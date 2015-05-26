@@ -26,11 +26,19 @@ class blogsdao extends webconfig
         }
     }
 
-    function getblogslist()
+    function getblogscount()
+    {
+        $sql="select count(*) as totalrows from tbl_blogs";
+        $qry=$this->mysqli->query($sql);
+        $res = $qry->fetch_array(MYSQLI_ASSOC);
+        return $res;
+    }
+
+    function getblogslist($N)
     {
         $result=array();
         $var=array();
-        $sql="select * from tbl_blogs ORDER by createddate DESC";
+        $sql="select * from tbl_blogs ORDER by createddate DESC LIMIT 10 OFFSET ".$N;
         $qry=$this->mysqli->query($sql);
         while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
             $result[]= $res;
@@ -41,7 +49,7 @@ class blogsdao extends webconfig
     function getblogslistclient()
     {
         $result=array();
-        $sql="select * from tbl_blogs WHERE status='active' ORDER by createddate DESC";
+        $sql="select * from tbl_blogs WHERE status='active' ORDER by createddate DESC LIMIT 5";
         $qry=$this->mysqli->query($sql);
         while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
             $result[]= $res;

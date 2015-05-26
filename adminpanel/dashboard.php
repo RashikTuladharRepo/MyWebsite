@@ -3,12 +3,32 @@
     include "library/getstatic.php";
     include "library/blogscontroller.php";
     $gs=new getstatic();
+    $gs->checksession();
+    $baseurl=$gs->home_base_url();
 
     $bc=new blogscontroller();
-    $blogsarray=$bc->getallblogs();
 
-	$gs->checksession();
-    $baseurl=$gs->home_base_url();
+    //for pagination
+    $blogcount=$bc->getblogscount();
+    $totalpage=ceil($blogcount['totalrows']/10);
+
+    if($_REQUEST['page']=="" || $_REQUEST['page']==1 || $_REQUEST['page']<0)
+    {
+        $N=0;
+    }
+    elseif($_REQUEST['page']>$totalpage)
+    {
+        $N=5*$totalpage;
+    }
+    else
+    {
+        $N=5*$_REQUEST['page'];
+    }
+
+    $blogsarray=$bc->getallblogs($N);
+
+
+
 
     if(isset($_REQUEST['did'])!="")
     {
@@ -51,6 +71,28 @@
 
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                     <h1 class="page-header">Blogs Management</h1>
+                    <div class="help-block">
+                        <?php
+                            echo "Total Number of Blogs: ". $blogcount['totalrows']."<br>";
+                        ?>
+
+                        <strong class="text-primary">
+                            <?php
+                            if($_REQUEST['page']<0)
+                            {
+                                $currentpage="1";
+                            }
+                            else
+                            {
+                                $currentpage=$_REQUEST['page'];
+                            }
+
+                            echo "You Are In Page Number: ". $currentpage ." of ". $totalpage ;
+                            ?>
+                        </strong>
+
+                    </div>
+
                     <div class="has-error">
                     <span id="helpBlock" class="help-block">
                         <?php
@@ -105,13 +147,58 @@
 
                     <div class="container-fluid pull-right">
                         <ul class="pagination">
-                            <li class="disabled"><a href="#">&laquo;</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>
+
+                                <?php
+                                    if($_REQUEST['page']<0 || $_REQUEST['page']==1)
+                                    {
+                                ?>
+                                    <li class="disabled"><a href="#">&laquo;</a></li>
+                                <?php
+                                    }
+                                    else
+                                    {
+                                ?>
+                                    <li><a href="dashboard.php?page=<?php echo $_REQUEST['page']-1; ?>">&laquo;</a></li>
+                                <?php
+                                    }
+                                ?>
+
+                            <?php
+                            if($totalpage>5)
+                            {
+                                $pages=5;
+                            }
+                            else
+                            {
+                                $pages=$totalpage;
+                            }
+                            for($i=1;$i<=$pages;$i++)
+                            {
+                            ?>
+                                <li>
+                                    <a href="dashboard.php?page=<?php echo $i; ?>">
+                                        <?php echo $i;?>
+                                    </a>
+                                </li>
+                            <?php
+                            }
+                            ?>
+
+                                <?php
+                                if($_REQUEST['page']>=$totalpage)
+                                {
+                                    ?>
+                                    <li class="disabled"><a href="#">&raquo;</a></li>
+                                <?php
+                                }
+                                else
+                                {
+                                    ?>
+                                    <li><a href="dashboard.php?page=<?php echo $_REQUEST['page']+1; ?>">&raquo;</a></li>
+                                <?php
+                                }
+                                ?>
+
                         </ul>
                     </div>
 
