@@ -1,4 +1,5 @@
 <?php
+    error_reporting(E_ERROR | E_PARSE);
     @session_start();
     include "library/getstatic.php";
     include "library/blogscontroller.php";
@@ -7,7 +8,6 @@
     $baseurl=$gs->home_base_url();
 
     $bc=new blogscontroller();
-
     //for pagination
     $blogcount=$bc->getblogscount();
     $totalpage=ceil($blogcount['totalrows']/10);
