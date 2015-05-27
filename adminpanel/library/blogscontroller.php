@@ -11,6 +11,48 @@ $bd=new blogsdao();
 class blogscontroller
 {
 
+    //GET BLOGS COUNT DAO METHOD
+    function getblogscount()
+    {
+        $bd=new blogsdao();
+        return $bd->getblogscount();
+    }
+    function categorygetblogscount($category)
+    {
+        $bd=new blogsdao();
+        return $bd->categorygetblogscount($category);
+    }
+
+
+
+    //GET ALL BLOGS DAO METHOD
+    function getallblogs($N)
+    {
+        $bd=new blogsdao();
+        return $bd->getblogslist($N);
+    }
+    function getallblogsclient()
+    {
+        $bd=new blogsdao();
+        return $bd->getblogslistclient();
+    }
+    function categorygetallblogs($N,$category)
+    {
+        $bd=new blogsdao();
+        return $bd->categorygetblogslist($N,$category);
+    }
+
+
+    //GET BLOG DETAILS DAO
+    function getblogdetails($bid)
+    {
+        $bd=new blogsdao();
+        return $bd->getblogdetails($bid);
+    }
+
+
+
+    //BLOGS CRUD DAO METHOD
     function blogsadd()
     {
         $bd=new blogsdao();
@@ -29,7 +71,7 @@ class blogscontroller
         $coverimage=$gs->imagemanipulate($cover);
         if($coverimage['errorcode']=="0")
         {
-             $imagename=$coverimage['msg'];
+            $imagename=$coverimage['msg'];
         }
         else
         {
@@ -56,25 +98,6 @@ class blogscontroller
             exit();
         }
     }
-
-    function getblogscount()
-    {
-        $bd=new blogsdao();
-        return $bd->getblogscount();
-    }
-
-    function getallblogs($N)
-    {
-        $bd=new blogsdao();
-        return $bd->getblogslist($N);
-    }
-
-    function getallblogsclient()
-    {
-        $bd=new blogsdao();
-        return $bd->getblogslistclient();
-    }
-
     function deleteblog($deleteid,$coverimage)
     {
         $gs=new getstatic();
@@ -100,7 +123,6 @@ class blogscontroller
             exit();
         }
     }
-
     function changestatus($csid)
     {
         $gs=new getstatic();
@@ -127,13 +149,6 @@ class blogscontroller
             exit();
         }
     }
-
-    function getblogdetails($bid)
-    {
-        $bd=new blogsdao();
-        return $bd->getblogdetails($bid);
-    }
-
     function editblog($eid)
     {
         $gs=new getstatic();
@@ -142,7 +157,6 @@ class blogscontroller
         $_SESSION['editblogsdetail']= $bd->getblogdetailsforedit($eid);
         header('location:'.$gs->home_base_url().'adminpanel/blogs.php?data='.$returnvalues['errorcode']);
     }
-
     function blogsedit()
     {
         $bd=new blogsdao();

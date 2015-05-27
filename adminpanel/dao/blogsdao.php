@@ -3,28 +3,8 @@
 require_once "webconfig.php";
 class blogsdao extends webconfig
 {
-    function addblogs($title,$metadata,$keyword,$description,$status,$coverimage,$category)
-    {
-        $date=date("Y-m-d h:i:sa");
-        $user=$_SESSION['username'];
-        $sql="INSERT INTO tbl_blogs
-              (title,metadata,keyword,description,status,coverimage,category,createddate,createdby) VALUES
-              ('$title','$metadata','$keyword','$description','$status','$coverimage','$category','$date',
-              '$user')";
-        $qry=$this->mysqli->query($sql);
-        if($qry)
-        {
-            $result['errorcode']=0;
-            $result['msg']="Blog Add Success!!!";
-            return $result;
-        }
-        else
-        {
-            $result['errorcode']=1;
-            $result['msg']="Blog Add Failed!!!";
-            return $result;
-        }
-    }
+
+    //GET BLOGS COUNT
 
     function getblogscount()
     {
@@ -33,6 +13,18 @@ class blogsdao extends webconfig
         $res = $qry->fetch_array(MYSQLI_ASSOC);
         return $res;
     }
+
+    function categorygetblogscount($category)
+    {
+        $sql="select count(*) as totalrows from tbl_blogs where category='$category'";
+        $qry=$this->mysqli->query($sql);
+        $res = $qry->fetch_array(MYSQLI_ASSOC);
+        return $res;
+    }
+
+
+
+    //GET BLOG LISTS
 
     function getblogslist($N)
     {
@@ -55,6 +47,45 @@ class blogsdao extends webconfig
             $result[]= $res;
         }
         return $result;
+    }
+
+    function categorygetblogslist($N,$category)
+    {
+        $result=array();
+        $var=array();
+        $sql="select * from tbl_blogs WHERE category='$category' ORDER by createddate DESC LIMIT 10 OFFSET ".$N;
+        $qry=$this->mysqli->query($sql);
+        while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
+            $result[]= $res;
+        }
+        return $result;
+    }
+
+
+
+    //CRUD Operations
+
+    function addblogs($title,$metadata,$keyword,$description,$status,$coverimage,$category)
+    {
+        $date=date("Y-m-d h:i:sa");
+        $user=$_SESSION['username'];
+        $sql="INSERT INTO tbl_blogs
+              (title,metadata,keyword,description,status,coverimage,category,createddate,createdby) VALUES
+              ('$title','$metadata','$keyword','$description','$status','$coverimage','$category','$date',
+              '$user')";
+        $qry=$this->mysqli->query($sql);
+        if($qry)
+        {
+            $result['errorcode']=0;
+            $result['msg']="Blog Add Success!!!";
+            return $result;
+        }
+        else
+        {
+            $result['errorcode']=1;
+            $result['msg']="Blog Add Failed!!!";
+            return $result;
+        }
     }
 
     function deleteindividualblogs($id,$image)

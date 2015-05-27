@@ -1,5 +1,4 @@
 <?php
-    error_reporting(E_ERROR | E_PARSE);
     @session_start();
     include "library/getstatic.php";
     include "library/blogscontroller.php";
@@ -11,6 +10,10 @@
     //for pagination
     $blogcount=$bc->getblogscount();
     $totalpage=ceil($blogcount['totalrows']/10);
+    if(!isset($_REQUEST['page']))
+    {
+        $_REQUEST['page']=1;
+    }
 
     if($_REQUEST['page']=="" || $_REQUEST['page']==1 || $_REQUEST['page']<0)
     {
@@ -24,6 +27,8 @@
     {
         $N=5*$_REQUEST['page'];
     }
+
+
 
     $blogsarray=$bc->getallblogs($N);
 
@@ -109,12 +114,14 @@
 
                     <div class="table-responsive">
                         <table class="table table-striped">
-                            <thead><tr><th>Id</th><th>Title</th><th>Status</th><th>Remarks</th></tr></thead>
+                            <thead><tr><th>Id</th><th>Title</th><th>Category</th><th>Status</th><th>Remarks</th>
+                            </tr></thead>
                             <tbody>
                                 <?php foreach ($blogsarray as $row) { ?>
                                     <tr>
-                                        <th scope = "row" ><?php echo $row['sn']; ?></th >
+                                        <td><?php echo $row['sn']; ?></td>
                                         <td style="min-width: 60%;"><?php echo $row['title']; ?></td >
+                                        <td><?php echo $row['category']; ?></td >
                                         <td class="text-center" >
                                             <?php if($row['status']=="active") { ?>
                                                 <i class="fa fa-check text-success" ></i >
@@ -122,20 +129,20 @@
                                                 <i class="fa fa-close text-danger"></i>
                                             <?php } ?>
                                         </td >
-                                        <td >
+                                        <td>
                                             <a href = "<?php echo $baseurl; ?>adminpanel/dashboard.php?eid=<?php echo $row['sn'];?>" class="btn btn-success" >
-                                                <i class="fa fa-pencil" >&nbsp;Edit </i >
+                                                <i class="fa fa-pencil" >&nbsp;</i >
                                             </a >
                                             <a href = "<?php echo $baseurl; ?>adminpanel/dashboard.php?did=<?php echo
                                             $row['sn'];?>&coverimage=<?php echo $row['coverimage']; ?>"
                                             class="btn btn-danger" onclick="return confirm('Are You Sure to Delete ' +
                                              'The Blog?')" >
-                                                <i class="fa fa-eraser" >&nbsp;Delete </i >
+                                                <i class="fa fa-eraser" >&nbsp;</i >
                                             </a >
                                             <a href = "<?php echo $baseurl; ?>adminpanel/dashboard.php?cs=<?php
                                             echo
                                             $row['sn'];?>" class="btn btn-warning" >
-                                                <i class="fa fa-recycle" >&nbsp;Change Status </i >
+                                                <i class="fa fa-recycle" >&nbsp;</i >
                                             </a >
                                         </td >
                                     </tr >
