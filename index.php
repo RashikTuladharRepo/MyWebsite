@@ -28,14 +28,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/customstyle.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/mainstyle.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dancing+Script">
-<!--    <script>-->
-<!--        function tick2()-->
-<!--        {-->
-<!--            $('#ticker_02 li:first').slideUp( function () { $(this).appendTo($('#ticker_02')).slideDown(); });-->
-<!--        }-->
-<!--        setInterval(function(){ tick2 () }, 3000);-->
-<!--    </script>-->
-
+    <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/owl.carousel.css">
 </head>
 <body id="home">
 <div id="fb-root"></div>
@@ -52,15 +45,18 @@
 <nav class="navbar navbar-inverse navbar-fixed-top"><?php include"includes/navigationbar.php"; ?></nav>
 <!-- Fixed navbar -->
 
-
-<!--banner-->
-<div class="home-banner">
-    <div class="container-fluid">
-        <div class="internal-holder"></div>
+<div class="container-fluid" style="margin-top:90px; height: auto; ">
+    <div id="owl-demo" class="owl-carousel owl-theme">
+        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>
+        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>
+        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>
+        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>
+        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>
+        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>
+        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>
     </div>
-</div>
-<!--banner ends-->
 
+</div>
 
 
 <div class="container blogs">
@@ -117,9 +113,16 @@
 <script src="<?php echo $baseurl; ?>js/jquery.smoothscroll.js"></script>
 <script src="<?php echo $baseurl; ?>js/bootstrap.min.js"></script>
 <script src="<?php echo $baseurl; ?>js/clock.js"></script>
-<script type="text/javascript">
-    $(function () {
-        $('#js-news').ticker();
+<script src="js/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+        $("#owl-demo").owlCarousel({
+            navigation : false,
+            autoPlay : 3000
+        });
+
     });
 </script>
 
