@@ -8,7 +8,7 @@ class blogsdao extends webconfig
 
     function getblogscount()
     {
-        $sql="select count(*) as totalrows from tbl_blogs";
+        $sql="select count(*) as totalrows from tbl_blogs WHERE status='active'";
         $qry=$this->mysqli->query($sql);
         $res = $qry->fetch_array(MYSQLI_ASSOC);
         return $res;
@@ -16,7 +16,7 @@ class blogsdao extends webconfig
 
     function categorygetblogscount($category)
     {
-        $sql="select count(*) as totalrows from tbl_blogs where category='$category'";
+        $sql="select count(*) as totalrows from tbl_blogs WHERE category='$category' AND status='active'";
         $qry=$this->mysqli->query($sql);
         $res = $qry->fetch_array(MYSQLI_ASSOC);
         return $res;
@@ -30,7 +30,7 @@ class blogsdao extends webconfig
     {
         $result=array();
         $var=array();
-        $sql="select * from tbl_blogs ORDER by createddate DESC LIMIT 10 OFFSET ".$N;
+        $sql="select * from tbl_blogs WHERE status='active' ORDER by createddate DESC LIMIT 10 OFFSET ".$N;
         $qry=$this->mysqli->query($sql);
         while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
             $result[]= $res;
@@ -65,7 +65,9 @@ class blogsdao extends webconfig
     {
         $result=array();
         $var=array();
-        $sql="select * from tbl_blogs WHERE category='$category' ORDER by createddate DESC ".$N;
+        $sql="select * from tbl_blogs WHERE category='$category' AND status='active' ORDER by createddate DESC ".$N;
+//        echo $sql;
+//        die();
         $qry=$this->mysqli->query($sql);
         while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
             $result[]= $res;
@@ -77,8 +79,6 @@ class blogsdao extends webconfig
     {
         $result=array();
         $sql="select * from tbl_blogs ORDER by createddate DESC ".$N;
-//        echo $sql;
-//        die();
         $qry=$this->mysqli->query($sql);
         while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
             $result[]= $res;
@@ -210,6 +210,66 @@ class blogsdao extends webconfig
         {
             $result['errorcode']=1;
             $result['msg']="Blog Edit Failed!!!";
+            return $result;
+        }
+    }
+
+
+
+
+    //Category
+
+    function addcategory($category)
+    {
+        $sql="insert into tbl_category VALUES ('','$category')";
+        $qry=$this->mysqli->query($sql);
+        if($qry)
+        {
+            $result['errorcode']=0;
+            $result['msg']="Category Add Success!!!";
+            return $result;
+        }
+        else
+        {
+            $result['errorcode']=1;
+            $result['msg']="Category Add Failure!!!";
+            return $result;
+        }
+    }
+
+    function getcategorylistdao()
+    {
+        $sql="select * from tbl_category";
+        $qry=$this->mysqli->query($sql);
+        $result=array();
+        while($row=$qry->fetch_array(MYSQLI_ASSOC))
+        {
+            if(count($row)>0) {
+                $result[] = $row;
+            }
+            else
+            {
+                $result['errorcode'] = "1";
+            }
+        }
+
+        return $result;
+    }
+
+    function deletecategorylistdao($did)
+    {
+        $sql="delete from tbl_category where sn=".$did;
+        $qry=$this->mysqli->query($sql);
+        if($qry)
+        {
+            $result['errorcode']=0;
+            $result['msg']="Category Deleted Successfully!!!";
+            return $result;
+        }
+        else
+        {
+            $result['errorcode']=1;
+            $result['msg']="Category Deleted Failed!!!";
             return $result;
         }
     }

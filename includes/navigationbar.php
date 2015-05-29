@@ -32,31 +32,31 @@ $page=trim(strtolower($array[$count-1]));
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo $baseurl; ?>blogs/asp"
+                    <a href="<?php echo $baseurl; ?>blogs/ASP"
                        class="<?php echo ($page=="asp")?"active" :""; ?>">
                         .NET
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo $baseurl; ?>blogs/mysql"
+                    <a href="<?php echo $baseurl; ?>blogs/MYSQL"
                        class="<?php echo ($page=="mysql")?"active" :""; ?>">
                         MySQL
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo $baseurl; ?>blogs/mssql"
+                    <a href="<?php echo $baseurl; ?>blogs/MSSQL"
                        class="<?php echo ($page=="mssql")?"active" :""; ?>">
                         MSSQL
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo $baseurl; ?>blogs/bootstrap"
+                    <a href="<?php echo $baseurl; ?>blogs/BOOTSTRAP"
                        class="<?php echo ($page=="bootstrap")?"active" :""; ?>">
                         BOOTSTRAP
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo $baseurl; ?>blogs/news"
+                    <a href="<?php echo $baseurl; ?>blogs/NEWS"
                        class="<?php echo ($page=="news")?"active" :""; ?>">
                         TECH NEWS
                     </a>

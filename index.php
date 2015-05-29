@@ -17,6 +17,7 @@
 
 
 ?>
+<!DOCTYPE HTML>
 <html>
 <head>
     <title>Rashik's Blog</title>

@@ -9,13 +9,14 @@ include"adminpanel/dao/webconfig.php";
 include"adminpanel/dao/blogsdao.php";
 include"adminpanel/library/blogscontroller.php";
 
-$id=$_REQUEST['bid'];
+//$id=$_REQUEST['bid'];
 $bc=new blogscontroller();
-$category=$_REQUEST['category'];
+$blogsarray=$bc->getallblogsclient();
+
 include"includes/paginate.php";
 ?>
     <!--<a href="http://example.com/bar.html#disqus_thread">Link</a>-->
-
+<!DOCTYPE HTML>
     <html>
     <head>
         <title>Rashik's Blog</title>
@@ -59,7 +60,7 @@ include"includes/paginate.php";
                         <?php echo ucwords($_REQUEST['category'])."";?> Categorized Blogs
                     </h2>
 
-                    <?php if($totalpage>0){?>
+                    <?php if($rows>0){?>
 
                     <div class="help-block">
                         <?php
@@ -77,7 +78,7 @@ include"includes/paginate.php";
                                 $currentpage=$_REQUEST['pn'];
                             }
 
-                            echo "You Are In Page Number: ". $currentpage ." of ". $totalpage ;
+                            echo "You Are In Page Number: ". $currentpage ." of ". $rows ;
                             ?>
                         </strong>
 

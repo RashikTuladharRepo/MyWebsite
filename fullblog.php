@@ -15,12 +15,27 @@
     $details=$bc->getblogdetails($id);
 ?>
 <!--<a href="http://example.com/bar.html#disqus_thread">Link</a>-->
-
+<!DOCTYPE HTML>
 <html>
 <head>
-    <title>Rashik's Blog</title>
+    <title><?php echo $details['title']; ?> - Rashik Tuladhar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en-US" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="alternate" href="http://rashik.com.np/" hreflang="en" />
     <link rel="icon" href="<?php echo $baseurl; ?>images/logo.png">
+
+    <meta name="description" content="<?php echo $details['metadata']; ?>">
+    <meta name="keywords" content="<?php echo $details['keyword']; ?>">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Web Designers in Nepal | Web Developer In Nepal" />
+    <meta property="og:description" content="Rashik, web designer from nepal and freelance webdesigner from nepal provides world class web design, grahpihc design, Search Engine Optimization , IT professional from nepal, freelance web designer nepal, freelance web designer, web developer, web page designer, web" />
+    <meta property="og:url" content="http://www.rashik.com.np" />
+    <meta property="article:published_time" content="<?php echo date("Y/m/d", strtotime($details['createddate'])); ?>" />
+    <meta property="article:modified_time" content="<?php echo date("Y/m/d", strtotime($details['createddate'])); ?>"/>
+    <meta property="og:site_name" content="Rashik Tuladhar | Web Developer/Designer In Nepal" />
+    <meta name="twitter:card" content="summary" />
+
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/customstyle.css">

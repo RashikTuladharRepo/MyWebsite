@@ -25,100 +25,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="blogs.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7719297" vertical-offset="150" max-vertical-offset="3850">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.935484" vertical-offset="0" max-vertical-offset="2904">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blogscontroller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adminpanel/library/blogscontroller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.322581" vertical-offset="354" max-vertical-offset="1166">
-              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-              <folding>
-                <element signature="n#getblogscount#0;n#blogscontroller#0;n#!!top" expanded="false" />
-                <element signature="n#getallblogs#0;n#blogscontroller#0;n#!!top" expanded="false" />
-                <element signature="n#getallblogsclient#0;n#blogscontroller#0;n#!!top" expanded="false" />
-                <element signature="n#categorygetallblogs#0;n#blogscontroller#0;n#!!top" expanded="false" />
-                <element signature="n#getallblogswithpage#0;n#blogscontroller#0;n#!!top" expanded="false" />
-                <element signature="n#getblogdetails#0;n#blogscontroller#0;n#!!top" expanded="false" />
-                <element signature="n#blogsadd#0;n#blogscontroller#0;n#!!top" expanded="false" />
-                <element signature="n#deleteblog#0;n#blogscontroller#0;n#!!top" expanded="false" />
-                <element signature="n#changestatus#0;n#blogscontroller#0;n#!!top" expanded="false" />
-                <element signature="n#editblog#0;n#blogscontroller#0;n#!!top" expanded="false" />
-                <element signature="n#blogsedit#0;n#blogscontroller#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7934426" vertical-offset="0" max-vertical-offset="770">
-              <caret line="22" column="76" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blogsdao.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="blogsdao.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/adminpanel/dao/blogsdao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7741935" vertical-offset="310" max-vertical-offset="1078">
-              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.66607773" vertical-offset="217" max-vertical-offset="1518">
+              <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
               <folding>
                 <element signature="n#getblogscount#0;n#blogsdao#0;n#!!top" expanded="false" />
                 <element signature="n#categorygetblogscount#0;n#blogsdao#0;n#!!top" expanded="false" />
                 <element signature="n#getblogslist#0;n#blogsdao#0;n#!!top" expanded="false" />
                 <element signature="n#getblogslistclient#0;n#blogsdao#0;n#!!top" expanded="false" />
-                <element signature="e#1271#1320#0#PHP" expanded="false" />
+                <element signature="e#1335#1384#0#PHP" expanded="false" />
                 <element signature="n#categorygetblogslist#0;n#blogsdao#0;n#!!top" expanded="false" />
-                <element signature="n#getblogslistwithpage#0;n#blogsdao#0;n#!!top" expanded="false" />
                 <element signature="n#addblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
                 <element signature="n#deleteindividualblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
                 <element signature="n#changesstatus#0;n#blogsdao#0;n#!!top" expanded="false" />
                 <element signature="n#getblogdetails#0;n#blogsdao#0;n#!!top" expanded="false" />
                 <element signature="n#getblogdetailsforedit#0;n#blogsdao#0;n#!!top" expanded="false" />
                 <element signature="n#editblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
-                <marker date="1432873079464" expanded="true" signature="162:205" placeholder="select count..tbl_blogs..." />
-                <marker date="1432873079464" expanded="true" signature="391:461" placeholder="select count..tbl_blogs..." />
-                <marker date="1432873079464" expanded="true" signature="702:768" placeholder="select * fro..tbl_blogs..." />
-                <marker date="1432873079464" expanded="true" signature="1021:1100" placeholder="select * fro..tbl_blogs..." />
-                <marker date="1432873079464" expanded="true" signature="1790:1866" placeholder="select * fro..tbl_blogs..." />
-                <marker date="1432873079464" expanded="true" signature="2124:2174" placeholder="select * fro..tbl_blogs..." />
-                <marker date="1432873079464" expanded="true" signature="2596:2854" placeholder="INSERT INTO ..." />
-                <marker date="1432873079464" expanded="true" signature="3269:3305" placeholder="delete from ..." />
-                <marker date="1432873079464" expanded="true" signature="3756:3969" placeholder="update tbl_b..." />
-                <marker date="1432873079464" expanded="true" signature="4396:4435" placeholder="select * fro..tbl_blogs..." />
-                <marker date="1432873079464" expanded="true" signature="4910:4949" placeholder="select * fro..tbl_blogs..." />
-                <marker date="1432873079464" expanded="true" signature="5534:5743" placeholder="UPDATE tbl_b..." />
+                <element signature="n#addcategory#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="n#getcategorylistdao#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="n#deletecategorylistdao#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <marker date="1432886219701" expanded="true" signature="162:227" placeholder="select count..tbl_blogs..." />
+                <marker date="1432886219701" expanded="true" signature="413:503" placeholder="select count..tbl_blogs..." />
+                <marker date="1432886219701" expanded="true" signature="744:832" placeholder="select * fro..tbl_blogs..." />
+                <marker date="1432886219701" expanded="true" signature="1085:1164" placeholder="select * fro..tbl_blogs..." />
+                <marker date="1432886219701" expanded="true" signature="1854:1950" placeholder="select * fro..tbl_blogs..." />
+                <marker date="1432886219701" expanded="true" signature="2246:2296" placeholder="select * fro..tbl_blogs..." />
+                <marker date="1432886219701" expanded="true" signature="2680:2938" placeholder="INSERT INTO ..." />
+                <marker date="1432886219701" expanded="true" signature="3353:3389" placeholder="delete from ..." />
+                <marker date="1432886219701" expanded="true" signature="3840:4053" placeholder="update tbl_b..." />
+                <marker date="1432886219701" expanded="true" signature="4480:4519" placeholder="select * fro..tbl_blogs..." />
+                <marker date="1432886219701" expanded="true" signature="4994:5033" placeholder="select * fro..tbl_blogs..." />
+                <marker date="1432886219701" expanded="true" signature="5618:5827" placeholder="UPDATE tbl_b..." />
+                <marker date="1432886219701" expanded="true" signature="6252:6300" placeholder="insert into ..." />
+                <marker date="1432886219701" expanded="true" signature="6711:6737" placeholder="select * fro..tbl_category..." />
+                <marker date="1432886219701" expanded="true" signature="7140:7174" placeholder="delete from ..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="paginate.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/paginate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.967742" vertical-offset="0" max-vertical-offset="1782">
-              <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -149,7 +92,6 @@
         <option value="$PROJECT_DIR$/adminpanel/css/admincustomstyle.css" />
         <option value="$PROJECT_DIR$/adminpanel/includes/adminnavigation.php" />
         <option value="$PROJECT_DIR$/adminpanel/dao/logincheck.php" />
-        <option value="$PROJECT_DIR$/adminpanel/includes/adminsidebar.php" />
         <option value="$PROJECT_DIR$/adminpanel/library/getstatic.php" />
         <option value="$PROJECT_DIR$/adminpanel/scripts/myscripts.js" />
         <option value="$PROJECT_DIR$/adminpanel/index.php" />
@@ -162,22 +104,24 @@
         <option value="$PROJECT_DIR$/adminpanel/includes/authordetails.php" />
         <option value="$PROJECT_DIR$/404.php" />
         <option value="$PROJECT_DIR$/includes/right-menu.php" />
-        <option value="$PROJECT_DIR$/adminpanel/blogs.php" />
-        <option value="$PROJECT_DIR$/includes/navigationbar.php" />
         <option value="$PROJECT_DIR$/css/customstyle.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/errorpages/css/style.css" />
         <option value="$PROJECT_DIR$/errorpages/404.php" />
-        <option value="$PROJECT_DIR$/adminpanel/library/blogscontroller.php" />
         <option value="$PROJECT_DIR$/adminpanel/dashboard2.php" />
         <option value="$PROJECT_DIR$/blogs2.php" />
-        <option value="$PROJECT_DIR$/adminpanel/dao/blogsdao.php" />
-        <option value="$PROJECT_DIR$/adminpanel/dashboard.php" />
         <option value="$PROJECT_DIR$/Pagination Technique.txt" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/fullblog.php" />
+        <option value="$PROJECT_DIR$/adminpanel/dashboard.php" />
+        <option value="$PROJECT_DIR$/adminpanel/category.php" />
+        <option value="$PROJECT_DIR$/adminpanel/library/blogscontroller.php" />
+        <option value="$PROJECT_DIR$/adminpanel/blogs.php" />
+        <option value="$PROJECT_DIR$/includes/navigationbar.php" />
         <option value="$PROJECT_DIR$/includes/paginate.php" />
+        <option value="$PROJECT_DIR$/fullblog.php" />
         <option value="$PROJECT_DIR$/blogs.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/adminpanel/includes/adminsidebar.php" />
+        <option value="$PROJECT_DIR$/adminpanel/dao/blogsdao.php" />
       </list>
     </option>
   </component>
@@ -259,7 +203,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
+              <option name="myItemId" value="adminpanel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -326,7 +270,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -334,7 +278,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15959005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15959005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -367,7 +311,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -477,13 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/includes/adminsidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58303887" vertical-offset="0" max-vertical-offset="566">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/adminpanel/includes/adminnavigation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.89399296" vertical-offset="0" max-vertical-offset="748">
@@ -499,24 +436,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/library/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="308">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/adminpanel/dao/webconfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.193548" vertical-offset="0" max-vertical-offset="572">
           <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/dao/logincheck.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.516129" vertical-offset="0" max-vertical-offset="1782">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -548,13 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3886926" vertical-offset="528" max-vertical-offset="1672">
-          <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/404.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7096774" vertical-offset="0" max-vertical-offset="154">
@@ -573,28 +489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9246575" vertical-offset="120" max-vertical-offset="1034">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/blogs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11660777" vertical-offset="2618" max-vertical-offset="5280">
-          <caret line="122" column="57" selection-start-line="122" selection-start-column="51" selection-end-line="122" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.15547703" vertical-offset="1760" max-vertical-offset="13574">
-          <caret line="76" column="12" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/library/getstatic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.565371" vertical-offset="2690" max-vertical-offset="3256">
-          <caret line="82" column="53" selection-start-line="82" selection-start-column="53" selection-end-line="82" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -622,25 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/dashboard2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6111111" vertical-offset="0" max-vertical-offset="5258">
-          <caret line="15" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="233" selection-end-column="7" />
-          <folding>
-            <marker date="1432871709391" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1432871709391" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2720848" vertical-offset="4620" max-vertical-offset="6798">
-          <caret line="217" column="45" selection-start-line="217" selection-start-column="45" selection-end-line="217" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pagination Technique.txt">
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -648,14 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6239016" vertical-offset="1565" max-vertical-offset="2134">
           <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6607774" vertical-offset="1540" max-vertical-offset="5280">
-          <caret line="87" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -684,113 +551,202 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7934426" vertical-offset="0" max-vertical-offset="770">
+          <caret line="22" column="76" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/library/getstatic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.077738516" vertical-offset="110" max-vertical-offset="682">
+          <caret line="77" column="32" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
+          <folding>
+            <element signature="n#home_base_url#0;n#getstatic#0;n#!!top" expanded="false" />
+            <element signature="n#filterstring#0;n#getstatic#0;n#!!top" expanded="false" />
+            <element signature="n#logout#0;n#getstatic#0;n#!!top" expanded="false" />
+            <element signature="n#getuser#0;n#getstatic#0;n#!!top" expanded="false" />
+            <element signature="n#imagemanipulate#0;n#getstatic#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/library/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="308">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/dao/logincheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2720848" vertical-offset="0" max-vertical-offset="566">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="n#filterstring#0;n#logincheck#0;n#!!top" expanded="false" />
+            <element signature="n#login#0;n#logincheck#0;n#!!top" expanded="false" />
+            <element signature="n#updatelastlogin#0;n#logincheck#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34982333" vertical-offset="0" max-vertical-offset="1672">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.3639574" vertical-offset="1430" max-vertical-offset="5280">
+          <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58303887" vertical-offset="0" max-vertical-offset="3234">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/blogs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46643108" vertical-offset="2310" max-vertical-offset="5302">
+          <caret line="117" column="80" selection-start-line="117" selection-start-column="80" selection-end-line="117" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/navigationbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-47.548386" vertical-offset="0" max-vertical-offset="2024">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="4" selection-end-line="74" selection-end-column="10" />
+        <state vertical-scroll-proportion="1.0883392" vertical-offset="0" max-vertical-offset="2024">
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/right-menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34982333" vertical-offset="0" max-vertical-offset="1254">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fullblog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.7809186" vertical-offset="0" max-vertical-offset="3850">
-          <caret line="123" column="27" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/paginate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.967742" vertical-offset="0" max-vertical-offset="1782">
-          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7719297" vertical-offset="150" max-vertical-offset="3850">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.935484" vertical-offset="0" max-vertical-offset="2904">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/dao/blogsdao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7741935" vertical-offset="310" max-vertical-offset="1078">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <element signature="n#getblogscount#0;n#blogsdao#0;n#!!top" expanded="false" />
-            <element signature="n#categorygetblogscount#0;n#blogsdao#0;n#!!top" expanded="false" />
-            <element signature="n#getblogslist#0;n#blogsdao#0;n#!!top" expanded="false" />
-            <element signature="n#getblogslistclient#0;n#blogsdao#0;n#!!top" expanded="false" />
-            <element signature="e#1271#1320#0#PHP" expanded="false" />
-            <element signature="n#categorygetblogslist#0;n#blogsdao#0;n#!!top" expanded="false" />
-            <element signature="n#getblogslistwithpage#0;n#blogsdao#0;n#!!top" expanded="false" />
-            <element signature="n#addblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
-            <element signature="n#deleteindividualblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
-            <element signature="n#changesstatus#0;n#blogsdao#0;n#!!top" expanded="false" />
-            <element signature="n#getblogdetails#0;n#blogsdao#0;n#!!top" expanded="false" />
-            <element signature="n#getblogdetailsforedit#0;n#blogsdao#0;n#!!top" expanded="false" />
-            <element signature="n#editblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
-            <marker date="1432873079464" expanded="true" signature="162:205" placeholder="select count..tbl_blogs..." />
-            <marker date="1432873079464" expanded="true" signature="391:461" placeholder="select count..tbl_blogs..." />
-            <marker date="1432873079464" expanded="true" signature="702:768" placeholder="select * fro..tbl_blogs..." />
-            <marker date="1432873079464" expanded="true" signature="1021:1100" placeholder="select * fro..tbl_blogs..." />
-            <marker date="1432873079464" expanded="true" signature="1790:1866" placeholder="select * fro..tbl_blogs..." />
-            <marker date="1432873079464" expanded="true" signature="2124:2174" placeholder="select * fro..tbl_blogs..." />
-            <marker date="1432873079464" expanded="true" signature="2596:2854" placeholder="INSERT INTO ..." />
-            <marker date="1432873079464" expanded="true" signature="3269:3305" placeholder="delete from ..." />
-            <marker date="1432873079464" expanded="true" signature="3756:3969" placeholder="update tbl_b..." />
-            <marker date="1432873079464" expanded="true" signature="4396:4435" placeholder="select * fro..tbl_blogs..." />
-            <marker date="1432873079464" expanded="true" signature="4910:4949" placeholder="select * fro..tbl_blogs..." />
-            <marker date="1432873079464" expanded="true" signature="5534:5743" placeholder="UPDATE tbl_b..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/adminpanel/library/blogscontroller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.322581" vertical-offset="354" max-vertical-offset="1166">
-          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        <state vertical-scroll-proportion="-8.67742" vertical-offset="303" max-vertical-offset="1716">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
           <folding>
             <element signature="n#getblogscount#0;n#blogscontroller#0;n#!!top" expanded="false" />
+            <element signature="n#categorygetblogscount#0;n#blogscontroller#0;n#!!top" expanded="false" />
             <element signature="n#getallblogs#0;n#blogscontroller#0;n#!!top" expanded="false" />
             <element signature="n#getallblogsclient#0;n#blogscontroller#0;n#!!top" expanded="false" />
             <element signature="n#categorygetallblogs#0;n#blogscontroller#0;n#!!top" expanded="false" />
-            <element signature="n#getallblogswithpage#0;n#blogscontroller#0;n#!!top" expanded="false" />
             <element signature="n#getblogdetails#0;n#blogscontroller#0;n#!!top" expanded="false" />
             <element signature="n#blogsadd#0;n#blogscontroller#0;n#!!top" expanded="false" />
             <element signature="n#deleteblog#0;n#blogscontroller#0;n#!!top" expanded="false" />
             <element signature="n#changestatus#0;n#blogscontroller#0;n#!!top" expanded="false" />
             <element signature="n#editblog#0;n#blogscontroller#0;n#!!top" expanded="false" />
             <element signature="n#blogsedit#0;n#blogscontroller#0;n#!!top" expanded="false" />
+            <element signature="n#addcategory#0;n#blogscontroller#0;n#!!top" expanded="false" />
+            <element signature="n#getcategorylist#0;n#blogscontroller#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/includes/paginate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7934426" vertical-offset="0" max-vertical-offset="770">
-          <caret line="22" column="76" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.34982333" vertical-offset="0" max-vertical-offset="1914">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/right-menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15547703" vertical-offset="0" max-vertical-offset="1254">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fullblog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6607774" vertical-offset="0" max-vertical-offset="4180">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11660777" vertical-offset="220" max-vertical-offset="13574">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="20" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69964665" vertical-offset="0" max-vertical-offset="3872">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7385159" vertical-offset="0" max-vertical-offset="2926">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/includes/adminsidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58303887" vertical-offset="0" max-vertical-offset="566">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/dao/blogsdao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66607773" vertical-offset="217" max-vertical-offset="1518">
+          <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+          <folding>
+            <element signature="n#getblogscount#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#categorygetblogscount#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#getblogslist#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#getblogslistclient#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="e#1335#1384#0#PHP" expanded="false" />
+            <element signature="n#categorygetblogslist#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#addblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#deleteindividualblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#changesstatus#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#getblogdetails#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#getblogdetailsforedit#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#editblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#addcategory#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#getcategorylistdao#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#deletecategorylistdao#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <marker date="1432886219701" expanded="true" signature="162:227" placeholder="select count..tbl_blogs..." />
+            <marker date="1432886219701" expanded="true" signature="413:503" placeholder="select count..tbl_blogs..." />
+            <marker date="1432886219701" expanded="true" signature="744:832" placeholder="select * fro..tbl_blogs..." />
+            <marker date="1432886219701" expanded="true" signature="1085:1164" placeholder="select * fro..tbl_blogs..." />
+            <marker date="1432886219701" expanded="true" signature="1854:1950" placeholder="select * fro..tbl_blogs..." />
+            <marker date="1432886219701" expanded="true" signature="2246:2296" placeholder="select * fro..tbl_blogs..." />
+            <marker date="1432886219701" expanded="true" signature="2680:2938" placeholder="INSERT INTO ..." />
+            <marker date="1432886219701" expanded="true" signature="3353:3389" placeholder="delete from ..." />
+            <marker date="1432886219701" expanded="true" signature="3840:4053" placeholder="update tbl_b..." />
+            <marker date="1432886219701" expanded="true" signature="4480:4519" placeholder="select * fro..tbl_blogs..." />
+            <marker date="1432886219701" expanded="true" signature="4994:5033" placeholder="select * fro..tbl_blogs..." />
+            <marker date="1432886219701" expanded="true" signature="5618:5827" placeholder="UPDATE tbl_b..." />
+            <marker date="1432886219701" expanded="true" signature="6252:6300" placeholder="insert into ..." />
+            <marker date="1432886219701" expanded="true" signature="6711:6737" placeholder="select * fro..tbl_category..." />
+            <marker date="1432886219701" expanded="true" signature="7140:7174" placeholder="delete from ..." />
+          </folding>
         </state>
       </provider>
     </entry>

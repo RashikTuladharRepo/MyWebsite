@@ -193,6 +193,53 @@ class blogscontroller
         }
     }
 
+
+    //Category Section
+    function addcategory()
+    {
+        $gs=new getstatic();
+        $bd=new blogsdao();
+        $category=$_POST['category'];
+        $result=$bd->addcategory($category);
+        if($result['errorcode'])
+        {
+            $_SESSION['msg']=$result['msg'];
+            header('location:'.$gs->home_base_url().'adminpanel/category.php');
+            exit();
+        }
+        else
+        {
+            $_SESSION['msg']=$result['msg'];
+            header('location:'.$gs->home_base_url().'adminpanel/category.php');
+            exit();
+        }
+    }
+
+    function getcategorylist()
+    {
+        $bd=new blogsdao();
+        return $bd->getcategorylistdao();
+    }
+
+    function deletecategory($did)
+    {
+        $bd=new blogsdao();
+        $gs=new getstatic();
+        $result=$bd->deletecategorylistdao($did);
+        if($result['errorcode']=="0")
+        {
+            $_SESSION['msg']=$result['msg'];
+            header('location:'.$gs->home_base_url().'adminpanel/category.php');
+            exit();
+        }
+        else
+        {
+            $_SESSION['msg']=$result['msg'];
+            header('location:'.$gs->home_base_url().'adminpanel/category.php');
+            exit();
+        }
+    }
+
 }
 
 

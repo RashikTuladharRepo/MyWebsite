@@ -18,7 +18,7 @@ $blogcount=$bc->getblogscount();
 $rows=$blogcount['totalrows'];
 
 // This is the number of results we want displayed per page
-$page_rows = 2;
+$page_rows = 10;
 // This tells us the page number of our last page
 $last = ceil($rows/$page_rows);
 // This makes sure $last cannot be less than 1

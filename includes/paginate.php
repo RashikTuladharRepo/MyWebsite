@@ -1,12 +1,18 @@
 <?php
-
+$category=$_REQUEST['category'];
 //for pagination
 $blogcount=$bc->categorygetblogscount($category);
 
 $rows=$blogcount['totalrows'];
 
 // This is the number of results we want displayed per page
-$page_rows = 10;
+
+        $page_rows = 10;
+        if($rows<11)
+        {
+                $page_rows=$rows;
+        }
+
 // This tells us the page number of our last page
 $last = ceil($rows/$page_rows);
 // This makes sure $last cannot be less than 1

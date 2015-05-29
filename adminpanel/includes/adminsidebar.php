@@ -12,6 +12,8 @@ $page=trim(strtolower($array[$count-1]));
         fa-sliders"></i>&nbsp;Blog Management</a></li>
         <li class="<?php echo ($page=="blogs.php")?"active" :""; ?>"><a href="blogs.php"><i class="fa
         fa-book"></i>&nbsp;Add Blogs</a></li>
+        <li class="<?php echo ($page=="category.php")?"active" :""; ?>"><a href="category.php"><i class="fa
+        fa-list-alt"></i>&nbsp;Category Management</a></li>
         <li class="<?php echo ($page=="media.php")?"active" :""; ?>"><a href="#"><i class="fa
         fa-file-photo-o"></i>&nbsp;Media Management</a></li>
     </ul>

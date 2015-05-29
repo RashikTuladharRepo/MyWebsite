@@ -7,7 +7,7 @@ include "library/blogscontroller.php";
 include "library/getstatic.php";
 $gs=new getstatic();
 $bc=new blogscontroller();
-
+$categorylist=$bc->getcategorylist();
 
 $gs->checksession();
 $baseurl=$gs->home_base_url();
@@ -114,8 +114,9 @@ if(isset($_POST['editblog']))
                     <div class="form-group">
                         <label for="category">Category</label>
                         <select name="category" id="category" class="form-control">
-                            <option value="PHP" selected>PHP</option>
-                            <option value="SQL">SQL</option>
+                            <?php foreach($categorylist as $category){?>
+                            <option value="<?php echo $category['category']; ?>"><?php echo $category['category']; ?></option>
+                            <?php }?>
                         </select>
                     </div>
                     <div class="form-group">
@@ -159,8 +160,9 @@ if(isset($_POST['editblog']))
                     <div class="form-group">
                         <label for="category">Category</label>
                         <select name="category" id="category" class="form-control">
-                            <option value="PHP" selected>PHP</option>
-                            <option value="SQL">SQL</option>
+                            <?php foreach($categorylist as $category){?>
+                                <option value="<?php echo $category['category']; ?>"><?php echo $category['category']; ?></option>
+                            <?php }?>
                         </select>
                     </div>
                     <div class="form-group">
