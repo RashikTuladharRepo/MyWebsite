@@ -11,30 +11,8 @@ include"adminpanel/library/blogscontroller.php";
 
 $id=$_REQUEST['bid'];
 $bc=new blogscontroller();
-//for pagination
-$blogcount=$bc->categorygetblogscount($_REQUEST['category']);
-$totalpage=ceil($blogcount['totalrows']/10);
-if(!isset($_REQUEST['page']))
-{
-    $_REQUEST['page']=1;
-}
-
-if($_REQUEST['page']=="" || $_REQUEST['page']==1 || $_REQUEST['page']<0)
-{
-    $N=0;
-}
-elseif($_REQUEST['page']>$totalpage)
-{
-    $N=5*$totalpage;
-}
-else
-{
-    $N=5*$_REQUEST['page'];
-}
-$blogsarraycategory=$bc->categorygetallblogs($N,$_REQUEST['category']);
-$blogsarray=$bc->getallblogsclient();
-
-
+$category=$_REQUEST['category'];
+include"includes/paginate.php";
 ?>
     <!--<a href="http://example.com/bar.html#disqus_thread">Link</a>-->
 
@@ -90,13 +68,13 @@ $blogsarray=$bc->getallblogsclient();
 
                         <strong class="text-primary">
                             <?php
-                            if($_REQUEST['page']<0)
+                            if($_REQUEST['pn']<0 || $_REQUEST['pn']=="")
                             {
                                 $currentpage="1";
                             }
                             else
                             {
-                                $currentpage=$_REQUEST['page'];
+                                $currentpage=$_REQUEST['pn'];
                             }
 
                             echo "You Are In Page Number: ". $currentpage ." of ". $totalpage ;
@@ -128,64 +106,7 @@ $blogsarray=$bc->getallblogsclient();
                     <div class="container-fluid pull-right">
                         <ul class="pagination">
 
-                            <?php
-                            if($_REQUEST['page']<0 || $_REQUEST['page']==1)
-                            {
-                                ?>
-                                <li class="disabled"><a href="#">&laquo;</a></li>
-                            <?php
-                            }
-                            else
-                            {
-                                ?>
-                                <li>
-                                    <a href="<?php echo $baseurl; ?>blog/<?php echo $_REQUEST['category'];?>/<?php echo $_REQUEST['page']-1;?>">
-                                    &laquo;
-                                    </a>
-                                </li>
-                            <?php
-                            }
-                            ?>
-
-                            <?php
-                            if($totalpage>5)
-                            {
-                                $pages=5;
-                            }
-                            else
-                            {
-                                $pages=$totalpage;
-                            }
-                            for($i=1;$i<=$pages;$i++)
-                            {
-                                ?>
-                                <li>
-                                    <a href="<?php echo $baseurl; ?>blog/<?php echo $_REQUEST['category'];?>/<?php echo $i; ?>">
-                                        <?php echo $i;?>
-                                    </a>
-                                </li>
-                            <?php
-                            }
-                            ?>
-
-                            <?php
-                            if($_REQUEST['page']>=$totalpage)
-                            {
-                                ?>
-                                <li class="disabled"><a href="#">&raquo;</a></li>
-                            <?php
-                            }
-                            else
-                            {
-                                ?>
-                                <li>
-                                    <a href="<?php echo $baseurl; ?>blog/<?php echo $_REQUEST['category'];?>/<?php echo $_REQUEST['page']+1;?>">
-                                    &raquo;
-                                    </a>
-                                </li>
-                            <?php
-                            }
-                            ?>
+                            <?php echo $paginationCtrls; ?>
 
                         </ul>
                     </div>

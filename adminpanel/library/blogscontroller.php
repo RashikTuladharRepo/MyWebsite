@@ -41,6 +41,11 @@ class blogscontroller
         $bd=new blogsdao();
         return $bd->categorygetblogslist($N,$category);
     }
+    function getallblogswithpage($N)
+    {
+        $bd=new blogsdao();
+        return $bd->getblogslistwithpage($N);
+    }
 
 
     //GET BLOG DETAILS DAO

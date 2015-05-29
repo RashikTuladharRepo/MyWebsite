@@ -49,11 +49,36 @@ class blogsdao extends webconfig
         return $result;
     }
 
+//    function categorygetblogslist($N,$category)
+//    {
+//        $result=array();
+//        $var=array();
+//        $sql="select * from tbl_blogs WHERE category='$category' ORDER by createddate DESC LIMIT 10 OFFSET ".$N;
+//        $qry=$this->mysqli->query($sql);
+//        while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
+//            $result[]= $res;
+//        }
+//        return $result;
+//    }
+
     function categorygetblogslist($N,$category)
     {
         $result=array();
         $var=array();
-        $sql="select * from tbl_blogs WHERE category='$category' ORDER by createddate DESC LIMIT 10 OFFSET ".$N;
+        $sql="select * from tbl_blogs WHERE category='$category' ORDER by createddate DESC ".$N;
+        $qry=$this->mysqli->query($sql);
+        while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
+            $result[]= $res;
+        }
+        return $result;
+    }
+
+    function getblogslistwithpage($N)
+    {
+        $result=array();
+        $sql="select * from tbl_blogs ORDER by createddate DESC ".$N;
+//        echo $sql;
+//        die();
         $qry=$this->mysqli->query($sql);
         while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
             $result[]= $res;
