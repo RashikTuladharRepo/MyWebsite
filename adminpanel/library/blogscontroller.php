@@ -69,6 +69,7 @@ class blogscontroller
         $description=$gs->filterstring($_POST['description']);
         $status=$gs->filterstring($_POST['status']);
         $category=$gs->filterstring($_POST['category']);
+        $coverimageurl=$gs->filterstring($_POST['coverimageurl']);
 
 
         //cover image test
@@ -86,7 +87,7 @@ class blogscontroller
         //cover image ends
 
 
-        $result=$bd->addblogs($blogtitle,$meta,$keyword,$description,$status,$imagename,$category);
+        $result=$bd->addblogs($blogtitle,$meta,$keyword,$description,$status,$imagename,$category,$coverimageurl);
 
 
         if($result['errorcode']=="0")
@@ -174,9 +175,10 @@ class blogscontroller
         $description=$gs->filterstring($_POST['description']);
         $status=$gs->filterstring($_POST['status']);
         $category=$gs->filterstring($_POST['category']);
+        $coverimageurl=$gs->filterstring($_POST['coverimageurl']);
 
 
-        $result=$bd->editblogs($sn,$blogtitle,$meta,$keyword,$description,$status,$category);
+        $result=$bd->editblogs($sn,$blogtitle,$meta,$keyword,$description,$status,$category,$coverimageurl);
 
 
         if($result['errorcode']=="0")

@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
 @session_start();
 include "library/getstatic.php";
 include "library/blogscontroller.php";
@@ -19,6 +20,10 @@ $rows=$blogcount['totalrows'];
 
 // This is the number of results we want displayed per page
 $page_rows = 10;
+if($rows<11)
+{
+    $page_rows=$rows;
+}
 // This tells us the page number of our last page
 $last = ceil($rows/$page_rows);
 // This makes sure $last cannot be less than 1

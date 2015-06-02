@@ -90,13 +90,13 @@ class blogsdao extends webconfig
 
     //CRUD Operations
 
-    function addblogs($title,$metadata,$keyword,$description,$status,$coverimage,$category)
+    function addblogs($title,$metadata,$keyword,$description,$status,$coverimage,$category,$coverimageurl)
     {
         $date=date("Y-m-d h:i:sa");
         $user=$_SESSION['username'];
         $sql="INSERT INTO tbl_blogs
-              (title,metadata,keyword,description,status,coverimage,category,createddate,createdby) VALUES
-              ('$title','$metadata','$keyword','$description','$status','$coverimage','$category','$date',
+              (title,metadata,keyword,description,status,coverimage,coverimageurl,category,createddate,createdby) VALUES
+              ('$title','$metadata','$keyword','$description','$status','$coverimage','$coverimageurl','$category','$date',
               '$user')";
         $qry=$this->mysqli->query($sql);
         if($qry)
@@ -193,11 +193,12 @@ class blogsdao extends webconfig
         }
     }
 
-    function editblogs($sn,$title,$metadata,$keyword,$description,$status,$category)
+    function editblogs($sn,$title,$metadata,$keyword,$description,$status,$category,$coverimageurl)
     {
         $date=date("Y-m-d h:i:sa");
         $user=$_SESSION['username'];
-        $sql="UPDATE tbl_blogs SET title='$title',metadata='$metadata',keyword='$keyword',description='$description',status='$status',category='$category',modifieddate='$date',modifiedby='$user'
+        $sql="UPDATE tbl_blogs SET title='$title',metadata='$metadata',keyword='$keyword',description='$description',
+status='$status',coverimageurl='$coverimageurl',category='$category',modifieddate='$date',modifiedby='$user'
               WHERE sn='$sn'";
         $qry=$this->mysqli->query($sql);
         if($qry)

@@ -40,6 +40,20 @@ if(isset($_POST['editblog']))
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>adminpanel/css/froala_style.min.css">
 <!--Froala Editor-->
 
+    <script type="text/javascript">
+
+
+
+    function imagepreview()
+    {
+        var image=document.getElementById('coverimageurl').value;
+        var imgprev=document.getElementById('imageprevlink');
+        imgprev.src=image;
+        alert(image);
+        return;
+    }
+    </script>
+
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -82,6 +96,7 @@ if(isset($_POST['editblog']))
                     $status=$blogdetail['status'];
                     $coverimage=$blogdetail['coverimage'];
                     $category=$blogdetail['category'];
+                    $coverimageurl=$blogdetail['coverimageurl'];
                 ?>
                 <form method="post" action="#" enctype="multipart/form-data">
                     <div class="form-group">
@@ -119,11 +134,19 @@ if(isset($_POST['editblog']))
                             <?php }?>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="display: none;">
                         <label for="coverimage">Cover Image For The Blog</label><br>
                         <input type="hidden" name="blogid" value="<?php echo $blogeditsn; ?>">
                         <img src="images/<?php echo $coverimage;?>" alt="your image" id="image" width="250px"
-                             height="100px"/>
+                             height="100px" style="display: none;"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="coverimage">Cover Image URL For The Blog(Cloudinary)</label>
+                        <input class="form-control" type="text" id="coverimageurl"
+                               name="coverimageurl"
+                               value="<?php echo $coverimageurl; ?>"
+                               placeholder="http://res.cloudinary.com/rashik/image/upload/v1433090106/me_vjt6kw.jpg">
+                        <div id="imgurlprev"></div>
                     </div>
                     <button type="submit" class="btn btn-success" name="editblog">Edit Blog</button>
                 </form>
@@ -165,11 +188,18 @@ if(isset($_POST['editblog']))
                             <?php }?>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="display: none;">
                         <label for="coverimage">Cover Image For The Blog</label>
                         <input class="" type="file" id="coverimage" name="coverimage">
                         <img src="#" alt="your image" id="imageprev" width="250px" height="100px" style="display:
                         none;"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="coverimage">Cover Image URL For The Blog(Cloudinary)</label>
+                        <input class="form-control" type="text" id="coverimageurl"
+                               name="coverimageurl"
+                               placeholder="http://res.cloudinary.com/rashik/image/upload/v1433090106/me_vjt6kw.jpg">
+                        <div id="imgurlprev"></div>
                     </div>
                     <button type="submit" class="btn btn-success" name="addblog">Add Blog</button>
                 </form>
@@ -231,6 +261,14 @@ if(isset($_POST['editblog']))
 //        document.getElementById("searchScroll").style.cssText = "position:fixed;margin:-50px;";
 //        document.getElementById("searchScroll").style.cssText += "position:fixed;margin:-50px;";
     });
+
+$(function() {
+    $("#coverimageurl").keyup(function () {
+        var imgurl = $("#coverimageurl").val();
+        var imgsrc="<img src="+imgurl+" width=\"250px\"/>";
+        $('#imgurlprev').html(imgsrc);
+    });
+});
 
 </script>
 </body>

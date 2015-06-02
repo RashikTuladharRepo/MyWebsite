@@ -8,6 +8,11 @@
     font-family:DancingScript ;
 }
 
+.form-urlimage
+{
+    width: 95%;
+}
+
 .signin-form
 {
     margin:0 auto;
