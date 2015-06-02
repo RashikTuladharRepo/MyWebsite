@@ -71,7 +71,9 @@
                 <div class="blog">
                     <div class="row">
                         <div class="col-md-6 col-md-push-6">
-                            <img src="<?php echo $baseurl; ?>adminpanel/images/<?php echo $row['coverimage']; ?>"
+<!--                            <img src="--><?php //echo $baseurl; ?><!--adminpanel/images/--><?php //echo $row['coverimage']; ?><!--"-->
+<!--                                 class="coverimage img-responsive">-->
+                            <img src="<?php echo $row['coverimageurl']; ?>"
                                  class="coverimage img-responsive">
                         </div>
                         <div class="col-md-6 col-md-pull-6">
@@ -85,9 +87,7 @@
                                 ?>
                             </p>
                             <a href="<?php echo $baseurl; ?>fullblog/<?php echo $row['sn']; ?>/<?php echo
-                            $row['title']; ?>#disqus_thread" class="btn
-                            btn-success">Read More
-                                &raquo;</a>
+                            $row['title']; ?>" class="btn btn-success">Read More&raquo;</a>
                         </div>
                         <div class="clearfix"></div>
                     </div>
@@ -120,6 +120,7 @@
 
         $("#owl-demo").owlCarousel({
             navigation : false,
+            loop: true,
             autoPlay : 3000
         });
 

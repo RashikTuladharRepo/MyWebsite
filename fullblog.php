@@ -86,9 +86,12 @@
                 <?php } else { ?>
 
                         <div class="blog-cover">
-                            <img src="<?php echo $baseurl; ?>adminpanel/images/<?php echo $details['coverimage']; ?>"
+<!--                            <img src="--><?php //echo $baseurl; ?><!--adminpanel/images/--><?php //echo $details['coverimage']; ?><!--"-->
+<!--                                 height="200px"-->
+<!--                                 class="img-responsive">-->
+                            <img src="<?php echo $details['coverimageurl']; ?>"
                                  height="200px"
-                                 class="img-responsive">
+                                 class="img-responsive">;
                         </div>
 
                         <div class="blog-title text-justify">

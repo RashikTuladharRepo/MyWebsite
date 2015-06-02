@@ -89,12 +89,14 @@ include"includes/paginate.php";
                             <a href="#">
                                 <div class="blogstitle">
                                     <div class="blogimage col-md-12">
-                                        <img src="<?php echo $baseurl; ?>adminpanel/images/<?php
-                                        echo $categoryrow['coverimage']; ?>" class="img-responsive">
+<!--                                        <img src="--><?php //echo $baseurl; ?><!--adminpanel/images/--><?php
+//                                        echo $categoryrow['coverimage']; ?><!--" class="img-responsive">-->
+                                        <img src="<?php echo $categoryrow['coverimageurl']; ?>" class="coverimage
+                                        img-responsive">
                                     </div>
                                     <div class="col-md-12 blogdetails">
                                         <h4 class="text-center"><?php echo $categoryrow['title']; ?></h4>
-                                        <a href="<?php echo $baseurl; ?>fullblog/<?php echo $categoryrow['sn']; ?>/<?php echo $categoryrow['title']; ?>#disqus_thread" class="btn btn-success">
+                                        <a href="<?php echo $baseurl; ?>fullblog/<?php echo $categoryrow['sn']; ?>/<?php echo $categoryrow['title']; ?>" class="btn btn-success">
                                             Read Now &raquo;
                                         </a>
                                     </div>

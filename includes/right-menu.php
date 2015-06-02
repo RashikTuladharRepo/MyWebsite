@@ -7,11 +7,16 @@
                 <p><?php echo $row['title']; ?></p>
                 <a href="<?php echo $baseurl; ?>fullblog/<?php echo $row['sn']; ?>/<?php echo
                 $row['title']; ?>">
-                    <img src="<?php echo $baseurl; ?>images/banner.jpg"
-                                 style="margin-right: 10px;"
-                                 height="80"
-                                 width="80"
-                                 class="pull-left img-responsive">
+<!--                    <img src="--><?php //echo $baseurl; ?><!--images/banner.jpg"-->
+<!--                                 style="margin-right: 10px;"-->
+<!--                                 height="80"-->
+<!--                                 width="80"-->
+<!--                                 class="pull-left img-responsive">-->
+                    <img src="<?php echo $row ['coverimageurl'];?>"
+                         style="margin-right: 10px;"
+                         height="80"
+                         width="80"
+                         class="pull-left img-responsive">
                     <p class="text-justify">
                         <span class="author">
                             Created By: <?php echo ucfirst($row['createdby']); ?><br>
