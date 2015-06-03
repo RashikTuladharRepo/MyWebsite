@@ -122,7 +122,6 @@ if(isset($_REQUEST['eid'])!="")
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>adminpanel/css/admincustomstyle.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dancing+Script">
-
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -134,6 +133,7 @@ if(isset($_REQUEST['eid'])!="")
 <div class="clearfix"></div>
 
 <div class="container-fluid dashboard-container">
+    <div class="black_overlay" id="black_overlay"></div>
     <div class="row">
         <?php include "includes/adminsidebar.php"; ?>
 
@@ -190,7 +190,7 @@ if(isset($_REQUEST['eid'])!="")
                                 <a href = "<?php echo $baseurl; ?>adminpanel/dashboard.php?did=<?php echo
                                 $row['sn'];?>&coverimage=<?php echo $row['coverimage']; ?>"
                                    class="btn btn-danger" onclick="return confirm('Are You Sure to Delete ' +
-                                             'The Blog?')" >
+                                             'The Blog?')" id="delete">
                                     <i class="fa fa-eraser" >&nbsp;</i >
                                 </a >
                                 <a href = "<?php echo $baseurl; ?>adminpanel/dashboard.php?cs=<?php
@@ -221,7 +221,6 @@ if(isset($_REQUEST['eid'])!="")
     </div>
 </div>
 
-
 <footer>
     <?php include"includes/footer.php"; ?>
 </footer>
@@ -234,6 +233,10 @@ if(isset($_REQUEST['eid'])!="")
 <script type="text/javascript">
     $(document).ready( function() {
         $('#helpBlock').delay(1000).fadeOut();
+        $("#black_overlay").css("display","none");
+        $("#delete").click(function(){
+            $("#black_overlay").css("display","block");
+        });
     });
 </script>
 </body>

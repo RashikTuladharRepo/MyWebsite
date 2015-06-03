@@ -42,8 +42,6 @@ if(isset($_POST['editblog']))
 
     <script type="text/javascript">
 
-
-
     function imagepreview()
     {
         var image=document.getElementById('coverimageurl').value;
@@ -51,6 +49,13 @@ if(isset($_POST['editblog']))
         imgprev.src=image;
         alert(image);
         return;
+    }
+
+    function validateaddblog()
+    {
+
+        alert(blogtitle);
+        return false;
     }
     </script>
 
@@ -201,7 +206,7 @@ if(isset($_POST['editblog']))
                                placeholder="http://res.cloudinary.com/rashik/image/upload/v1433090106/me_vjt6kw.jpg">
                         <div id="imgurlprev"></div>
                     </div>
-                    <button type="submit" class="btn btn-success" name="addblog">Add Blog</button>
+                    <button type="submit" class="btn btn-success" name="addblog" id="addblog">Add Blog</button>
                 </form>
 
                 <?php }?>
@@ -263,10 +268,58 @@ if(isset($_POST['editblog']))
     });
 
 $(function() {
+//    $("#blogtitle").keyup(function(){
+//       if($("#blogtitle").val().length>10)
+//       {
+//           $("#blogtitle").css("border","1px solid green");
+//       }
+//        else
+//       {
+//           $("#blogtitle").css("border","1px solid red");
+//       }
+//    });
     $("#coverimageurl").keyup(function () {
         var imgurl = $("#coverimageurl").val();
         var imgsrc="<img src="+imgurl+" width=\"250px\"/>";
         $('#imgurlprev').html(imgsrc);
+    });
+    $("#addblog").click(function(){
+        var blogtitle=$("#blogtitle").val();
+        var meta=$("#meta").val();
+        var keywords=$("#keywords").val();
+        var coverimageurl=$("#coverimageurl").val();
+        var description=$("#description").val();
+        if(blogtitle=="" || blogtitle.length<10)
+        {
+            //$("#blogtitle").css({"border":"1px solid red","color":"red"});
+            $("#blogtitle").addClass("error");
+            $("#blogtitle").attr("placeholder","Please Enter Proper Title.");
+            return false;
+        }
+        else if(meta=="" || meta.length<10)
+        {
+            $("#meta").addClass("error");
+            $("#meta").attr("placeholder","Please Enter Proper Meta.");
+            return false;
+        }
+        else if(keywords=="" || keywords.length<10)
+        {
+            $("#keywords").addClass("error");
+            $("#keywords").attr("placeholder","Please Enter Proper Keywords.");
+            return false;
+        }
+        else if(coverimageurl=="" || coverimageurl.length<10)
+        {
+            $("#coverimageurl").addClass("error");
+            $("#coverimageurl").attr("placeholder","Please Enter Proper Cover Image Url.");
+            return false;
+        }
+        else if(description=="")
+        {
+            $("#description").addClass("error");
+            $("#description").attr("placeholder","Please Enter Proper Description.");
+            return false;
+        }
     });
 });
 
