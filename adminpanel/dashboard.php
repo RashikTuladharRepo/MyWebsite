@@ -15,7 +15,7 @@ $bc=new blogscontroller();
 
 
 //for pagination
-$blogcount=$bc->getblogscount();
+$blogcount=$bc->getadminblogscount();
 $rows=$blogcount['totalrows'];
 
 // This is the number of results we want displayed per page
@@ -193,9 +193,8 @@ if(isset($_REQUEST['eid'])!="")
                                              'The Blog?')" id="delete">
                                     <i class="fa fa-eraser" >&nbsp;</i >
                                 </a >
-                                <a href = "<?php echo $baseurl; ?>adminpanel/dashboard.php?cs=<?php
-                                echo
-                                $row['sn'];?>" class="btn btn-warning" >
+                                <a href ="<?php echo $baseurl; ?>adminpanel/dashboard.php?cs=<?php
+                                echo $row['sn'];?>" class="btn btn-warning changestat" >
                                     <i class="fa fa-recycle" >&nbsp;</i >
                                 </a >
                             </td >

@@ -17,6 +17,11 @@ class blogscontroller
         $bd=new blogsdao();
         return $bd->getblogscount();
     }
+    function getadminblogscount()
+    {
+        $bd=new blogsdao();
+        return $bd->getadminblogscount();
+    }
     function categorygetblogscount($category)
     {
         $bd=new blogsdao();

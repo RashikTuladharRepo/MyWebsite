@@ -14,6 +14,15 @@ class blogsdao extends webconfig
         return $res;
     }
 
+
+    function getadminblogscount()
+    {
+        $sql="select count(*) as totalrows from tbl_blogs";
+        $qry=$this->mysqli->query($sql);
+        $res = $qry->fetch_array(MYSQLI_ASSOC);
+        return $res;
+    }
+
     function categorygetblogscount($category)
     {
         $sql="select count(*) as totalrows from tbl_blogs WHERE category='$category' AND status='active'";
