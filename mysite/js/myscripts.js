@@ -15,24 +15,26 @@
     });
 
 
-//animation of skills
-    jQuery(document).ready(function(){
-        jQuery('.skillbar').each(function(){
-            jQuery(this).find('.skillbar-bar').animate({
-                width:jQuery(this).attr('data-percent')
-            },6000);
-        });
-    });
-
 
 $(window).scroll(function() {
     $('#portfolio').each(function(){
         var imagePos = $(this).offset().top;
         var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+600) {
+        if (imagePos < topOfWindow+500) {
             $(this).addClass("fadeIn");
         }
     });
+
+    jQuery('.skillbar').each(function () {
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + 600) {
+            jQuery(this).find('.skillbar-bar').animate({
+                width: jQuery(this).attr('data-percent')
+            }, 6000);
+        }
+    });
+
 
     $('#about').each(function(){
         var imagePos = $(this).offset().top;

@@ -7,11 +7,19 @@
    font-family: HarabaraHand;
    src: url("../fonts/HarabaraHand.ttf");
  }
- 
+
+ .navbar-inverse
+ {
+     background-color: #ffffff;
+ }
+
  .navbar
  {
      min-height: 80px;
      border-bottom: none;
+     -webkit-box-shadow: 0px 3px 5px -1px rgba(34,34,34,0.5);
+     -moz-box-shadow: 0px 3px 5px -1px rgba(34,34,34,0.5);
+     box-shadow: 0px 3px 5px -1px rgba(34,34,34,0.5);
  }
 
  .navbar-brand
@@ -23,6 +31,7 @@
 
  .navbar-inverse .navbar-toggle {
    margin-top: 23px;
+   background-color:#1e90ff;
  }
 
  .navbar-nav > li
@@ -42,7 +51,7 @@
  {
    color:#1e90ff;
    font-size: 16px;
-   font-weight: 100;
+   font-weight: lighter;
  -webkit-transition: background 1s;
  -moz-transition: background 1s;
  -ms-transition: background 1s;
@@ -52,13 +61,12 @@
 
  .navbar-inverse .navbar-nav > li > a:hover
  {
-   color: #FFFFFF;
+   color: #222;
  }
 
  .navbar-inverse .navbar-nav .active
  {
-     color: #FFFFFF;
-     background: #0169CE;
+     color: #222;
  }
 
  @media (max-width:990px) {

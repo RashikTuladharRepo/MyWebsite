@@ -48,7 +48,6 @@
 <!--        }-->
 <!--        setInterval(function(){ tick2 () }, 3000);-->
 <!--    </script>-->
-
 </head>
 <body id="home">
 <div id="fb-root"></div>
@@ -60,6 +59,15 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=440080386153926";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Fixed navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top"><?php include"includes/navigationbar.php"; ?></nav>
@@ -101,6 +109,18 @@
                         <div class="blog-author">
                             <?php echo ucfirst($details['createdby']); ?>,
                             <?php echo date("Y/m/d", strtotime($details['createddate'])); ?>
+
+                            <div class="sharepost">
+
+                                <div class="fb-share-button" data-href="http://<?php
+                                echo $_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>" data-layout="button_count"></div>
+
+
+                                <a href="https://twitter.com/share"
+                                   class="twitter-share-button"
+                                    data-via="RashikTuladhar" data-dnt="true">Tweet</a>
+                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                            </div>
                         </div>
 
                         <div class="blog-description text-justify">
@@ -113,7 +133,6 @@
                                 <?php echo $details['category']; ?>
                             </a>
                         </div>
-
 
                         <?php include "includes/authordetails.php"; ?>
 

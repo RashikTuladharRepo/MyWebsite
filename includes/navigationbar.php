@@ -15,50 +15,50 @@ $page=trim(strtolower($array[$count-1]));
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo $baseurl; ?>index.php"></a>
+            <a class="navbar-brand" href="<?php echo $baseurl; ?>index"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="<?php echo $baseurl; ?>index"
                        class="<?php echo ($page=="index"||$page=="")?"active" :""; ?>">
-                        HOME
+                        home
                     </a>
                 </li>
                 <li>
                     <a href="<?php echo $baseurl; ?>blogs/php"
                         class="<?php echo ($page=="php")?"active" :""; ?>">
-                        PHP
+                        php
                     </a>
                 </li>
                 <li>
                     <a href="<?php echo $baseurl; ?>blogs/ASP"
                        class="<?php echo ($page=="asp")?"active" :""; ?>">
-                        .NET
+                        .net
                     </a>
                 </li>
                 <li>
                     <a href="<?php echo $baseurl; ?>blogs/MYSQL"
                        class="<?php echo ($page=="mysql")?"active" :""; ?>">
-                        MySQL
+                        mysql
                     </a>
                 </li>
                 <li>
                     <a href="<?php echo $baseurl; ?>blogs/MSSQL"
                        class="<?php echo ($page=="mssql")?"active" :""; ?>">
-                        MSSQL
+                        mssql
                     </a>
                 </li>
                 <li>
                     <a href="<?php echo $baseurl; ?>blogs/BOOTSTRAP"
                        class="<?php echo ($page=="bootstrap")?"active" :""; ?>">
-                        BOOTSTRAP
+                        bootstrap
                     </a>
                 </li>
                 <li>
                     <a href="<?php echo $baseurl; ?>blogs/NEWS"
                        class="<?php echo ($page=="news")?"active" :""; ?>">
-                        TECH NEWS
+                        tech news
                     </a>
                 </li>
             </ul>
