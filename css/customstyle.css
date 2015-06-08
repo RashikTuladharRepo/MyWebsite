@@ -342,6 +342,17 @@
  .popular-keyword
  {
      padding-top: 5%;
+     font-size: 14px;
+ }
+
+ .popular-keyword a
+ {
+     text-decoration: none;
+ }
+
+ .popular-keyword a i
+ {
+     font-size: 200%;
  }
 
  @media (max-width:990px) {

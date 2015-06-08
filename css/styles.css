@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "programming";
+  src:url("../fonts/programming.eot");
+  src:url("../fonts/programming.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/programming.woff") format("woff"),
+    url("../fonts/programming.ttf") format("truetype"),
+    url("../fonts/programming.svg#programming") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "programming" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="rashik-"]:before,
+[class*=" rashik-"]:before {
+  font-family: "programming" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rashik-angularjs:before {
+  content: "a";
+}
+.rashik-codepenplain:before {
+  content: "b";
+}
+.rashik-codependark:before {
+  content: "c";
+}
+.rashik-css3text:before {
+  content: "d";
+}
+.rashik-css3:before {
+  content: "e";
+}
+.rashik-dbs-cassandra:before {
+  content: "f";
+}
+.rashik-dbs-couchbasesmall:before {
+  content: "g";
+}
+.rashik-dbs-couchbasebig:before {
+  content: "h";
+}
+.rashik-dbs-couchdb:before {
+  content: "i";
+}
+.rashik-dbs-hadoop:before {
+  content: "j";
+}
+.rashik-dbs-hbase:before {
+  content: "k";
+}
+.rashik-dbs-mongodb:before {
+  content: "l";
+}
+.rashik-dbs-mysql:before {
+  content: "m";
+}
+.rashik-dbs-neo4j:before {
+  content: "n";
+}
+.rashik-prog-actionscript:before {
+  content: "o";
+}
+.rashik-dbs-postgresql:before {
+  content: "p";
+}
+.rashik-dbs-redis:before {
+  content: "q";
+}
+.rashik-dbs-riak:before {
+  content: "r";
+}
+.rashik-dbs-sqlite:before {
+  content: "s";
+}
+.rashik-dbs-sqlserver:before {
+  content: "t";
+}
+.rashik-html5text:before {
+  content: "u";
+}
+.rashik-html5:before {
+  content: "v";
+}
+.rashik-pl-clojure:before {
+  content: "w";
+}
+.rashik-pl-dart:before {
+  content: "x";
+}
+.rashik-pl-groovysmall:before {
+  content: "y";
+}
+.rashik-pl-groovybig:before {
+  content: "z";
+}
+.rashik-prog-codeign:before {
+  content: "A";
+}
+.rashik-prog-cobol:before {
+  content: "B";
+}
+.rashik-prog-cherrypy:before {
+  content: "C";
+}
+.rashik-prog-ccplusplus:before {
+  content: "D";
+}
+.rashik-prog-cakephp:before {
+  content: "E";
+}
+.rashik-prog-c:before {
+  content: "F";
+}
+.rashik-prog-basic:before {
+  content: "G";
+}
+.rashik-prog-bash:before {
+  content: "H";
+}
+.rashik-prog-bashtext:before {
+  content: "I";
+}
+.rashik-prog-backbonejs:before {
+  content: "J";
+}
+.rashik-prog-aspnet:before {
+  content: "K";
+}
+.rashik-prog-air:before {
+  content: "L";
+}
+.rashik-prog-coffeescr:before {
+  content: "M";
+}
+.rashik-prog-cplusplus:before {
+  content: "N";
+}
+.rashik-prog-csharp:before {
+  content: "O";
+}
+.rashik-prog-delphilight:before {
+  content: "P";
+}
+.rashik-prog-delphidark:before {
+  content: "Q";
+}
+.rashik-prog-django:before {
+  content: "R";
+}
+.rashik-prog-dotnet:before {
+  content: "S";
+}
+.rashik-prog-drupal:before {
+  content: "T";
+}
+.rashik-prog-erlang:before {
+  content: "U";
+}
+.rashik-prog-expression:before {
+  content: "V";
+}
+.rashik-prog-flask:before {
+  content: "W";
+}
+.rashik-prog-fortran:before {
+  content: "X";
+}
+.rashik-prog-golanglight:before {
+  content: "Y";
+}
+.rashik-prog-mootools:before {
+  content: "Z";
+}
+.rashik-prog-matlab:before {
+  content: "0";
+}
+.rashik-prog-magento:before {
+  content: "1";
+}
+.rashik-prog-luadark:before {
+  content: "2";
+}
+.rashik-prog-lualight:before {
+  content: "3";
+}
+.rashik-prog-lisp:before {
+  content: "4";
+}
+.rashik-prog-jsdark:before {
+  content: "6";
+}
+.rashik-prog-jquery:before {
+  content: "5";
+}
+.rashik-prog-jslight:before {
+  content: "7";
+}
+.rashik-prog-joomla:before {
+  content: "8";
+}
+.rashik-prog-java:before {
+  content: "9";
+}
+.rashik-prog-haskell:before {
+  content: "!";
+}
+.rashik-prog-golanglight-1:before {
+  content: "\"";
+}
+.rashik-prog-nodejstext:before {
+  content: "#";
+}
+.rashik-prog-nodejs:before {
+  content: "$";
+}
+.rashik-prog-objc:before {
+  content: "%";
+}
+.rashik-prog-perl:before {
+  content: "&";
+}
+.rashik-prog-phpdark:before {
+  content: "'";
+}
+.rashik-prog-phplight:before {
+  content: "(";
+}
+.rashik-prog-pylons:before {
+  content: ")";
+}
+.rashik-prog-pylonsdark:before {
+  content: "*";
+}
+.rashik-prog-python:before {
+  content: "+";
+}
+.rashik-prog-rails:before {
+  content: ",";
+}
+.rashik-prog-ruby:before {
+  content: "-";
+}
+.rashik-prog-scala:before {
+  content: ".";
+}
+.rashik-vc-svn:before {
+  content: "/";
+}
+.rashik-vc-mercurial:before {
+  content: ":";
+}
+.rashik-vc-git:before {
+  content: ";";
+}
+.rashik-vc-fossil:before {
+  content: "<";
+}
+.rashik-vc-bitbucketdark:before {
+  content: "=";
+}
+.rashik-vc-bitbucketlight:before {
+  content: ">";
+}
+.rashik-vc-bazaar:before {
+  content: "?";
+}
+.rashik-shopify:before {
+  content: "@";
+}
+.rashik-prog-zendfrm:before {
+  content: "[";
+}
+.rashik-prog-yii:before {
+  content: "]";
+}
+.rashik-prog-wordpress:before {
+  content: "^";
+}
+.rashik-prog-visualstudio:before {
+  content: "_";
+}
+.rashik-prog-vbnet:before {
+  content: "`";
+}

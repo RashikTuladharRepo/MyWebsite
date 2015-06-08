@@ -30,6 +30,23 @@
         </ul>
     </div>
 
+
+    <div class="popular-keyword">
+        <h2 class="text-center">Popular Keywords</h2>
+        <a href="<?php echo $baseurl; ?>blogs/PHP"><i class="icon rashik-prog-phplight"></i> (<?php echo $phpcount; ?>)</a>
+        <a href="<?php echo $baseurl; ?>blogs/ASP"><i class="icon rashik-prog-aspnet"></i> (<?php echo $aspcount; ?>)
+        </a>
+        <a href="<?php echo $baseurl; ?>blogs/MYSQL"><i class="icon rashik-dbs-mysql"></i> (<?php echo $mysqlcount; ?>)
+        </a>
+        <a href="<?php echo $baseurl; ?>blogs/MSSQL"><i class="icon rashik-dbs-sqlserver"></i> (<?php echo $mssqlcount; ?>)</a>
+        <a href="<?php echo $baseurl; ?>blogs/BOOTSTRAP"><i class="icon rashik-css3text"></i> (<?php echo $bootstrapcount; ?>)</a>
+        <a href="<?php echo $baseurl; ?>blogs/NEWS"><i class="fa fa-newspaper-o" style="font-size: 150%;"></i> (<?php
+            echo
+            $newscount; ?>)
+        </a>
+    </div>
+    <div class="clearfix"></div>
+
     <div class="facebook-likebox">
         <h2 class="text-center">Follow Me @</h2>
         <div class="page">
@@ -48,10 +65,4 @@
     </div>
     <div class="clearfix"></div>
 
-
-
-    <div class="popular-keyword">
-        <h2 class="text-center">Popular Keywords</h2>
-    </div>
-    <div class="clearfix"></div>
 </div>

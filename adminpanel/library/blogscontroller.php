@@ -247,6 +247,14 @@ class blogscontroller
         }
     }
 
+    function getcategoryblogscount($bcategory)
+    {
+        $bd=new blogsdao();
+        $gs=new getstatic();
+        $result=$bd->getcategoryblogscount($bcategory);
+        return $result;
+    }
+
 }
 
 

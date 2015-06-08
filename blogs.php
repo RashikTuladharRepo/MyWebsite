@@ -27,6 +27,7 @@ include"includes/paginate.php";
         <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/customstyle.css">
         <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/mainstyle.css">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dancing+Script">
+        <link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>css/styles.css">
         <!--    <script>-->
         <!--        function tick2()-->
         <!--        {-->

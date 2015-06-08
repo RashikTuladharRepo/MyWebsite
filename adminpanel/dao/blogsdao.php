@@ -284,5 +284,13 @@ status='$status',coverimageurl='$coverimageurl',category='$category',modifieddat
         }
     }
 
+    function getcategoryblogscount($bcategory)
+    {
+        $sql="SELECT COUNT(*) as count FROM tbl_blogs WHERE status!='nactive' and category='$bcategory'";
+        $qry=$this->mysqli->query($sql);
+        $row= $qry->fetch_array(MYSQLI_ASSOC);
+        return $row;
+    }
+
 
 }

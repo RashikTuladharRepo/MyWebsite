@@ -16,6 +16,8 @@
 
 
 
+
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -29,6 +31,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/mainstyle.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dancing+Script">
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>css/styles.css">
 </head>
 <body id="home">
 <div id="fb-root"></div>
