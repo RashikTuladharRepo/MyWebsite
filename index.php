@@ -5,7 +5,8 @@
     $gs=new getstatic();
     $baseurl=$gs->home_base_url();
 
-
+//    define("baseurl","http://localhost/mywebsite/");
+    $baseurl=constant("baseurl");
 
     include"adminpanel/dao/webconfig.php";
     include"adminpanel/dao/blogsdao.php";

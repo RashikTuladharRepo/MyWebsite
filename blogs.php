@@ -79,7 +79,7 @@ include"includes/paginate.php";
                                 $currentpage=$_REQUEST['pn'];
                             }
 
-                            echo "You Are In Page Number: ". $currentpage ." of ". $rows ;
+                            echo "You Are In Page Number: ". $currentpage ." of ". $last ;
                             ?>
                         </strong>
 
