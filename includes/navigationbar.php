@@ -75,7 +75,7 @@ $newscount= $countnews['count'];
                 <li>
                     <a href="<?php echo $baseurl; ?>blogs/BOOTSTRAP"
                        class="<?php echo ($page=="bootstrap")?"active" :""; ?>">
-                        bootstrap <i class="icon rashik-css3text"></i>
+                        bootstrap <i class="icon rashik-bootstrap"></i>
                     </a>
                 </li>
                 <li>

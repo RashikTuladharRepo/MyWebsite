@@ -39,7 +39,8 @@
         <a href="<?php echo $baseurl; ?>blogs/MYSQL"><i class="icon rashik-dbs-mysql"></i> (<?php echo $mysqlcount; ?>)
         </a>
         <a href="<?php echo $baseurl; ?>blogs/MSSQL"><i class="icon rashik-dbs-sqlserver"></i> (<?php echo $mssqlcount; ?>)</a>
-        <a href="<?php echo $baseurl; ?>blogs/BOOTSTRAP"><i class="icon rashik-css3text"></i> (<?php echo $bootstrapcount; ?>)</a>
+        <a href="<?php echo $baseurl; ?>blogs/BOOTSTRAP"><i class="icon rashik-bootstrap"></i> (<?php echo $bootstrapcount;
+            ?>)</a>
         <a href="<?php echo $baseurl; ?>blogs/NEWS"><i class="fa fa-newspaper-o" style="font-size: 150%;"></i> (<?php
             echo
             $newscount; ?>)

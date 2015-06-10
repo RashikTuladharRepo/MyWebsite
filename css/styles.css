@@ -305,3 +305,12 @@
 .rashik-prog-vbnet:before {
   content: "`";
 }
+.rashik-bootstrap:before {
+  content: "{";
+}
+.rashik-prog-symfony:before {
+  content: "|";
+}
+.rashik-prog-air02:before {
+  content: "}";
+}

@@ -112,15 +112,23 @@
                             <?php echo date("Y/m/d", strtotime($details['createddate'])); ?>
 
                             <div class="sharepost">
+                                <table>
+                                    <tr>
+                                        <td style="width:100px;">
+                                            <div class="fb-share-button" data-href="http://<?php
+                                            echo $_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>" data-layout="button_count"></div>
+                                        </td>
+                                        <td style="width:100px;">
+                                            <a href="https://twitter.com/share"
+                                               class="twitter-share-button"
+                                               data-via="RashikTuladhar" data-dnt="true">Tweet</a>
+                                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                        </td>
+                                    </tr>
+                                </table>
 
-                                <div class="fb-share-button" data-href="http://<?php
-                                echo $_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI];?>" data-layout="button_count"></div>
 
 
-                                <a href="https://twitter.com/share"
-                                   class="twitter-share-button"
-                                    data-via="RashikTuladhar" data-dnt="true">Tweet</a>
-                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                             </div>
                         </div>
 
