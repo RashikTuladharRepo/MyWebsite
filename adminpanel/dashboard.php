@@ -184,7 +184,7 @@ if(isset($_REQUEST['eid'])!="")
                                 <?php } ?>
                             </td >
                             <td>
-                                <a href = "<?php echo $baseurl; ?>adminpanel/dashboard.php?eid=<?php echo $row['sn'];?>" class="btn btn-success" >
+                                <a href = "<?php echo $baseurl; ?>adminpanel/dashboard.php?eid=<?php echo $row['sn'];?>" class="btn btn-success" id="edit">
                                     <i class="fa fa-pencil" >&nbsp;</i >
                                 </a >
                                 <a href = "<?php echo $baseurl; ?>adminpanel/dashboard.php?did=<?php echo
@@ -234,6 +234,9 @@ if(isset($_REQUEST['eid'])!="")
         $('#helpBlock').delay(1000).fadeOut();
         $("#black_overlay").css("display","none");
         $("#delete").click(function(){
+            $("#black_overlay").css("display","block");
+        });
+		$("#edit").click(function(){
             $("#black_overlay").css("display","block");
         });
     });
