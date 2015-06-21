@@ -100,7 +100,7 @@
 <!--                                 class="img-responsive">-->
                             <img src="<?php echo $details['coverimageurl']; ?>"
                                  height="200px"
-                                 class="img-responsive">;
+                                 class="img-responsive">
                         </div>
 
                         <div class="blog-title text-justify">
