@@ -93,7 +93,7 @@ include"includes/paginate.php";
 <!--                                        <img src="--><?php //echo $baseurl; ?><!--adminpanel/images/--><?php
 //                                        echo $categoryrow['coverimage']; ?><!--" class="img-responsive">-->
                                         <img src="<?php echo $categoryrow['coverimageurl']; ?>" class="coverimage
-                                        img-responsive">
+                                        img-responsive" width="355" height="230">
                                     </div>
                                     <div class="col-md-12 blogdetails">
                                         <h4 class="text-center"><?php echo $categoryrow['title']; ?></h4>

@@ -33,9 +33,11 @@ if(isset($_POST['editblog']))
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>adminpanel/css/admincustomstyle.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dancing+Script">
 <!--Froala Editor-->
-    <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>adminpanel/css/froala_editor.min.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>adminpanel/css/froala_style.min.css">
+<!--    <link rel="stylesheet" type="text/css" href="--><?php //echo $baseurl; ?><!--adminpanel/css/froala_editor.min.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="--><?php //echo $baseurl; ?><!--adminpanel/css/froala_style.min.css">-->
 <!--Froala Editor-->
+
+
 
     <script type="text/javascript">
 
@@ -55,6 +57,10 @@ if(isset($_POST['editblog']))
         return false;
     }
     </script>
+
+
+
+
 
 </head>
 <body>
@@ -223,21 +229,33 @@ if(isset($_POST['editblog']))
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!--Ckeditor-->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="ckeditor/ckeditor.js"></script>
+<script src="ckeditor/adapters/jquery.js"></script>
+<script>
+    $( document ).ready( function() {
+        $( '#description' ).ckeditor();
+    });
+</script>
+<!--Ckeditor-->
 <script src="<?php echo $baseurl; ?>js/bootstrap.min.js"></script>
-<script src="<?php echo $baseurl; ?>adminpanel/js/froala_editor.min.js" type="text/javascript"></script>
+<!--<script src="--><?php //echo $baseurl; ?><!--adminpanel/js/froala_editor.min.js" type="text/javascript"></script>-->
+
 
 <script type="text/javascript">
 
+
 //froalaeditor customization
-    $(function(){
-        $('textarea#description').editable({
-            buttons: ['sep', 'bold', 'italic', 'underline','strikeThrough','fontFamily','fontSize','formatBlock','align','blockStyle','insertOrderedList','insertUnorderedList','indent','html','insertImage'],
-            inlineMode: false,
-            minHeight: 100,
-            maxWidth:100,
-            imageUploadURL: 'http://localhost/MyWebsite/adminpanel/upload_image.php'
-        })
-    });
+//    $(function(){
+//        $('textarea#description').editable({
+//            buttons: ['sep', 'bold', 'italic', 'underline','strikeThrough','fontFamily','fontSize','formatBlock','align','blockStyle','insertOrderedList','insertUnorderedList','indent','html','insertImage'],
+//            inlineMode: false,
+//            minHeight: 100,
+//            maxWidth:100,
+//            imageUploadURL: 'http://localhost/MyWebsite/adminpanel/upload_image.php'
+//        })
+//    });
 
 //for displaying the seession message and fadeout
     $(document).ready( function() {

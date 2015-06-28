@@ -250,10 +250,24 @@
 
  }
 
-
+pre
+{
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #333;
+    display: block;
+    font-family: arial;
+    font-size: 16px;
+    line-height: 1.42857;
+    margin: 0 0 10px;
+    padding: 9.5px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
 
  .blogslists
  {
+     max-height: 330px;
      height: auto;
      padding: 5px;
  }
