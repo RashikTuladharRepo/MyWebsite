@@ -51,8 +51,8 @@
 <!--    </script>-->
 
 
-    <script type="text/javascript" src="<?php echo $baseurl; ?>js/shCore.js"></script>
-    <script type="text/javascript" src="<?php echo $baseurl; ?>js/shBrushJScript.js"></script>
+    <script type="text/javascript" src="<?php echo $baseurl; ?>syntaxscripts/shCore.js"></script>
+    <script type="text/javascript" src="<?php echo $baseurl; ?>syntaxscripts/shBrushPhp.js"></script>
     <link type="text/css" rel="stylesheet" href="<?php echo $baseurl; ?>css/shCoreDefault.css"/>
     <script type="text/javascript">SyntaxHighlighter.all();</script>
 

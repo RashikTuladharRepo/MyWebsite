@@ -229,8 +229,6 @@ if(isset($_POST['editblog']))
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!--Ckeditor-->
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="ckeditor/ckeditor.js"></script>
 <script src="ckeditor/adapters/jquery.js"></script>
 <script>
@@ -238,7 +236,10 @@ if(isset($_POST['editblog']))
         $( '#description' ).ckeditor();
     });
 </script>
-<!--Ckeditor-->
+
+<script> SyntaxHighlighter.all() </script>
+
+
 <script src="<?php echo $baseurl; ?>js/bootstrap.min.js"></script>
 <!--<script src="--><?php //echo $baseurl; ?><!--adminpanel/js/froala_editor.min.js" type="text/javascript"></script>-->
 
