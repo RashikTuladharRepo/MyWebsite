@@ -23,6 +23,9 @@ $mssqlcount= $countmssql['count'];
 $countbootstrap=$bc->getcategoryblogscount("bootstrap");
 $bootstrapcount= $countbootstrap['count'];
 
+$countjs=$bc->getcategoryblogscount("js");
+$jscount= $countjs['count'];
+
 $countnews=$bc->getcategoryblogscount("news");
 $newscount= $countnews['count'];
 
@@ -76,6 +79,12 @@ $newscount= $countnews['count'];
                     <a href="<?php echo $baseurl; ?>blogs/BOOTSTRAP"
                        class="<?php echo ($page=="bootstrap")?"active" :""; ?>">
                         bootstrap <i class="icon rashik-bootstrap"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo $baseurl; ?>blogs/JS"
+                       class="<?php echo ($page=="others")?"active" :""; ?>">
+                        JS/Jquery <i class="icon rashik-prog-jquery"></i>
                     </a>
                 </li>
                 <li>

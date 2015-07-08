@@ -87,7 +87,7 @@ class blogsdao extends webconfig
     function getblogslistwithpage($N)
     {
         $result=array();
-        $sql="select * from tbl_blogs ORDER by createddate DESC ".$N;
+        $sql="select * from tbl_blogs WHERE status='active' ORDER by createddate DESC ".$N;
         $qry=$this->mysqli->query($sql);
         while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
             $result[]= $res;

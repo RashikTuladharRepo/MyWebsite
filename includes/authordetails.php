@@ -2,13 +2,8 @@
     <img width="80" height="80" src="<?php echo $baseurl; ?>images/user.png" class="img-responsive pull-left img-circle bg-primary">
     <h4>&nbsp;&nbsp;Rashik Tuladhar</h4><hr>
     <p class="text-justify">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-        has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop
-        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        A web developer for fun and by profession, I love blogging about 
+        latest techs and trends whenever I have free time from my frequent web development adventures.
     </p>
     <br><hr>
 </div>

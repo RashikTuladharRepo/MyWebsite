@@ -16,6 +16,8 @@ RewriteRule ^mail index.php [NC,L]
 #http://localhost/MyWebsite/fullblog/1
 RewriteRule ^fullblog/([0-9a-zA-Z]+) fullblog.php?bid=$1 [NC,L]
 
+#RewriteRule ^([0-9a-zA-Z]+) index.php?pn=$1 [NC,L]
+
 RewriteRule ^blogs/([0-9a-zA-Z]+) blogs.php?category=$1 [NC,L]
 
 #rewrite for fullblog.php?bid=1&title=title
@@ -23,6 +25,10 @@ RewriteRule ^blogs/([0-9a-zA-Z]+) blogs.php?category=$1 [NC,L]
 RewriteRule ^fullblog/([0-9]+)/([0-9a-zA-Z_-]+) fullblog.php?bid=$1&title=$2 [NC,L]
 
 RewriteRule ^blog/([0-9a-zA-Z]+)/([0-9]+) blogs.php?category=$1&pn=$2 [NC,L]
+
+
+
+
 
 
 #error document redirection

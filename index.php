@@ -1,18 +1,22 @@
 <?php
     error_reporting(E_ERROR | E_PARSE);
-    include"includes/get_browser.php";
+    //include"includes/get_browser.php";
     include"adminpanel/library/getstatic.php";
+
     $gs=new getstatic();
     $baseurl=$gs->home_base_url();
-
-//    define("baseurl","http://localhost/mywebsite/");
-    $baseurl=constant("baseurl");
 
     include"adminpanel/dao/webconfig.php";
     include"adminpanel/dao/blogsdao.php";
 
     include"adminpanel/library/blogscontroller.php";
+
     $bc=new blogscontroller();
+
+    include "includes/paginateall.php";
+
+
+
     $blogsarray=$bc->getallblogsclient();
 
 
@@ -82,8 +86,7 @@
         <div class="blog-lists">
             <div class="col-xs-12 col-md-8">
                 <h2 class="text-center h2-heading">Latest Blog Posts</h2>
-
-                <?php foreach($blogsarray as $row) {?>
+                <?php foreach($blogdata as $row) {?>
                 <div class="blog">
                     <div class="row">
                         <div class="col-md-6 col-md-push-6">
@@ -109,8 +112,18 @@
                     </div>
                 </div>
                 <?php } ?>
+                <div class="clearfix"></div>
+                <div class="container-fluid pull-right">
+                    <ul class="pagination">
+
+                        <?php echo $paginationCtrls; ?>
+
+                    </ul>
+                </div>
             </div>
         </div>
+
+
 
         <div class="col-xs-12 col-md-4">
             <?php include "includes/right-menu.php"; ?>
