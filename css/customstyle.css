@@ -98,12 +98,21 @@
      border-bottom: 1px solid rgba(30,144,255,0.5);
  }
 
- .searchbar input[type="text"],.searchbar input[type="submit"]
+ .searchbar input[type="text"],.searchbar input[type="submit"],.searchbar button
  {
      height: 40px;
      /*border: none;*/
      border-radius:inherit;
-     color: #000000;
+     color: #FFF;
+     border: none;
+     font-size: 18px;
+     font-family: HarabaraHand;
+ }
+
+ .searchbar input[type="text"]
+ {
+     color:#808080 !important;
+     font-family: HarabaraHand;
  }
 
  .searchbar input[type="text"]:focus
@@ -127,6 +136,12 @@
      padding:20% 0;
  }
 
+
+ .blogs
+ {
+     margin-top: 90px;
+ }
+
  @media (max-width:990px) {
 
  }
@@ -136,7 +151,7 @@
 
  .full-blogs
  {
-     padding-top: 120px;
+     padding-top: 150px;
  }
 
  .full-blogs .blog-cover

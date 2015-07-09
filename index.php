@@ -53,30 +53,30 @@
 <nav class="navbar navbar-inverse navbar-fixed-top"><?php include"includes/navigationbar.php"; ?></nav>
 <!-- Fixed navbar -->
 
-<div class="container-fluid" style="margin-top:90px; height: auto; ">
-    <div id="owl-demo" class="owl-carousel owl-theme">
-
-        <?php
-        $handle = opendir(dirname(realpath(__FILE__)).'/images/carousel/');
-        while($file = readdir($handle)){
-            if($file !== '.' && $file !== '..'){
-                echo '<div class="item"><img class="img-rounded" src="images/carousel/'.$file.'" width="255px"
-                height="150px"></div>';
-            }
-        }
-        ?>
-
-
-<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->
-<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->
-<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->
-<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->
-<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->
-<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->
-<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->
-    </div>
-
-</div>
+<!--<div class="container-fluid" style="margin-top:90px; height: auto; ">-->
+<!--    <div id="owl-demo" class="owl-carousel owl-theme">-->
+<!---->
+<!--        --><?php
+//        $handle = opendir(dirname(realpath(__FILE__)).'/images/carousel/');
+//        while($file = readdir($handle)){
+//            if($file !== '.' && $file !== '..'){
+//                echo '<div class="item"><img class="img-rounded" src="images/carousel/'.$file.'" width="255px"
+//                height="150px"></div>';
+//            }
+//        }
+//        ?>
+<!---->
+<!---->
+<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->-->
+<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->-->
+<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->-->
+<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->-->
+<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->-->
+<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->-->
+<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->-->
+<!--    </div>-->
+<!---->
+<!--</div>-->
 
 
 <div class="container blogs">

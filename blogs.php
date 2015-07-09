@@ -65,7 +65,7 @@ include"includes/paginate.php";
 
                     <div class="help-block">
                         <?php
-                        echo "Total Number of Blogs: ". $blogcount['totalrows']."<br>";
+                        //echo "Total Number of Blogs: ". $blogcount['totalrows']."<br>";
                         ?>
 
                         <strong class="text-primary">
@@ -79,7 +79,7 @@ include"includes/paginate.php";
                                 $currentpage=$_REQUEST['pn'];
                             }
 
-                            echo "You Are In Page Number: ". $currentpage ." of ". $last ;
+                            //echo "You Are In Page Number: ". $currentpage ." of ". $last ;
                             ?>
                         </strong>
 

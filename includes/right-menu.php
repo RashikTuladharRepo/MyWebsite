@@ -18,10 +18,10 @@
                          width="80"
                          class="pull-left img-responsive">
                     <p class="text-justify">
-                        <span class="author">
-                            Created By: <?php echo ucfirst($row['createdby']); ?><br>
-                            Dated On: <?php echo date('Y/m/d',strtotime($row['createddate'])); ?><br>
-                        </span>
+<!--                        <span class="author">-->
+<!--                            Created By: --><?php //echo ucfirst($row['createdby']); ?><!--<br>-->
+<!--                            Dated On: --><?php //echo date('Y/m/d',strtotime($row['createddate'])); ?><!--<br>-->
+<!--                        </span>-->
                         <?php echo substr($row['description'],0,55)."......"; ?>
                     </p>
                 </a>

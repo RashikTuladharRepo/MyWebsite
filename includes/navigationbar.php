@@ -97,14 +97,14 @@ $newscount= $countnews['count'];
         </div><!--/.nav-collapse -->
     </div>
 
-<!--<div class="searchbar">-->
-<!--    <div class="input-group">-->
-<!--        <input type="text" class="form-control" placeholder="Search for...">-->
-<!--            <span class="input-group-btn">-->
-<!--                <input type="submit" class="btn btn-success" value="Search..">-->
-<!--            </span>-->
-<!--    </div>-->
-<!--</div>-->
+<div class="searchbar">
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+                <button type="submit" class="btn btn-success"><i class="fa fa-search"></i> Search</button>
+            </span>
+    </div>
+</div>
 
 
 
