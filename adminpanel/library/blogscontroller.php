@@ -255,6 +255,21 @@ class blogscontroller
         return $result;
     }
 
+
+    //Search
+    function getblogscountforsearch($search)
+    {
+        $bd=new blogsdao();
+        $result=$bd->getsearchblogscount($search);
+        return $result;
+    }
+
+    function getallblogswithsearch($search, $limit)
+    {
+        $bd=new blogsdao();
+        return $bd->getsearchblogs($search,$limit);
+    }
+
 }
 
 

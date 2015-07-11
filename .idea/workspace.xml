@@ -25,46 +25,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.645161" vertical-offset="1957" max-vertical-offset="3652">
-              <caret line="81" column="27" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="27" />
-              <folding>
-                <element signature="e#2068#2145#0#PHP" expanded="true" />
-                <marker date="1436407200450" expanded="true" signature="2281:2391" placeholder="..." />
-                <marker date="1436407200450" expanded="true" signature="2352:2385" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blogs.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.967742" vertical-offset="1320" max-vertical-offset="3938">
-              <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigationbar.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="navigationbar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/navigationbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.548388" vertical-offset="1882" max-vertical-offset="2728">
-              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="106" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.58303887" vertical-offset="440" max-vertical-offset="3102">
+              <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customstyle.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/customstyle.css">
+      <file leaf-file-name="blogsdao.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adminpanel/dao/blogsdao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72131145" vertical-offset="2090" max-vertical-offset="9658">
-              <caret line="115" column="2" selection-start-line="100" selection-start-column="1" selection-end-line="115" selection-end-column="2" />
-              <folding />
+            <state vertical-scroll-proportion="-4.774194" vertical-offset="1832" max-vertical-offset="2508">
+              <caret line="298" column="63" selection-start-line="298" selection-start-column="63" selection-end-line="298" selection-end-column="63" />
+              <folding>
+                <element signature="n#getblogscount#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="n#getadminblogscount#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="n#categorygetblogscount#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="n#getblogslist#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="e#1105#1192#0#PHP" expanded="false" />
+                <element signature="e#1434#1521#0#PHP" expanded="false" />
+                <element signature="n#categorygetblogslist#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="e#2224#2311#0#PHP" expanded="false" />
+                <element signature="n#addblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="e#3238#3526#0#PHP" expanded="false" />
+                <element signature="e#3389#3526#0#PHP" expanded="false" />
+                <element signature="n#deleteindividualblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="e#3689#4028#0#PHP" expanded="false" />
+                <element signature="e#3887#4028#0#PHP" expanded="false" />
+                <element signature="n#changesstatus#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="e#4354#4659#0#PHP" expanded="false" />
+                <element signature="e#4516#4659#0#PHP" expanded="false" />
+                <element signature="n#getblogdetails#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="e#4868#5166#0#PHP" expanded="false" />
+                <element signature="e#5026#5166#0#PHP" expanded="false" />
+                <element signature="n#getblogdetailsforedit#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="e#5382#5680#0#PHP" expanded="false" />
+                <element signature="e#5540#5680#0#PHP" expanded="false" />
+                <element signature="n#editblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="e#6174#6464#0#PHP" expanded="false" />
+                <element signature="e#6326#6464#0#PHP" expanded="false" />
+                <element signature="n#addcategory#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="e#6647#6944#0#PHP" expanded="false" />
+                <element signature="e#6802#6944#0#PHP" expanded="false" />
+                <element signature="n#getcategorylistdao#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="e#7109#7341#0#PHP" expanded="false" />
+                <element signature="e#7175#7331#0#PHP" expanded="false" />
+                <element signature="e#7255#7331#0#PHP" expanded="false" />
+                <element signature="n#deletecategorylistdao#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <element signature="e#7526#7835#0#PHP" expanded="false" />
+                <element signature="e#7690#7835#0#PHP" expanded="false" />
+                <element signature="n#getcategoryblogscount#0;n#blogsdao#0;n#!!top" expanded="false" />
+                <marker date="1436617527804" expanded="true" signature="162:227" placeholder="select count..tbl_blogs..." />
+                <marker date="1436617527804" expanded="true" signature="402:445" placeholder="select count..tbl_blogs..." />
+                <marker date="1436617527804" expanded="true" signature="631:721" placeholder="select count..tbl_blogs..." />
+                <marker date="1436617527804" expanded="true" signature="962:1050" placeholder="select * fro..tbl_blogs..." />
+                <marker date="1436617527804" expanded="true" signature="1303:1382" placeholder="select * fro..tbl_blogs..." />
+                <marker date="1436617527804" expanded="true" signature="2072:2168" placeholder="select * fro..tbl_blogs..." />
+                <marker date="1436617527804" expanded="true" signature="2426:2498" placeholder="select * fro..tbl_blogs..." />
+                <marker date="1436617527804" expanded="true" signature="2897:3186" placeholder="INSERT INTO ..." />
+                <marker date="1436617527804" expanded="true" signature="3601:3637" placeholder="delete from ..." />
+                <marker date="1436617527804" expanded="true" signature="4088:4301" placeholder="update tbl_b..." />
+                <marker date="1436617527804" expanded="true" signature="4728:4767" placeholder="select * fro..tbl_blogs..." />
+                <marker date="1436617527804" expanded="true" signature="5242:5281" placeholder="select * fro..tbl_blogs..." />
+                <marker date="1436617527804" expanded="true" signature="5881:6122" placeholder="UPDATE tbl_b..." />
+                <marker date="1436617527804" expanded="true" signature="6547:6595" placeholder="insert into ..." />
+                <marker date="1436617527804" expanded="true" signature="7006:7032" placeholder="select * fro..tbl_category..." />
+                <marker date="1436617527804" expanded="true" signature="7435:7469" placeholder="delete from ..." />
+                <marker date="1436617527804" expanded="true" signature="7910:7999" placeholder="SELECT COUNT..." />
+                <marker date="1436617527804" expanded="true" signature="8202:8325" placeholder="SELECT COUNT..tbl_blogs..." />
+                <marker date="1436617527804" expanded="true" signature="8534:8671" placeholder="SELECT * FRO..tbl_blogs..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,8 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/ticker-style.css" />
-        <option value="$PROJECT_DIR$/includes/footer.php" />
         <option value="$PROJECT_DIR$/js/tickr.js" />
         <option value="$PROJECT_DIR$/css/mainstyle.css" />
         <option value="$PROJECT_DIR$/adminpanel/dao/blogs.php" />
@@ -116,15 +147,17 @@
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/adminpanel/blogs.php" />
         <option value="$PROJECT_DIR$/fullblog.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/includes/right-menu.php" />
+        <option value="$PROJECT_DIR$/blogs.php" />
+        <option value="$PROJECT_DIR$/css/customstyle.css" />
+        <option value="$PROJECT_DIR$/includes/paginateall.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/includes/paginatesearch.php" />
+        <option value="$PROJECT_DIR$/search.php" />
         <option value="$PROJECT_DIR$/adminpanel/library/blogscontroller.php" />
         <option value="$PROJECT_DIR$/adminpanel/dao/blogsdao.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/includes/paginateall.php" />
-        <option value="$PROJECT_DIR$/includes/right-menu.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/blogs.php" />
         <option value="$PROJECT_DIR$/includes/navigationbar.php" />
-        <option value="$PROJECT_DIR$/css/customstyle.css" />
       </list>
     </option>
   </component>
@@ -177,6 +210,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,13 +253,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="adminpanel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyWebsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adminpanel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,7 +337,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -295,7 +346,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1647145" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18814056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -352,25 +403,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <option name="time" value="24" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/navigationbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="550">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="176">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/customstyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="644" max-vertical-offset="3212">
@@ -445,13 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="8712">
           <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/css/mystyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72131145" vertical-offset="1782" max-vertical-offset="11066">
-          <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -560,31 +590,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31095406" vertical-offset="0" max-vertical-offset="1672">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/dao/logincheck.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1766784" vertical-offset="0" max-vertical-offset="1782">
-          <caret line="56" column="5" selection-start-line="28" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/adminpanel/includes/adminnavigation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5335689" vertical-offset="182" max-vertical-offset="748">
           <caret line="22" column="77" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/library/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30397236" vertical-offset="0" max-vertical-offset="579">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -628,52 +637,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/library/getstatic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.387097" vertical-offset="1540" max-vertical-offset="3388">
-          <caret line="79" column="40" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/library/blogscontroller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="643" max-vertical-offset="5896">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminpanel/dao/blogsdao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="885" max-vertical-offset="6622">
-          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-          <folding>
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="select count..tbl_blogs..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="select count..tbl_blogs..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="select count..tbl_blogs..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="select * fro..tbl_blogs..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="select * fro..tbl_blogs..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="select * fro..tbl_blogs..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="select * fro..tbl_blogs..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="update tbl_b..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="select * fro..tbl_blogs..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="select * fro..tbl_blogs..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="UPDATE tbl_b..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="select * fro..tbl_category..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1436292453033" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="902">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,19 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/paginateall.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2720848" vertical-offset="1348" max-vertical-offset="2244">
-          <caret line="94" column="89" selection-start-line="94" selection-start-column="89" selection-end-line="94" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.4983606" vertical-offset="2310" max-vertical-offset="7084">
           <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.580646" vertical-offset="143" max-vertical-offset="1672">
           <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="23" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,38 +673,173 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/customstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72131145" vertical-offset="2090" max-vertical-offset="9658">
+          <caret line="115" column="2" selection-start-line="100" selection-start-column="1" selection-end-line="115" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blogs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.967742" vertical-offset="1320" max-vertical-offset="3938">
+        <state vertical-scroll-proportion="0.2720848" vertical-offset="1320" max-vertical-offset="3938">
           <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/css/mystyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0540984" vertical-offset="1271" max-vertical-offset="12804">
+          <caret line="87" column="11" selection-start-line="87" selection-start-column="11" selection-end-line="87" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/dao/logincheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31095406" vertical-offset="660" max-vertical-offset="1782">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/library/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18998273" vertical-offset="0" max-vertical-offset="579">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/library/getstatic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7208481" vertical-offset="2712" max-vertical-offset="3388">
+          <caret line="79" column="40" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.46643108" vertical-offset="440" max-vertical-offset="1672">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.645161" vertical-offset="1957" max-vertical-offset="3652">
-          <caret line="81" column="27" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="27" />
+        <state vertical-scroll-proportion="6.290323" vertical-offset="1867" max-vertical-offset="3652">
+          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
           <folding>
             <element signature="e#2068#2145#0#PHP" expanded="true" />
-            <marker date="1436407200450" expanded="true" signature="2281:2391" placeholder="..." />
-            <marker date="1436407200450" expanded="true" signature="2352:2385" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/paginateall.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.32258" vertical-offset="1018" max-vertical-offset="2244">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5936396" vertical-offset="748" max-vertical-offset="3058">
+          <caret line="75" column="56" selection-start-line="75" selection-start-column="56" selection-end-line="75" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/library/blogscontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61130744" vertical-offset="5572" max-vertical-offset="6226">
+          <caret line="269" column="28" selection-start-line="269" selection-start-column="28" selection-end-line="269" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/paginatesearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31095406" vertical-offset="0" max-vertical-offset="2288">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpanel/dao/blogsdao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.774194" vertical-offset="1832" max-vertical-offset="2508">
+          <caret line="298" column="63" selection-start-line="298" selection-start-column="63" selection-end-line="298" selection-end-column="63" />
+          <folding>
+            <element signature="n#getblogscount#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#getadminblogscount#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#categorygetblogscount#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="n#getblogslist#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="e#1105#1192#0#PHP" expanded="false" />
+            <element signature="e#1434#1521#0#PHP" expanded="false" />
+            <element signature="n#categorygetblogslist#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="e#2224#2311#0#PHP" expanded="false" />
+            <element signature="n#addblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="e#3238#3526#0#PHP" expanded="false" />
+            <element signature="e#3389#3526#0#PHP" expanded="false" />
+            <element signature="n#deleteindividualblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="e#3689#4028#0#PHP" expanded="false" />
+            <element signature="e#3887#4028#0#PHP" expanded="false" />
+            <element signature="n#changesstatus#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="e#4354#4659#0#PHP" expanded="false" />
+            <element signature="e#4516#4659#0#PHP" expanded="false" />
+            <element signature="n#getblogdetails#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="e#4868#5166#0#PHP" expanded="false" />
+            <element signature="e#5026#5166#0#PHP" expanded="false" />
+            <element signature="n#getblogdetailsforedit#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="e#5382#5680#0#PHP" expanded="false" />
+            <element signature="e#5540#5680#0#PHP" expanded="false" />
+            <element signature="n#editblogs#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="e#6174#6464#0#PHP" expanded="false" />
+            <element signature="e#6326#6464#0#PHP" expanded="false" />
+            <element signature="n#addcategory#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="e#6647#6944#0#PHP" expanded="false" />
+            <element signature="e#6802#6944#0#PHP" expanded="false" />
+            <element signature="n#getcategorylistdao#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="e#7109#7341#0#PHP" expanded="false" />
+            <element signature="e#7175#7331#0#PHP" expanded="false" />
+            <element signature="e#7255#7331#0#PHP" expanded="false" />
+            <element signature="n#deletecategorylistdao#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <element signature="e#7526#7835#0#PHP" expanded="false" />
+            <element signature="e#7690#7835#0#PHP" expanded="false" />
+            <element signature="n#getcategoryblogscount#0;n#blogsdao#0;n#!!top" expanded="false" />
+            <marker date="1436617527804" expanded="true" signature="162:227" placeholder="select count..tbl_blogs..." />
+            <marker date="1436617527804" expanded="true" signature="402:445" placeholder="select count..tbl_blogs..." />
+            <marker date="1436617527804" expanded="true" signature="631:721" placeholder="select count..tbl_blogs..." />
+            <marker date="1436617527804" expanded="true" signature="962:1050" placeholder="select * fro..tbl_blogs..." />
+            <marker date="1436617527804" expanded="true" signature="1303:1382" placeholder="select * fro..tbl_blogs..." />
+            <marker date="1436617527804" expanded="true" signature="2072:2168" placeholder="select * fro..tbl_blogs..." />
+            <marker date="1436617527804" expanded="true" signature="2426:2498" placeholder="select * fro..tbl_blogs..." />
+            <marker date="1436617527804" expanded="true" signature="2897:3186" placeholder="INSERT INTO ..." />
+            <marker date="1436617527804" expanded="true" signature="3601:3637" placeholder="delete from ..." />
+            <marker date="1436617527804" expanded="true" signature="4088:4301" placeholder="update tbl_b..." />
+            <marker date="1436617527804" expanded="true" signature="4728:4767" placeholder="select * fro..tbl_blogs..." />
+            <marker date="1436617527804" expanded="true" signature="5242:5281" placeholder="select * fro..tbl_blogs..." />
+            <marker date="1436617527804" expanded="true" signature="5881:6122" placeholder="UPDATE tbl_b..." />
+            <marker date="1436617527804" expanded="true" signature="6547:6595" placeholder="insert into ..." />
+            <marker date="1436617527804" expanded="true" signature="7006:7032" placeholder="select * fro..tbl_category..." />
+            <marker date="1436617527804" expanded="true" signature="7435:7469" placeholder="delete from ..." />
+            <marker date="1436617527804" expanded="true" signature="7910:7999" placeholder="SELECT COUNT..." />
+            <marker date="1436617527804" expanded="true" signature="8202:8325" placeholder="SELECT COUNT..tbl_blogs..." />
+            <marker date="1436617527804" expanded="true" signature="8534:8671" placeholder="SELECT * FRO..tbl_blogs..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/navigationbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.548388" vertical-offset="1882" max-vertical-offset="2728">
-          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="106" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/customstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72131145" vertical-offset="2090" max-vertical-offset="9658">
-          <caret line="115" column="2" selection-start-line="100" selection-start-column="1" selection-end-line="115" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.58303887" vertical-offset="440" max-vertical-offset="3102">
+          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
           <folding />
         </state>
       </provider>

@@ -29,8 +29,19 @@ $jscount= $countjs['count'];
 $countnews=$bc->getcategoryblogscount("news");
 $newscount= $countnews['count'];
 
-
-
+if(isset($_POST['search']))
+{
+    $_SESSION['search']=$_POST['search_text'];
+    header('location:'.$baseurl.'search');
+    //echo'<script>window.location="'.$baseurl.'search";</script>';
+}
+if(isset($_SESSION['search'])) {
+    $searchtxt=$_SESSION['search'];
+}
+else
+{
+    $searchtxt="";
+}
 ?>
 
 <div class="container">
@@ -98,12 +109,18 @@ $newscount= $countnews['count'];
     </div>
 
 <div class="searchbar">
-    <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search for...">
-            <span class="input-group-btn">
-                <button type="submit" class="btn btn-success"><i class="fa fa-search"></i> Search</button>
-            </span>
-    </div>
+    <form method="post" action="#">
+        <div class="input-group">
+            <input type="text" class="form-control" name="search_text"
+                   placeholder="Search for..." value="<?php
+                        echo ($searchtxt=="")?"" :$searchtxt;
+            ?>">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-success" name="search"><i class="fa fa-search"></i>
+                        Search</button>
+                </span>
+        </div>
+    </form>
 </div>
 
 

@@ -75,8 +75,6 @@ class blogsdao extends webconfig
         $result=array();
         $var=array();
         $sql="select * from tbl_blogs WHERE category='$category' AND status='active' ORDER by createddate DESC ".$N;
-//        echo $sql;
-//        die();
         $qry=$this->mysqli->query($sql);
         while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
             $result[]= $res;
@@ -293,4 +291,27 @@ status='$status',coverimageurl='$coverimageurl',category='$category',modifieddat
     }
 
 
+
+
+    //Search Blogs
+    function getsearchblogscount($search)
+    {
+        $sql="SELECT COUNT(*) as totalrows FROM tbl_blogs WHERE status='active' AND (title LIKE '%$search%' OR category LIKE
+'%$search%')";
+        $qry=$this->mysqli->query($sql);
+        $row= $qry->fetch_array(MYSQLI_ASSOC);
+        return $row;
+    }
+
+    function getsearchblogs($search, $limit)
+    {
+        $result=array();
+        $sql="SELECT * FROM tbl_blogs WHERE status='active' AND (title LIKE '%$search%' OR category LIKE '%$search%')
+        ORDER by createddate DESC ".$limit;
+        $qry=$this->mysqli->query($sql);
+        while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
+            $result[]= $res;
+        }
+        return $result;
+    }
 }

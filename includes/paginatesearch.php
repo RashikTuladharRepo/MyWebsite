@@ -6,7 +6,7 @@ $salt = 'Rashik#456';
 $hash = sha1($salt.$variable);
 
 //for pagination
-$blogcount=$bc->getblogscount();
+$blogcount=$bc->getblogscountforsearch($search);
 
 
 $rows=$blogcount['totalrows'];
@@ -14,8 +14,8 @@ $rows=$blogcount['totalrows'];
 
 // This is the number of results we want displayed per page
 
-$page_rows = 10;
-if($rows<11)
+$page_rows = 1;
+if($rows<2)
 {
     $page_rows=$rows;
 }
@@ -56,7 +56,7 @@ $limit = 'LIMIT ' .($pagenum - 1) * $page_rows .',' .$page_rows;
 // This is your query again, it is for grabbing just one page worth of rows by applying $limit
 
 
-$blogdata=$bc->getallblogswithpage($limit);
+$blogdata=$bc->getallblogswithsearch($search,$limit);
 
 
 $paginationCtrls = '';
@@ -66,13 +66,14 @@ if($last != 1)
     /* First we check if we are on page one. If we are then we don't need a link to the previous page or the first page so we do nothing. If we aren't then we generate links to the first page, and to the previous page. */
     if ($pagenum > 1)
     {
-        $previous = $pagenum - 1; $paginationCtrls .= '<li><a href="'.$baseurl.'index.php?pn='.$previous.'&other='.$hash.'">Previous</a></li> &nbsp; &nbsp; '; // Render clickable number links that should appear on the
+        $previous = $pagenum - 1; $paginationCtrls .= '<li><a href="'.$baseurl.'search.php?pn='.$previous.'&other='.$hash.'">Previous</a></li> &nbsp; &nbsp; '; // Render clickable number links that should appear on the
 // left of the target page number
         for($i = $pagenum-4; $i < $pagenum; $i++)
         {
             if($i > 0)
             {
-                $paginationCtrls .= '<li><a href="'.$baseurl.'index.php?pn='.$i.'&other='.$hash.'">'.$i.'</a></li> &nbsp; ';
+                $paginationCtrls .= '<li><a href="'.$baseurl.'search.php?pn='.$i.'&other='.$hash.'">'.$i.'</a></li>
+&nbsp; ';
             }
         }
     }
@@ -83,7 +84,8 @@ if($last != 1)
 // Render clickable number links that should appear on the right of the target page number
     for($i = $pagenum+1; $i <= $last; $i++)
     {
-        $paginationCtrls .= '<li><a href="'.$baseurl.'index.php?pn='.$i.'&other='.$hash.'">'.$i.'</a></li> &nbsp; ';
+        $paginationCtrls .= '<li><a href="'.$baseurl.'search.php?pn='.$i.'&other='.$hash.'">'.$i.'</a></li>
+&nbsp; ';
         if($i >= $pagenum+4)
         {
             break;
@@ -92,6 +94,6 @@ if($last != 1)
 // This does the same as above, only checking if we are on the last page, and then generating the "Next"
     if ($pagenum != $last)
     {
-        $next = $pagenum + 1; $paginationCtrls .= ' &nbsp; &nbsp; <li><a href="'.$baseurl.'index.php?pn='.$next.'&other='.$hash.'">Next</a></li> ';
+        $next = $pagenum + 1; $paginationCtrls .= ' &nbsp; &nbsp; <li><a href="'.$baseurl.'search.php?pn='.$next.'&other='.$hash.'">Next</a></li> ';
     }
 }
