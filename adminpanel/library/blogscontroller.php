@@ -270,12 +270,16 @@ class blogscontroller
         return $bd->getsearchblogs($search,$limit);
     }
 
+
+    //blogs of interest
     function randomblogs()
     {
         $bd=new blogsdao();
         return $bd->somerandomblogs();
     }
 
+
+    //blogs count updating
     function updateviewcounts($id)
     {
         $bd=new blogsdao();

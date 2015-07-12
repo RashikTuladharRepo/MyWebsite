@@ -317,6 +317,8 @@ status='$status',coverimageurl='$coverimageurl',category='$category',modifieddat
         return $result;
     }
 
+
+    //blogs of interest
     function somerandomblogs()
     {
         $result=array();
@@ -328,6 +330,8 @@ status='$status',coverimageurl='$coverimageurl',category='$category',modifieddat
         return $result;
     }
 
+
+    //blogs count updating
     function viewcountsadd($id)
     {
         $sql="update tbl_blogs set viewcounts=(viewcounts+1) where sn='$id'";
