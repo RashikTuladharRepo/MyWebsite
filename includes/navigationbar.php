@@ -114,7 +114,7 @@ else
             <input type="text" class="form-control" name="search_text"
                    placeholder="Search for..." value="<?php
                         echo ($searchtxt=="")?"" :$searchtxt;
-            ?>">
+            ?>" required="required">
                 <span class="input-group-btn">
                     <button type="submit" class="btn btn-success" name="search"><i class="fa fa-search"></i>
                         Search</button>

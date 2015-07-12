@@ -11,8 +11,12 @@
 
     $id=$_REQUEST['bid'];
     $bc=new blogscontroller();
+    $bc->updateviewcounts($id);
     $blogsarray=$bc->getallblogsclient();
     $details=$bc->getblogdetails($id);
+
+    $otherblogs=$bc->randomblogs();
+
 ?>
 <!--<a href="http://example.com/bar.html#disqus_thread">Link</a>-->
 <!DOCTYPE HTML>
@@ -186,6 +190,24 @@
 
         <div class="col-xs-12 col-md-4">
             <?php include "includes/right-menu.php"; ?>
+        </div>
+
+
+        <div class="col-xs-12 some-other-blogs">
+            <h2 class="text-center h2-heading">Might Also Interest You</h2>
+
+            <?php
+                foreach($otherblogs as $ob)
+                {
+            ?>
+            <div class="col-xs-12 col-md-3 individual-blogs">
+                <a href="<?php echo $baseurl; ?>fullblog/<?php echo $ob['sn']; ?>/<?php echo $ob['title']; ?>"
+                   class="text-center">
+                    <img src="<?php echo $ob['coverimageurl']; ?>" height="100px" class="img-responsive">
+                    <i class="ob-title"><?php echo $ob['title']; ?></i>
+                </a>
+            </div>
+            <?php } ?>
         </div>
 
 

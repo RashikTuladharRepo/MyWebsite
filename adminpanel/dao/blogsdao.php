@@ -50,7 +50,7 @@ class blogsdao extends webconfig
     function getblogslistclient()
     {
         $result=array();
-        $sql="select * from tbl_blogs WHERE status='active' ORDER by createddate DESC LIMIT 5";
+        $sql="select * from tbl_blogs WHERE status='active' ORDER by viewcounts DESC LIMIT 5";
         $qry=$this->mysqli->query($sql);
         while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
             $result[]= $res;
@@ -102,9 +102,11 @@ class blogsdao extends webconfig
         $date=date("Y-m-d h:i:sa");
         $user=$_SESSION['username'];
         $sql="INSERT INTO tbl_blogs
-              (title,metadata,keyword,description,status,coverimage,coverimageurl,category,createddate,createdby) VALUES
+              (title,metadata,keyword,description,status,coverimage,coverimageurl,category,createddate,createdby,
+      viewcounts)
+              VALUES
               ('$title','$metadata','$keyword','$description','$status','$coverimage','$coverimageurl','$category','$date',
-              '$user')";
+              '$user',1)";
         $qry=$this->mysqli->query($sql);
         if($qry)
         {
@@ -313,5 +315,34 @@ status='$status',coverimageurl='$coverimageurl',category='$category',modifieddat
             $result[]= $res;
         }
         return $result;
+    }
+
+    function somerandomblogs()
+    {
+        $result=array();
+        $sql="SELECT DISTINCT * FROM tbl_blogs WHERE status='active' ORDER BY RAND() LIMIT 4 ";
+        $qry=$this->mysqli->query($sql);
+        while ($res = $qry->fetch_array(MYSQLI_ASSOC)) {
+            $result[]= $res;
+        }
+        return $result;
+    }
+
+    function viewcountsadd($id)
+    {
+        $sql="update tbl_blogs set viewcounts=(viewcounts+1) where sn='$id'";
+        $qry=$this->mysqli->query($sql);
+        if($qry)
+        {
+            $result['errorcode']=0;
+            $result['msg']="Views Registered!!!";
+            return $result;
+        }
+        else
+        {
+            $result['errorcode']=1;
+            $result['msg']="Views Unregistered!!!";
+            return $result;
+        }
     }
 }

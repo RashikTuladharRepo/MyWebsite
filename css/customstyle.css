@@ -399,6 +399,50 @@ pre
  }
 
 
+ .some-other-blogs  .h2-heading
+ {
+     font-family: HarabaraHand;
+     border-bottom: 1px solid rgba(0,0,0,0.2);
+     color: #1e90ff;
+     font-weight: 100;
+     font-size: 20px;
+ }
+
+ .some-other-blogs .individual-blogs
+ {
+
+ }
+
+ .some-other-blogs .individual-blogs a
+ {
+     font-size: 18px;
+     display: block;
+     opacity: 0.5;
+     text-decoration: none;
+     -webkit-transition: opacity 1s;
+     -moz-transition: opacity 1s;
+     -ms-transition: opacity 1s;
+     -o-transition: opacity 1s;
+     transition: opacity 1s;
+ }
+
+ .some-other-blogs .individual-blogs a:hover
+ {
+     opacity: 1;
+ }
+
+ .some-other-blogs img
+ {
+     height: 200px;
+ }
+
+ .some-other-blogs .individual-blogs .ob-title
+ {
+     color:#696969;
+     font-size: 18px;
+ }
+
+
  footer
  {
      margin-top: 10px;
