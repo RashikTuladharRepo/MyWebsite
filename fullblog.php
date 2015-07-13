@@ -201,8 +201,7 @@
                 {
             ?>
             <div class="col-xs-12 col-md-3 individual-blogs">
-                <a href="<?php echo $baseurl; ?>fullblog/<?php echo $ob['sn']; ?>/<?php echo $ob['title']; ?>"
-                   class="text-center">
+                <a href="<?php echo $baseurl; ?>fullblog/<?php echo $ob['sn']; ?>/<?php echo $ob['title']; ?>">
                     <img src="<?php echo $ob['coverimageurl']; ?>" height="100px" class="img-responsive">
                     <i class="ob-title"><?php echo $ob['title']; ?></i>
                 </a>

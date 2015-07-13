@@ -415,7 +415,7 @@ pre
 
  .some-other-blogs .individual-blogs a
  {
-     font-size: 18px;
+     font-size: 14px;
      display: block;
      opacity: 0.5;
      text-decoration: none;
@@ -433,13 +433,13 @@ pre
 
  .some-other-blogs img
  {
-     height: 200px;
+     height: 100px;
  }
 
  .some-other-blogs .individual-blogs .ob-title
  {
      color:#696969;
-     font-size: 18px;
+     font-size: 14px;
  }
 
 
