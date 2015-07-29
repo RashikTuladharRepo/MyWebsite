@@ -34,7 +34,6 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/customstyle.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/mainstyle.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dancing+Script">
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl; ?>css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $baseurl;?>css/styles.css">
 </head>
@@ -67,13 +66,13 @@
 //        ?>
 <!---->
 <!---->
-<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->-->
-<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->-->
-<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->-->
-<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->-->
-<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->-->
-<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->-->
-<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->-->
+<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->
+<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->
+<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->
+<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->
+<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->
+<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->
+<!--<!--        <div class="item"><img class="img-rounded" src="images/banner1.jpg" width="255px" height="150px"></div>-->
 <!--    </div>-->
 <!---->
 <!--</div>-->
@@ -152,7 +151,19 @@
             loop: true,
             autoPlay : 3000
         });
+    });
 
+    $(window).on('scroll', function() {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test = 150;             // set to whatever you want it to be
+
+        if(y_scroll_pos > scroll_pos_test) {
+            $('.navbar').fadeOut();
+        }
+        else
+        {
+            $('.navbar').fadeIn();
+        }
     });
 </script>
 

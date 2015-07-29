@@ -8,6 +8,13 @@
    src: url("../fonts/HarabaraHand.ttf");
  }
 
+ @font-face {
+     font-family: 'Dancing Script';
+     font-style: normal;
+     font-weight: 400;
+     src: url("../fonts/DancingScript-Regular.otf");
+ }
+
  .navbar-inverse
  {
      background-color: #ffffff;
