@@ -1,4 +1,4 @@
-
+    
 $blogcount=$bc->getblogscount();  //get the blogs count
 
 $rows=$blogcount['totalrows']; // $row holds the number of of blog count

@@ -27,10 +27,17 @@
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
         <link rel="icon" href="images/logo.png">
         <link rel="stylesheet" type="text/css" href="css/animations.css">
+
         <link rel="stylesheet" type="text/css" href="css/ihover.css">
 
         <link rel="stylesheet" type="text/css" href="includes/engine1/style.css" />
         <script type="text/javascript" src="includes/engine1/jquery.js"></script>
+				<link rel="stylesheet" type="text/css" href="css/animate.css">
+				
+				
+				<link rel="stylesheet" type="text/css" media="all" href="css/animate.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+...
 
     </head>
 
@@ -91,7 +98,7 @@
 </div>
 
 
-<section id="about">
+<section id="about" class="animated">
     <div class="container aboutme">
         <div class="col-md-12">
             <h1>About Me</h1>
